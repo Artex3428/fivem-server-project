@@ -1,0 +1,8 @@
+cache/
+logs/
+crashes/
+txData/
+
+*.log
+
+server-private.cfg
