@@ -10,3 +10,6 @@
 [submodule "server-data/resources/ox_inventory"]
 	path = server-data/resources/ox_inventory
 	url = https://github.com/Artex3428/ox_inventory.git
+[submodule "server-data/resources/ox_target"]
+	path = server-data/resources/ox_target
+	url = https://github.com/Artex3428/ox_target.git
