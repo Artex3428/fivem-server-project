@@ -7,3 +7,6 @@
 [submodule "oxmysql"]
 	path = oxmysql
 	url = https://github.com/Artex3428/oxmysql.git
+[submodule "qbx_core"]
+	path = qbx_core
+	url = https://github.com/Artex3428/qbx_core.git
