@@ -2,7 +2,8 @@ cache/
 logs/
 crashes/
 txData/
+coreclr_server/
 
 *.log
 
-server-private.cfg
+server-data/server-private.cfg

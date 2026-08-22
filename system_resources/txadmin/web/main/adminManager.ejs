@@ -1,0 +1,310 @@
+<%- await include('parts/header.ejs', locals) %>
+
+<style>
+    .admin-icon {
+        display: inline-block;
+    }
+    .admin-icon svg {
+        height: 20px;
+        width: 20px;
+        margin: auto;
+        text-align: center;
+    }
+    .table td {
+        vertical-align: middle;
+    }
+</style>
+
+<svg style="display:none">
+    <symbol id="cfxre-icon" viewBox="51.12 12.29 329.06 231.43" style="fill: #DC1F5B">
+        <g>
+            <path d="M242.956504 146.0804v-.723216l-4.339296-57.85728c-.12113868-1.56702827-.78288132-2.92305827-1.988844-4.06809s-2.59092132-1.717638-4.158492-1.717638h-33.629544c-1.56702827 0-2.95307173.57260627-4.158492 1.717638-1.20542027 1.14503173-1.86824773 2.50106173-1.988844 4.06809l-4.339296 57.85728v.723216c-.12059627 1.446432.361608 2.65239468 1.446432 3.61608 1.084824.96368532 2.350452 1.446432 3.796884 1.446432h44.116176c1.446432 0 2.71206-.48274668 3.796884-1.446432 1.084824-.96368532 1.56757068-2.169648 1.446432-3.61608zm137.230236 84.435468c0 8.79973068-2.77172532 13.198692-8.316984 13.198692H244.58374c1.56757068 0 2.892864-.57314868 3.977688-1.717638 1.084824-1.14448932 1.56757068-2.50051932 1.446432-4.06809l-3.61608-46.285824c-.12113868-1.56757068-.78288132-2.92360068-1.988844-4.06809s-2.59092132-1.717638-4.158492-1.717638h-49.178688c-1.56702827 0-2.95307173.57314868-4.158492 1.717638-1.20542027 1.14448932-1.86824773 2.50051932-1.988844 4.06809l-3.61608 46.285824c-.12059627 1.56757068.361608 2.92360068 1.446432 4.06809s2.41065973 1.717638 3.977688 1.717638H59.440444c-5.54471627 0-8.316984-4.39896132-8.316984-13.198692 0-6.508944 1.56702827-13.50063468 4.700904-20.973264l75.395268-188.759376c.96422773-2.29024427 2.531256-4.27908827 4.700904-5.966532 2.169648-1.68744373 4.45989227-2.531256 6.870552-2.531256h61.292556c-1.56702827 0-2.95307173.57260627-4.158492 1.717638-1.20542027 1.14503173-1.86824773 2.50106173-1.988844 4.06809l-2.71206 34.714368c-.12059627 1.68744373.361608 3.073668 1.446432 4.158492 1.084824 1.084824 2.41065973 1.627236 3.977688 1.627236h30.013464c1.56757068 0 2.892864-.542412 3.977688-1.627236 1.084824-1.084824 1.56757068-2.47104827 1.446432-4.158492l-2.71206-34.714368c-.12113868-1.56702827-.78288132-2.92305827-1.988844-4.06809s-2.59092132-1.717638-4.158492-1.717638h61.292556c2.41011732 0 4.700904.84381227 6.870552 2.531256 2.169648 1.68744373 3.73721868 3.67628773 4.700904 5.966532l75.395268 188.759376c3.13333332 7.47262932 4.700904 14.46432 4.700904 20.973264z" fill-rule="nonzero">
+            </path>
+        </g>
+    </symbol>
+    <symbol id="discord-icon" viewBox="0 0 245 240" style="fill: #7289da;">
+        <path d="M104.4 103.9c-5.7 0-10.2 5-10.2 11.1s4.6 11.1 10.2 11.1c5.7 0 10.2-5 10.2-11.1.1-6.1-4.5-11.1-10.2-11.1zM140.9 103.9c-5.7 0-10.2 5-10.2 11.1s4.6 11.1 10.2 11.1c5.7 0 10.2-5 10.2-11.1s-4.5-11.1-10.2-11.1z" />
+        <path d="M189.5 20h-134C44.2 20 35 29.2 35 40.6v135.2c0 11.4 9.2 20.6 20.5 20.6h113.4l-5.3-18.5 12.8 11.9 12.1 11.2 21.5 19V40.6c0-11.4-9.2-20.6-20.5-20.6zm-38.6 130.6s-3.6-4.3-6.6-8.1c13.1-3.7 18.1-11.9 18.1-11.9-4.1 2.7-8 4.6-11.5 5.9-5 2.1-9.8 3.5-14.5 4.3-9.6 1.8-18.4 1.3-25.9-.1-5.7-1.1-10.6-2.7-14.7-4.3-2.3-.9-4.8-2-7.3-3.4-.3-.2-.6-.3-.9-.5-.2-.1-.3-.2-.4-.3-1.8-1-2.8-1.7-2.8-1.7s4.8 8 17.5 11.8c-3 3.8-6.7 8.3-6.7 8.3-22.1-.7-30.5-15.2-30.5-15.2 0-32.2 14.4-58.3 14.4-58.3 14.4-10.8 28.1-10.5 28.1-10.5l1 1.2c-18 5.2-26.3 13.1-26.3 13.1s2.2-1.2 5.9-2.9c10.7-4.7 19.2-6 22.7-6.3.6-.1 1.1-.2 1.7-.2 6.1-.8 13-1 20.2-.2 9.5 1.1 19.7 3.9 30.1 9.6 0 0-7.9-7.5-24.9-12.7l1.4-1.6s13.7-.3 28.1 10.5c0 0 14.4 26.1 14.4 58.3 0 0-8.5 14.5-30.6 15.2z" />
+    </symbol>
+</svg>
+
+
+<div class="row justify-content-md-center">
+    <div class="col-lg-10 mw-col12">
+
+        <!-- Global Card -->
+        <div class="card card-accent-primary">
+            <div class="card-header float-left">
+                <span style="font-size: large">All Admins (<%= admins.length %>)</span>
+                <button class="btn btn-sm btn-success float-right" type="button" onclick="getAdminModal();">
+                    <i class="icon-plus"></i> Add
+                </button>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive text-center">
+
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Username</th>
+                                <th>Identifiers</th>
+                                <th>Permissions</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% for (const admin of admins) { %>
+                            <tr>
+                                <td><%= admin.name %></td>
+                                <td>
+                                    <div style="display: flex; flex-direction: column; gap: 2px;">
+                                        <% if (admin.identifiers.length > 0) { %>
+                                            <% for (const identifier of admin.identifiers) { %>
+                                                <span style="font-size: 0.9em; opacity: 75%; font-family: monospace; display: flex; align-items: center; justify-content: center; gap: 4px;">
+                                                    <% if (identifier.startsWith('fivem:')) { %>
+                                                        <svg style="display: inline; max-width: 1.5em; max-height: 1.5em; margin-top: -2px;">
+                                                            <use href="#cfxre-icon"></use>
+                                                        </svg>
+                                                    <% } else if (identifier.startsWith('discord:')) { %>
+                                                        <svg style="display: inline; max-width: 1.5em; max-height: 1.5em;">
+                                                            <use href="#discord-icon"></use>
+                                                        </svg>
+                                                    <% } %>
+                                                    <%= identifier %>
+                                                </span>
+                                            <% } %>
+                                        <% } else { %>
+                                            <span>--</span>
+                                        <% } %>
+                                    </div>
+                                </td>
+                                <td><%= admin.perms %></td>
+                                <td class="tableActions">
+                                    <% if (admin.isSelf) { %>
+                                        <button class="btn btn-sm btn-outline-primary"
+                                            onclick="openAccountModal()">
+                                            <i class="icon-pencil"></i> Your Account
+                                        </button>
+                                    <% } else { %>
+                                        <% if (admin.disableEdit) { %>
+                                            <button class="btn btn-sm btn-outline-secondary" disabled>
+                                                <i class="icon-pencil"></i> Edit
+                                            </button>
+                                        <% } else { %>
+                                            <button class="btn btn-sm btn-outline-primary"
+                                                onclick="getAdminModal(<%= escapeHtmlRawText(JSON.stringify(admin.name)) %>)">
+                                                <i class="icon-pencil"></i> Edit
+                                            </button>
+                                        <% } %>
+                                        &nbsp;
+                                        <% if (admin.disableDelete) { %>
+                                            <button class="btn btn-sm btn-outline-secondary" disabled>
+                                                <i class="icon-trash"></i> Delete
+                                            </button>
+                                        <% } else { %>
+                                            <button class="btn btn-sm btn-outline-danger"
+                                                onclick="deleteAdmin(<%= escapeHtmlRawText(JSON.stringify(admin.name)) %>)">
+                                                <i class="icon-trash"></i> Delete
+                                            </button>
+                                        <% } %>
+                                    <% } %>
+                                </td>
+                            </tr>
+                            <% } %>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<%- await include('parts/footer.ejs', locals) %>
+
+<!-- Add Admin Copy Password Modal -->
+<div class="modal fade" id="modAdminPassword" tabindex="-1" role="dialog" aria-labelledby="modAdminPasswordTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modAdminPasswordTitle">Add Admin</h5>
+            </div>
+            <div class="modal-body text-center">
+                <div class="form-group row">
+                    <div class="col-sm-8 mx-auto">
+                        <h4 class="text-success">Admin Saved!</h4>
+                        <h6>Please copy the following temporary password:</h6>
+                        <div class="input-group">
+                            <input type="text" class="form-control text-center" id="modAdminPassword-pwd" readonly>
+                        </div>
+                        <span class="form-text text-muted">
+                            The admin will be prompted to change his password on first login.
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer text-center">
+                <div class="mx-auto">
+                    <button type="button" class="btn btn-primary" onclick="window.location.reload(false);">Close & Refresh</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Admin Modal -->
+<div class="modal fade" id="modAdmin" tabindex="-1" role="dialog" aria-labelledby="modAdminTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lgx" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modAdminTitle">Edit Admin</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" id="modAdmin-body"></div>
+            <div class="modal-footer text-center">
+                <div class="mx-auto">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-success" id="modAdmin-save">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    //============================================== Form Autofill
+    // Example: ?autofill&name=tabarra&citizenfx=fivem:271816&discord=discord:272800190639898628
+    // NOTE: please encode the name with something like slug(name, '_')
+    let autofill = false;
+    if(typeof location.search === 'string' && location.search.startsWith('?autofill')){
+        const params = new URLSearchParams(location.search);
+        const discordValue = params.get('discord');
+        autofill = {
+            name: params.get('name'),
+            citizenfxID: params.get('citizenfx') ?? '',
+            discordID: discordValue && discordValue.includes(':') ? discordValue.split(':')[1] : '',
+        }
+        window.history.pushState(null, 'txAdmin', 'legacy/adminManager?');
+        getAdminModal();
+    }
+
+    
+    //============================================== Show Your Account Modal
+    function openAccountModal() {
+        window.parent.postMessage({ type: 'openAccountModal' });
+    }
+
+    //============================================== Show Admin Modal
+    function getAdminModal(name){
+        let modalType, data;
+        if(name){
+            $('#modAdminTitle').html('Edit Admin');
+            modalType = 'edit';
+            data = {name}
+        }else{
+            $('#modAdminTitle').html('New Admin');
+            modalType = 'add';
+            data = {autofill: true}
+        }
+        txAdminAPI({
+            type: "POST",
+            url: `adminManager/getModal/${modalType}`,
+            data,
+            dataType: 'html',
+            success: function (data) {
+                $('#modAdmin-body').html(data);
+                if(!name && autofill){
+                    $('#modAdmin-name').val(autofill.name);
+                    $('#modAdmin-citizenfxID').val(autofill.citizenfxID);
+                    $('#modAdmin-discordID').val(autofill.discordID);
+                    autofill = false;
+                }
+                $('#modAdmin').modal('show');
+            },
+            error: function (xmlhttprequest, textstatus, message) {
+                $('#modAdmin-body').html(`<div class="text-center pt-2">
+                    <h5 class="text-secondary">action failed, please refresh the page and try again</h5>
+                </div>`);
+                $('#modAdmin').modal('show');
+            }
+        });
+    }
+
+
+    //============================================== Admin Modal Save
+    $('#modAdmin-save').click(function () {
+        const isNewAdmin = $('#modAdmin-isNewAdmin').val() === "true";
+        const permissions = [];
+        $.each($("input[name='modAdmin-permissions[]']:checked"), function() {
+            permissions.push($(this).val());
+        });
+        const formData = {
+            name: $('#modAdmin-name').val().trim(),
+            citizenfxID: $('#modAdmin-citizenfxID').val().trim(),
+            discordID: $('#modAdmin-discordID').val().trim(),
+            permissions: (permissions.length)? permissions : false
+        }
+        if(formData.name.length < 3) {
+            return $.notify({ message: 'The Username is not long enough.' }, { type: 'warning' });
+        }
+        const notify = $.notify({ message: '<p class="text-center">Saving...</p>' }, {});
+        const action = (isNewAdmin) ? 'add' : 'edit';
+
+        txAdminAPI({
+            type: "POST",
+            url: `/adminManager/${action}`, 
+            data: formData,
+            success: function (data) {
+                if (checkApiLogoutRefresh(data)) return;
+                if(data.type == 'showPassword'){
+                    notify.update('progress', 0);
+                    notify.update('type', 'success');
+                    notify.update('message', 'Saved!');
+                    $('#modAdmin').modal('hide');
+                    $('#modAdminPassword-pwd').val(data.password);
+                    $('#modAdminPassword').modal('show');
+                }else{
+                    updateMarkdownNotification(data, notify);
+                }
+            },
+            error: function (xmlhttprequest, textstatus, message) {
+                notify.update('progress', 0);
+                notify.update('type', 'danger');
+                notify.update('message', message);
+            }
+        });
+    });
+
+
+    //============================================== Delete Admin
+    async function deleteAdmin(name){
+        const confirmation = await txAdminConfirm({
+            content: `Are you sure you want to delete <b>${xss(name)}</b>?`
+        })
+        if(!confirmation) return;
+
+        const notify = $.notify({ message: '<p class="text-center">Deleting...</p>' }, {});
+        txAdminAPI({
+            type: "POST",
+            url: '/adminManager/delete',
+            data: {name: name},
+            success: function (data) {
+                if (checkApiLogoutRefresh(data)) return;
+                notify.update('progress', 0);
+                notify.update('type', data.type);
+                notify.update('message', data.message);
+            },
+            error: function (xmlhttprequest, textstatus, message) {
+                $.notify({ message: '<p class="text-center">Error deleting admin</p>' })
+            }
+        });
+    }
+</script>

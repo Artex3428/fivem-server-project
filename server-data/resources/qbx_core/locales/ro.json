@@ -1,0 +1,164 @@
+{
+    "error": {
+        "not_online": "Cetateanul nu este in stat (offline)",
+        "wrong_format": "Format incorect",
+        "missing_args": "Nu ai pferit toate argumentele necesare (x, y, z)",
+        "missing_args2": "Toate argumentele trebuiesc precizate!",
+        "no_access": "Nu ai acces la aceasta comanda!",
+        "company_too_poor": "Patronul tau e sarachie mare, nu are bani!",
+        "item_not_exist": "Acest obiect nu exista",
+        "too_heavy": "Inventarul tau este prea plin",
+        "duplicate_license": "Duplicat de licenta Rockstar detectata",
+        "no_valid_license":  "Nu s-a gasit nicio licenta valida Rockstar",
+        "not_whitelisted": "Nu ai statut de whitelist pe acest server",
+        "no_permission": "Din pacate nu ai permisiunile necesare pentru asa ceva..",
+        "no_waypoint": "Niciun punct de referinta setat.",
+        "tp_error": "A aparut o eroare la teleportare.",
+        "connecting_database_timeout": "Conexiune cu data de baze pierdută. (Este serverul SQL activ?)",
+        "connecting_error": "Eroare la încercarea conectării pe server. (Verifică serverele)",
+        "no_match_character_registration": "Doar literele sunt permise, fără spații libere și cuvintele încep cu majusculă. Poți adăuga spații între cuvinte.",
+        "already_in_queue": "Ești deja în coadă.",
+        "no_subqueue": "Nu ai permisiune pentru sub-queue."
+    },
+    "success": {
+        "server_opened": "Serverul este deschis",
+        "server_closed": "Serverul este închis",
+        "teleported_waypoint": "Ai fost teleportat la punctul de referinta.",
+        "character_deleted": "Caracter șters!",
+        "character_deleted_citizenid": "Ai șters cu succes caracterul cu Citizen ID %s."
+    },
+    "info": {
+        "received_paycheck": "Ai primit salariul in valoare de $%s",
+        "job_info": "Job: %s | Functie: %s | In tura: %s",
+        "gang_info": "Gasca: %s | Functie: %s",
+        "on_duty": "Ai inceput tura !",
+        "off_duty": "Ai iesit din tura!",
+        "checking_ban": "Salutari %s. Verificam daca ai primit ban la noi :)",
+        "join_server": "Bun venit %s pe %s.",
+        "checking_whitelisted": "Salutari %s. Iti facem o verificare scurta.",
+        "exploit_banned": "Ai fost banat pentru cheating. Informatii suplimentare pe serverul nostru de Discord: ",
+        "exploit_dropped": "Ai primit KICK pentru ca ai incercat un exploit!",
+        "multichar_title": "Selectarea Caracterului",
+        "multichar_new_character": "Caracter Nou #%s",
+        "char_male": "Bărbat",
+        "char_female": "Femeie",
+        "play": "Joacă",
+        "play_description": "Joacă ca %s",
+        "delete_character": "Șterge caracterul",
+        "delete_character_description": "Șterge %s",
+        "logout_command_help": "Te scoate din propriul caracter",
+        "check_id": "Verifică Server ID",
+        "deletechar_command_help": "Șterge caracterul jucătorului",
+        "deletechar_command_arg_player_id": "ID-ul jucătorului",
+        "character_registration_title": "Înregistrarea caracterului",
+        "first_name": "Prenume",
+        "last_name": "Nume",
+        "nationality": "Naționalitate",
+        "gender": "Sex",
+        "birth_date": "Zi de naștere",
+        "select_gender": "Alege sexul...",
+        "confirm_delete": "Ești sigur că vrei să ștergi caracterul?",
+        "in_queue": "🐌 Ești %s/%s in coadă. (%s) %s"
+    },
+    "command": {
+        "tp": {
+            "help": "TP catre un jucător sau către anumite coordonate (Admin Only)",
+            "params": {
+                "x": { "name": "ID/X", "help": "ID-ul jucătorului sau coordonata X"},
+                "y": { "name": "Y", "help": "Coordonata Y"},
+                "z": { "name": "Z", "help": "Coordonata Z"}
+            }
+        },
+        "tpm": { "help": "TP la punctul de referinta de pe harta (Admin Only)" },
+        "togglepvp": { "help": "Activeaza/Dezactiveaza PVP pe server (Admin Only)" },
+        "addpermission": {
+            "help": "Dai permisiuni speciale unui jucator (God Only)",
+            "params": {
+                "id": { "name": "ID", "help": "ID-ul jucatorului" },
+                "permission": { "name": "Permisiuni", "help": "Permisiunile pe care vrei sa le dau (admin/moderator)" }
+            }
+        },
+        "removepermission": {
+            "help": "Stergi permisiunile speciale ale unui jucator (God Only)",
+            "params": {
+                "id": { "name": "ID", "help": "ID-ul jucatorului" },
+                "permission": { "name": "Permisiuni", "help": "Nivelul de permisiuni pe care vrei sa le stergi" }
+            }
+        },
+        "openserver": { "help": "Deschide serverul pentru publicul larg (Admin Only)" },
+        "closeserver": {
+            "help": "Inchide serverul pentru publicul larg (Admin Only)",
+            "params": {
+                "reason": { "name": "Motivul", "help": "Motivul pentru care serverul este inchis publicului larg (optional)" }
+            }
+        },
+        "car": {
+            "help": "Spawneaza un vehicul (Admin Only)",
+            "params": {
+                "model": { "name": "Model", "help": "Modelul vehiculului dorit, Ex: intruder" }
+            }
+        },
+        "dv": { "help": "Stergi un vehicul (Admin Only)" },
+        "givemoney": {
+            "help": "Dai o suma de bani unui jucator (Admin Only)",
+            "params": {
+                "id": { "name": "ID", "help": "ID-ul jucatorului, Ex: 342" },
+                "moneytype": { "name": "Tipul banilor", "help": "Aici avem 3 optiuni (cash, bank, crypto)" },
+                "amount": { "name": "Suma", "help": "Suma de bani pe care vrei sa o dai, Ex: 5000" }
+            }
+        },
+        "setmoney": {
+            "help": "Setezi o suma de bani pentru un jucator anume (Admin Only)",
+            "params": {
+                "id": { "name": "ID", "help": "ID-ul Jucatorului" },
+                "moneytype": { "name": "tipul de bani", "help": "Tipul de bani pe care vrei sa-l setezi jucatorului (cash, bank, crypto)" },
+                "amount": { "name": "Suma", "help": "Suma de bani pe care vrei sa o dai/setezi" }
+            }
+        },
+        "job": { "help": "Iti verifici job-ul, in cazul in care ai uitat :)" },
+        "setjob": {
+            "help": "Setezi un job pentru un cetatean (Admin Only)",
+            "params": {
+                "id": { "name": "ID", "help": "ID-ul Jucatorului" },
+                "job": { "name": "job", "help": "Numele jobului, asa cum este definit in config." },
+                "grade": { "name": "Functia", "help": "Functia este de tipul 1,2,3,4 etc." }
+            }
+        },
+        "changejob": {
+            "help": "Schimbă jobul unui cetățean (Admin Only)",
+            "params": {
+                "id": { "name": "id", "help": "Player ID" },
+                "job": { "name": "job", "help": "Job name" }
+            }
+        },
+        "addjob": {
+            "help": "Adaugă job unui cetățean (Admin Only)",
+            "params": {
+                "id": { "name": "id", "help": "Player ID" },
+                "job": { "name": "job", "help": "Job name" },
+                "grade": { "name": "grade", "help": "Job grade" }
+            }
+        },
+        "removejob": {
+            "help": "Scoate job-ul unui cetățean (Admin Only)",
+            "params": {
+                "id": { "name": "id", "help": "Player ID" },
+                "job": { "name": "job", "help": "Job name" }
+            }
+        },
+        "setgang": {
+            "help": "Setezi o gasca/mafie pentru un jucator (Admin Only)",
+            "params": {
+                "id": { "name": "ID", "help": "ID-ul Jucatorului" },
+                "gang": { "name": "gasca/mafie", "help": "Numele mafiei sau a gasti pe care vrei sa o setezi" },
+                "grade": { "name": "Functia", "help": "Functia este de tipul 1,2,3,4 etc." }
+            }
+        },
+        "me": {
+            "help": "Mesaj local/Indica o actiune sau afectiune",
+            "params": {
+                "message": { "name": "mesaj", "help": "Efectiv mesajul pe care vrei sa-l afisezi" }
+            }
+        }
+    }
+}

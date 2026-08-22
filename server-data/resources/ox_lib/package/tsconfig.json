@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "rootDir": ".",
+    "strict": true,
+    "module": "es2022",
+    "types": ["@types/node", "@citizenfx/client", "@citizenfx/server"],
+    "declaration": true,
+    "target": "esnext",
+    "allowJs": false,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "experimentalDecorators": true,
+    "noImplicitAny": true,
+    "outDir": "dist",
+    "declarationMap": true
+  },
+  "include": ["client", "server", "common"],
+  "exclude": ["**/node_modules"]
+}

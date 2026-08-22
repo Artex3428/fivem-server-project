@@ -1,0 +1,58 @@
+name: "release-action"
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+    release-action:
+        name: "Create Release"
+        runs-on: "ubuntu-latest"
+        steps:
+            - name: Checkout Repository
+              uses: actions/checkout@v4
+              with:
+                fetch-depth: 0
+                ref: ${{ github.event.repository.default_branch }}
+
+            - name: Install ZIP
+              run: sudo apt install zip
+
+            - name: Bundle files
+              run: |
+                rm -rf ./.github ./.vscode ./.git
+                shopt -s extglob
+                mkdir ./${{ github.event.repository.name }}
+                cp -r !(${{ github.event.repository.name }}) ${{ github.event.repository.name }}
+                zip -r ./${{ github.event.repository.name }}.zip ./${{ github.event.repository.name }}
+
+            - name: Get App Token
+              uses: actions/create-github-app-token@v1
+              id: generate_token
+              with:
+                app-id: ${{ secrets.APP_ID }}
+                private-key: ${{ secrets.PRIVATE_KEY }}
+
+            - name: Update CHANGELOG
+              id: changelog
+              uses: requarks/changelog-action@v1
+              continue-on-error: true
+              with:
+                token: ${{ steps.generate_token.outputs.token }}
+                tag: ${{ github.ref_name }}
+                includeInvalidCommits: true
+                useGitmojis: false
+                writeToFile: false
+
+            - name: Create Release
+              uses: ncipollo/release-action@v1.14.0
+              with:
+                allowUpdates: true
+                draft: false
+                makeLatest: true
+                name: ${{ github.ref_name }}
+                tag: ${{ github.ref_name }}
+                body: ${{ steps.changelog.outputs.changes }}
+                artifacts: ${{ github.event.repository.name }}.zip
+                token: ${{ steps.generate_token.outputs.token }}

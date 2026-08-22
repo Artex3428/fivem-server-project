@@ -1,0 +1,358 @@
+<%- await include('parts/header.ejs', locals) %>
+
+
+<div class="row justify-content-md-center">
+    <div class="col-lg-6 col-md-8 col-sm-12">
+        <% if (!isMasterAdmin) { %>
+            <div class="alert alert-warning text-center" role="alert">
+                <strong>Warning:</strong> You MUST be the Master Admin to be able to use the options below.
+            </div>
+        <% } %>
+        <% if (!isWebInterface) { %>
+            <div class="alert alert-warning text-center" role="alert">
+                <strong>Warning:</strong> These functions are disabled for the in-game menu, please use the Web version.
+            </div>
+        <% } %>
+    </div>
+</div>
+
+
+<div class="row justify-content-md-center">
+    <div class="col-md-7 mw-col8">
+
+        <!-- Settings Card -->
+        <div class="card card-accent-danger">
+            <div class="card-header font-weight-bold" style="border-bottom: 0px;">
+                <ul class="nav nav-tabs card-header-tabs">
+                    <li class="nav-item">
+                        <a class="nav-item nav-link active" id="nav-general-tab" data-toggle="tab" href="#nav-general"
+                            role="tab" aria-controls="nav-general" aria-selected="true">
+                            General
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item nav-link" id="nav-cleandb-tab" data-toggle="tab" href="#nav-cleandb"
+                            role="tab" aria-controls="nav-cleandb" aria-selected="true">
+                            Clean Database
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item nav-link" id="nav-revokewl-tab" data-toggle="tab" href="#nav-revokewl"
+                            role="tab" aria-controls="nav-revokewl" aria-selected="true">
+                            Revoke Allowlists
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="card-body settings-card">
+                <div class="tab-content" id="nav-tabContent">
+
+                    <!-- General Tab -->
+                    <div class="tab-pane fade active show" id="nav-general" role="tabpanel" aria-labelledby="nav-general-tab">
+                        <!-- Reset FXServer -->
+                        <div class="row text-center pb-2">
+                            <div class="col-lg-9 text-lg-left">
+                                <h5>Reset FXServer</h5>
+                                <p class="text-warning">
+                                    This option has been moved to the <a href="#" onclick="navigateParentTo('/settings#fxserver')" class="text-warning" style="font-weight: 700; text-decoration: underline;">Settings -> FXServer</a> page.
+                                </p>
+                            </div>
+                            <div class="col-lg-3 text-lg-right">
+                                <button class="btn btn-sm btn-outline-secondary" type="button" 
+                                onclick="navigateParentTo('/settings#fxserver')">
+                                    Go To Settings
+                                </button>
+                            </div>
+                        </div>
+                        <hr class="m-1">
+
+                        <!-- Backup Database -->
+                        <div class="row text-center pt-2">
+                            <div class="col-lg-9 text-lg-left">
+                                <h5>Backup Database</h5>
+                                Download a copy of the <code>playersDB.json</code> file containing all players, actions (bans, warns), and join requests for allowlisted servers.  
+                                You should do this every once in a while.
+                            </div>
+                            <div class="col-lg-3 text-lg-right">
+                                <button class="btn btn-sm btn-outline-danger" type="button" 
+                                id="general-btnBackupDatabase" <%= disableActions %>>
+                                    Backup Database
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /General Tab -->
+                    
+                    <!-- Clean Database Tab -->
+                    <div class="tab-pane fade" id="nav-cleandb" role="tabpanel" aria-labelledby="nav-cleandb-tab">
+                        <div class="alert alert-warning text-center" role="alert">
+                            <strong>Warning:</strong> this action is irreversible and we strongly suggest that you save a database backup first.
+                        </div>
+                        <div class="form-group row">
+                            <label for="cleandb-players" class="col-sm-3 col-form-label">
+                                Players
+                            </label>
+                            <div class="col-sm-9">
+                                <select id="cleandb-players" name="players" class="form-control" required>
+                                    <option value="none">none</option>
+                                    <option value="60d" selected>inactive over 60 days</option>
+                                    <option value="30d">inactive over 30 days</option>
+                                    <option value="15d">inactive over 15 days</option>
+                                </select>
+                                <span class="form-text text-muted">
+                                    Remove from the database players based on how much time since they last connected to the server.
+                                    This will not remove players with saved notes, neither will erase bans/warns logs.
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="cleandb-bans" class="col-sm-3 col-form-label">
+                                Bans
+                            </label>
+                            <div class="col-sm-9">
+                                <select id="cleandb-bans" name="bans" class="form-control" required>
+                                    <option value="none">none</option>
+                                    <option value="revoked" selected>revoked</option>
+                                    <option value="revokedExpired">revoked or expired</option>
+                                    <option value="all" class="font-weight-bold text-danger">REMOVE ALL BANS</option>
+                                </select>
+                                <span class="form-text text-muted">
+                                    Remove expired or revoked bans from the database.
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="cleandb-warns" class="col-sm-3 col-form-label">
+                                Warns
+                            </label>
+                            <div class="col-sm-9">
+                                <select id="cleandb-warns" name="warns" class="form-control" required>
+                                    <option value="none" >none</option>
+                                    <option value="revoked">revoked</option>
+                                    <option value="30d" selected>older than 30 days</option>
+                                    <option value="15d">older than 15 days</option>
+                                    <option value="7d">older than 7 days</option>
+                                    <option value="all" class="font-weight-bold text-danger">REMOVE ALL WARNS</option>
+                                </select>
+                                <span class="form-text text-muted">
+                                    Remove old or revoked warns from the database.
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="cleandb-hwids" class="col-sm-3 col-form-label">
+                                HWIDs
+                            </label>
+                            <div class="col-sm-9">
+                                <select id="cleandb-hwids" name="hwids" class="form-control" required>
+                                    <option value="none" selected>none</option>
+                                    <option value="players">from players</option>
+                                    <option value="bans">from bans</option>
+                                    <option value="all" class="font-weight-bold text-danger">REMOVE ALL HWIDS</option>
+                                </select>
+                                <span class="form-text text-muted">
+                                    Player Hardware ID Tokens (HWIDs) are tied to the server owner, and if it changes, no HWID will match anymore. And because of that, if you change your <code>sv_licenseKey</code> to one owned by another person, it is recommended that you wipe the existing HWIDs.
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="text-center mt-4">
+                            <button class="btn btn-sm btn-outline-danger" id="cleandb-submitButton" <%= disableActions %>>
+                                <i class="icon-trash"></i> Clean Database
+                            </button>
+                        </div>
+                    </div>
+
+
+                    <!-- /Revoke Whitelists Tab -->
+                    <div class="tab-pane fade" id="nav-revokewl" role="tabpanel" aria-labelledby="nav-revokewl-tab">
+                        <div class="form-group row">
+                            <label for="revokewl-filter" class="col-sm-3 col-form-label">
+                                Filter
+                            </label>
+                            <div class="col-sm-9">
+                                <select id="revokewl-filter" name="filter" class="form-control" required>
+                                    <option value="30d" selected>players that haven't joined in the last 30 days</option>
+                                    <option value="15d">players that haven't joined in the last 15 days</option>
+                                    <option value="7d">players that haven't joined in the last 7 days</option>
+                                    <option value="all" class="font-weight-bold text-danger">REVOKE ALL ALLOWLISTS</option>
+                                </select>
+                                <span class="form-text text-muted">
+                                    Revoke allowlist from players that have not joined the server the last X days. <br>
+                                    <strong>Note:</strong> This only applies to license allowlist, and not Discord member or Discord role allowlist.
+                                </span>
+                            </div>
+                        </div>
+    
+                        <div class="text-center mt-4">
+                            <button class="btn btn-sm btn-outline-danger" id="revokewl-submitButton" <%= disableActions %>>
+                                <i class="icon-close"></i> Revoke From Allowlist
+                            </button>
+                        </div>
+                    </div>
+                    <!-- /Revoke Whitelists Tab -->
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+
+
+<%- await include('parts/footer.ejs', locals) %>
+
+
+<script>
+    //============================================== General
+    (()=>{
+        if(window.location.hash === '#cleandb'){
+            document.getElementById('nav-cleandb').classList.add('active', 'show');
+            document.getElementById('nav-cleandb-tab').classList.add('active');
+            document.getElementById('nav-general').classList.remove('active', 'show');
+            document.getElementById('nav-general-tab').classList.remove('active');
+        }else if(window.location.hash === '#revokewl'){
+            document.getElementById('nav-revokewl').classList.add('active', 'show');
+            document.getElementById('nav-revokewl-tab').classList.add('active');
+            document.getElementById('nav-general').classList.remove('active', 'show');
+            document.getElementById('nav-general-tab').classList.remove('active');
+        }
+    })();
+    (()=>{
+        const generalBtnBackupDatabase = document.getElementById('general-btnBackupDatabase');
+        generalBtnBackupDatabase.onclick = async () => {
+            window.location = 'masterActions/backupDatabase';
+        }
+    })();
+
+
+    //============================================== Clean Database
+    (()=>{
+        const frmPlayers = document.getElementById('cleandb-players');
+        const frmBans = document.getElementById('cleandb-bans');
+        const frmWarns = document.getElementById('cleandb-warns');
+        const frmHwids = document.getElementById('cleandb-hwids');
+        const cleandbSubmitBtn = document.getElementById('cleandb-submitButton');
+
+        cleandbSubmitBtn.onclick = async (event) => {
+            //Validate options
+            const changes = [];
+            if(frmPlayers.value !== 'none'){
+                changes.push(`Remove players ${frmPlayers.options[frmPlayers.selectedIndex].text}.`);
+            }
+            if(frmBans.value !== 'none'){
+                changes.push(`Remove bans ${frmBans.options[frmBans.selectedIndex].text}.`);
+            }
+            if(frmWarns.value !== 'none'){
+                changes.push(`Remove warns ${frmWarns.options[frmWarns.selectedIndex].text}.`);
+            }
+            if(frmHwids.value !== 'none'){
+                changes.push(`Remove HWIDs ${frmHwids.options[frmHwids.selectedIndex].text}.`);
+            }
+            if(!changes.length){
+                return $.notify({ message: 'You need to select at least one option.' }, {type: 'danger'});
+            }
+
+            //Confirm action
+            const confirmOptions = {
+                title: 'Are you sure wou want to:',
+                content: '<ul>' + changes.map(x => `<li>${x}</li>`).join('\n') + '</ul>'
+            }
+            if(!await txAdminConfirm(confirmOptions)) return;
+            
+            //Send API request
+            txAdminAPI({
+                type: "POST",
+                url: `/masterActions/cleanDatabase`,
+                data: {
+                    players: frmPlayers.value,
+                    bans: frmBans.value,
+                    warns: frmWarns.value,
+                    hwids: frmHwids.value,
+                },
+                timeout: REQ_TIMEOUT_LONG,
+                success: function (data) {
+                    if(data.error){
+                        return txAdminAlert({
+                            title: 'Error:',
+                            modalColor: 'red',
+                            content: data.error
+                        });
+                    }else{
+                        return txAdminAlert({
+                            title: 'Result:',
+                            content: `<b>Players deleted: ${data.playersRemoved}</b> <br>
+                                <b>Actions deleted: ${data.actionsRemoved}</b> <br>
+                                <b>HWIDs deleted: ${data.hwidsRemoved}</b> <br>
+                                Process finished in ${data.msElapsed}ms.`
+                        });
+                    }
+                },
+                error: function (xmlhttprequest, textstatus, message) {
+                    return txAdminAlert({
+                        title: 'Error:',
+                        modalColor: 'red',
+                        content: message
+                    });
+                }
+            });
+        }
+    })();
+
+
+    //============================================== Revoke Whitelists
+    (()=>{
+        const frmFilter = document.getElementById('revokewl-filter');
+        const revokewlSubmitBtn = document.getElementById('revokewl-submitButton');
+
+        revokewlSubmitBtn.onclick = async (event) => {
+            //Confirm action
+            const actionText = (frmFilter.value === 'all')
+                ? `Revoke ALL Allowlisted Players.`
+                : `Revoke Allowlist from all players that have not joined in the past ${frmFilter.value}.`;
+            const confirmOptions = {
+                title: 'Are you sure wou want to:',
+                content: actionText
+            }
+            if(!await txAdminConfirm(confirmOptions)) return;
+            
+            //Send API request
+            txAdminAPI({
+                type: "POST",
+                url: `/masterActions/revokeWhitelists`,
+                data: {
+                    filter: frmFilter.value,
+                },
+                timeout: REQ_TIMEOUT_LONG,
+                success: function (data) {
+                    if(data.error){
+                        return txAdminAlert({
+                            title: 'Error:',
+                            modalColor: 'red',
+                            content: data.error
+                        });
+                    }else{
+                        return txAdminAlert({
+                            title: 'Result:',
+                            content: `<b>Allowlists revoked: ${data.cntRemoved}</b> <br>
+                                Process finished in ${data.msElapsed}ms.`
+                        });
+                    }
+                },
+                error: function (xmlhttprequest, textstatus, message) {
+                    return txAdminAlert({
+                        title: 'Error:',
+                        modalColor: 'red',
+                        content: message
+                    });
+                }
+            });
+        }
+    })();
+</script>

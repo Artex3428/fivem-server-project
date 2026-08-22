@@ -1,15 +1,15 @@
 [submodule "ox_lib"]
-	path = ox_lib
+	path = server-data/resources/ox_lib
 	url = https://github.com/Artex3428/ox_lib.git
 [submodule "ox_inventory"]
-	path = ox_inventory
+	path = server-data/resources/ox_inventory
 	url = https://github.com/Artex3428/ox_inventory.git
 [submodule "oxmysql"]
-	path = oxmysql
+	path = server-data/resources/oxmysql
 	url = https://github.com/Artex3428/oxmysql.git
 [submodule "qbx_core"]
-	path = qbx_core
+	path = server-data/resources/qbx_core
 	url = https://github.com/Artex3428/qbx_core.git
 [submodule "resources/cfx-server-data"]
-	path = resources/cfx-server-data
+	path = server-data/resources/cfx-server-data
 	url = https://github.com/Artex3428/cfx-server-data.git

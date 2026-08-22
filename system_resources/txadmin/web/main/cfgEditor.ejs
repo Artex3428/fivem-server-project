@@ -1,0 +1,131 @@
+<%- await include('parts/header.ejs', locals) %>
+
+<!-- Page CSS -->
+<!-- <link rel="stylesheet" href="css/codemirror.css"> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.61.1/codemirror.min.css" 
+    integrity="sha512-xIf9AdJauwKIVtrVRZ0i4nHP61Ogx9fSRAkCLecmE2dL/U8ioWpDvFCAy4dcfecN72HHB9+7FfQj3aiO68aaaw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="<%= resourcePath %>css/codemirror_lucario.css?txVer=<%= txAdminVersion %>">
+<style>
+    .cm-s-lucario{
+        font-size: 1.05rem !important;
+    }
+    .CodeMirror{
+        height: calc(100vh - 250px);
+    }
+
+    /* https://codemirror.net/5/addon/dialog/dialog.css */
+    .CodeMirror-dialog {
+        position: absolute;
+        left: 0; right: 0;
+        background: inherit;
+        z-index: 15;
+        padding: .1em .8em;
+        overflow: hidden;
+        color: inherit;
+    }
+    .CodeMirror-dialog-top {
+        border-bottom: 1px solid #eee;
+        top: 0;
+    }
+    .CodeMirror-dialog-bottom {
+        border-top: 1px solid #eee;
+        bottom: 0;
+    }
+    .CodeMirror-dialog input {
+        border: none;
+        outline: none;
+        background: transparent;
+        width: 20em;
+        color: inherit;
+        font-family: monospace;
+    }
+    .CodeMirror-dialog button {
+        font-size: 70%;
+    }
+</style>
+
+<!-- Hacky hack but ok, no time to do it better: -->
+<% if (!isWebInterface) { %>
+    <style>.CodeMirror{height: calc(100vh - 150px);}</style>
+<% } %>
+
+<!-- CFG Editor -->
+<div class="row justify-content-md-center">
+    <div class="col-lg-12 col-xl-11 mw-col8">
+        <textarea id="codeMirrorTarget" style="height: calc(100vh - 250px); width: 100%;"
+            class="cms-s-lucario" name="code"><%= rawFile %></textarea>
+    </div>
+</div>
+<div class="row justify-content-md-center" style="margin-top: 1em;">
+    <div class="mx-auto">
+        <button type="button" id="cfgEditor-save" class="btn btn-outline-dark btn-sm mb-2">
+            Save File (CTRL+S)
+        </button>
+    </div>
+</div>
+
+
+<%- await include('parts/footer.ejs', locals) %>
+
+
+<!-- <script src="js/codeEditor/codemirror.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.61.1/codemirror.min.js" 
+    integrity="sha512-ZTpbCvmiv7Zt4rK0ltotRJVRaSBKFQHQTrwfs6DoYlBYzO1MA6Oz2WguC+LkV8pGiHraYLEpo7Paa+hoVbCfKw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="<%= resourcePath %>js/codeEditor/mode/simple.js?txVer=<%= txAdminVersion %>"></script>
+<script src="<%= resourcePath %>js/codeEditor/mode/fivem-cfg.js?txVer=<%= txAdminVersion %>"></script>
+<script src="<%= resourcePath %>js/codeEditor/comment.js?txVer=<%= txAdminVersion %>"></script>
+<script src="<%= resourcePath %>js/codeEditor/searchcursor.js?txVer=<%= txAdminVersion %>"></script>
+<script src="<%= resourcePath %>js/codeEditor/dialog.js?txVer=<%= txAdminVersion %>"></script>
+<script src="<%= resourcePath %>js/codeEditor/search.js?txVer=<%= txAdminVersion %>"></script>
+
+<script>
+    //============================================== CodeMirror & Hook Setup
+    const saveButton = document.getElementById('cfgEditor-save');
+
+    window.onload = function () {
+        const codeMirrorTarget = document.getElementById("codeMirrorTarget");
+        window.CMInstance = CodeMirror.fromTextArea(codeMirrorTarget, {
+            mode: "fivem-cfg",
+            lineNumbers: true,
+            lineWrapping: true,
+            theme: "lucario" //NOTE: I modified the theme a bit
+        });
+
+        window.addEventListener("keydown", (event) => {
+            if (event.ctrlKey && event.key == 's') {
+                event.preventDefault();
+                saveButton.click();
+            } else if (event.ctrlKey && event.key == ';') {
+                window.CMInstance.toggleComment({lineComment: "#"})
+                event.preventDefault();
+            }
+        })
+    };
+
+
+    //============================================== Save action
+    saveButton.onclick = () =>  {
+        const cfgData = window.CMInstance.getValue();
+        if(cfgData.length < 1024){
+            const notifyWarn = $.notify({ message: `Your CFG file is too small, there is a good chance you deleted something you shouldn't. We are saving an backup file just in case you need it.` }, { type: 'warning' });
+        }
+        const notify = $.notify({ message: '<p class="text-center">Saving...</p>' }, {});
+
+        txAdminAPI({
+            type: "POST",
+            url: '/cfgEditor/save',
+            data: {cfgData},
+            success: function (data) {
+                if (checkApiLogoutRefresh(data)) return;
+                updateMarkdownNotification(data, notify);
+            },
+            error: function (xmlhttprequest, textstatus, message) {
+                notify.update('progress', 0);
+                notify.update('type', 'danger');
+                notify.update('message', message);
+            }
+        });
+    };
+</script>

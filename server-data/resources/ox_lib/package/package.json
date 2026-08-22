@@ -1,0 +1,77 @@
+{
+  "name": "@overextended/ox_lib",
+  "version": "3.39.0",
+  "description": "JS/TS wrapper for ox_lib exports",
+  "keywords": [
+    "fivem",
+    "overextended",
+    "ox",
+    "ox_lib"
+  ],
+  "bugs": {
+    "url": "https://github.com/overextended/ox_lib/issues"
+  },
+  "license": "LGPL-3.0",
+  "author": "Overextended",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/overextended/ox_lib.git"
+  },
+  "type": "module",
+  "sideEffects": [
+    "./common/locale/index.js"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/common/index.js",
+      "types": "./dist/common/index.d.ts"
+    },
+    "./*": {
+      "import": "./dist/common/*/index.js",
+      "types": "./dist/common/*/index.d.ts"
+    },
+    "./client": {
+      "import": "./dist/client/index.js",
+      "types": "./dist/client/index.d.ts"
+    },
+    "./client/*": {
+      "import": "./dist/client/*/index.js",
+      "types": "./dist/client/*/index.d.ts"
+    },
+    "./server": {
+      "import": "./dist/server/index.js",
+      "types": "./dist/server/index.d.ts"
+    },
+    "./server/*": {
+      "import": "./dist/server/*/index.js",
+      "types": "./dist/server/*/index.d.ts"
+    }
+  },
+  "scripts": {
+    "compile": "tsdown --",
+    "lint": "oxlint",
+    "format": "oxfmt",
+    "prepublishOnly": "bun run compile"
+  },
+  "dependencies": {
+    "@overextended/core": "^0.2.5",
+    "csstype": "^3.2.3",
+    "fast-printf": "^1.6.10",
+    "typescript": "^6.0.3"
+  },
+  "devDependencies": {
+    "@citizenfx/client": "latest",
+    "@citizenfx/server": "latest",
+    "@fortawesome/fontawesome-common-types": "7.2.0",
+    "@mantine/core": "^6.0.22",
+    "@types/node": "16.9.1",
+    "@types/react": "^19.2.15",
+    "oxfmt": "^0.51.0",
+    "oxlint": "^1.66.0",
+    "tsdown": "^0.22.0",
+    "unplugin-preprocessor-directives": "^1.2.0"
+  },
+  "inlinedDependencies": {
+    "@fortawesome/fontawesome-common-types": "7.2.0"
+  }
+}

@@ -1,0 +1,80 @@
+-- Modifying or rewriting this resource for local use only is strongly discouraged.
+-- Feel free to open an issue or pull request in our GitHub.
+-- Official discord server: https://discord.gg/txAdmin
+
+author 'Tabarra'
+description 'The official FiveM/RedM server web/in-game management platform.'
+repository 'https://github.com/tabarra/txAdmin'
+version '9.0.0-beta-646aba9a'
+ui_label 'txAdmin' --FIXME: remove?
+
+fx_version 'cerulean'
+game 'common'
+
+-- NOTE: the gen8 vs gen9 default values are the ones we need (gen8 off, gen9 on)
+-- nui_callback_strict_mode 'false' --gen9 fix
+
+-- NOTE: pretty sure this is already the default
+-- lua54 'yes'
+
+-- NOTE: we don't mark as node22 only because we want a custom error message - checked in entrypoint.js
+-- node_version '22'
+
+-- NOTE: All server_scripts will be executed both on monitor and server mode 
+-- NOTE: Due to global package constraints, js scripts will be loaded from entrypoint.js
+-- NOTE: Due to people drag-n-dropping their artifacts, we can't do globbing
+shared_scripts {
+    'resource/shared.lua'
+}
+
+server_scripts {
+    'entrypoint.js',
+    'resource/sv_main.lua', --must run first
+    'resource/sv_admins.lua',
+    'resource/sv_logger.lua',
+    'resource/sv_resources.lua',
+    'resource/sv_playerlist.lua',
+    'resource/sv_ctx.lua',
+    'resource/sv_initialData.lua',
+    'resource/menu/server/sv_webpipe.lua',
+    'resource/menu/server/sv_functions.lua',
+    'resource/menu/server/sv_main_page.lua',
+    'resource/menu/server/sv_vehicle.lua',
+    'resource/menu/server/sv_freeze_player.lua',
+    'resource/menu/server/sv_trollactions.lua',
+    'resource/menu/server/sv_player_modal.lua',
+    'resource/menu/server/sv_spectate.lua',
+    'resource/menu/server/sv_player_mode.lua'
+}
+
+client_scripts {
+    'resource/cl_main.lua',
+    'resource/cl_logger.lua',
+    'resource/cl_playerlist.lua',
+    'resource/menu/client/cl_webpipe.lua',
+    'resource/menu/client/cl_base.lua',
+    'resource/menu/client/cl_functions.lua',
+    'resource/menu/client/cl_instructional_ui.lua',
+    'resource/menu/client/cl_main_page.lua',
+    'resource/menu/client/cl_vehicle.lua',
+    'resource/menu/client/cl_player_ids.lua',
+    'resource/menu/client/cl_ptfx.lua', --must run before cl_player_mode
+    'resource/menu/client/cl_player_mode.lua',
+    'resource/menu/client/cl_spectate.lua',
+    'resource/menu/client/cl_trollactions.lua',
+    'resource/menu/client/cl_freeze.lua',
+    'resource/menu/vendor/freecam/utils.lua',
+    'resource/menu/vendor/freecam/config.lua',
+    'resource/menu/vendor/freecam/main.lua',
+    'resource/menu/vendor/freecam/camera.lua',
+}
+
+ui_page 'nui/index.html'
+
+files {
+    'nui/**/*',
+
+    -- WebPipe optimization:
+    'panel/**/*',
+    'web/public/**/*',
+}
