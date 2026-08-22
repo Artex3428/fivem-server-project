@@ -10,3 +10,6 @@
 [submodule "qbx_core"]
 	path = qbx_core
 	url = https://github.com/Artex3428/qbx_core.git
+[submodule "resources/cfx-server-data"]
+	path = resources/cfx-server-data
+	url = https://github.com/Artex3428/cfx-server-data.git

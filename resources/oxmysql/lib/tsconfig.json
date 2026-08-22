@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "outDir": ".",
+    "strict": true,
+    "module": "es2022",
+    "types": ["@citizenfx/server"],
+    "declaration": true,
+    "sourceMap": true,
+    "target": "ESNext",
+    "allowJs": true,
+    "lib": ["ESNext"],
+    "noEmitOnError": false,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "rootDir": ".",
+    "moduleResolution": "bundler",
+    "experimentalDecorators": true,
+    "noImplicitAny": false,
+    "noEmit": false
+  },
+  "include": ["MySQL.ts"],
+  "exclude": ["**/node_modules"]
+}

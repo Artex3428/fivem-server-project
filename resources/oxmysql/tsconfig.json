@@ -1,0 +1,16 @@
+{
+  "extends": "./src/tsconfig.json",
+  "compilerOptions": {
+    "paths": {
+      "config": ["./src/config.ts"],
+      "types": ["./src/types/index.ts"],
+      "logger": ["./src/logger/index.ts"],
+      "profiler": ["./src/profiler/index.ts"],
+      "database": ["./src/database/index.ts"],
+      "database/*": ["./src/database/*"],
+      "utils/*": ["./src/utils/*"]
+    },
+    "types": ["@citizenfx/server", "bun"]
+  },
+  "include": ["src", "tests"]
+}

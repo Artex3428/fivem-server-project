@@ -1,0 +1,9 @@
+name: Discord Commit
+
+on:
+  push:
+
+jobs:
+  notify:
+    uses: Qbox-project/.github/.github/workflows/discord-commit.yml@main
+    secrets: inherit

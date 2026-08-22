@@ -1,0 +1,33 @@
+{
+  "language": "ไทย",
+  "settings": "ตั้งค่า",
+  "ui": {
+    "cancel": "ยกเลิก",
+    "close": "ปิด",
+    "confirm": "ยืนยัน",
+    "more": "เพิ่มเติม...",
+    "settings": {
+      "locale": "เปลี่ยนภาษา",
+      "locale_description": "ภาษาปัจจุบัน: ${language} (%s)",
+      "notification_audio": "เสียงแจ้งเตือน",
+      "notification_position": "ตำแหน่งแจ้งเตือน"
+    },
+    "position": {
+      "bottom": "ข้างล่าง",
+      "bottom-left": "ล่างซ้าย",
+      "bottom-right": "ล่างขวา",
+      "center-left": "กลางซ้าย",
+      "center-right": "กลางขวา",
+      "top": "ข้างบน",
+      "top-left": "บนซ้าย",
+      "top-right": "บนขวา"
+    }
+  },
+  "open_radial_menu": "เปิดเมนู",
+  "cancel_progress": "ยกเลิก Progress",
+  "txadmin_announcement": "ประกาศจากเซิฟเวอร์โดย %s",
+  "txadmin_dm": "มีข้อความใหม่จาก %s",
+  "txadmin_warn": "คุณถูกเตือนโดย %s",
+  "txadmin_warn_content": "%s  \nเลขไอดี: %s",
+  "txadmin_scheduledrestart": "การรีสตาร์ทตามกำหนดการ"
+}
