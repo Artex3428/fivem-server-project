@@ -78,3 +78,13 @@ carwash
 if sd-simonsays and sd-dialog and sd-levels are not used in the end maybe remove them
 
 maybe change the images from nd_ambulance to match with the other images styles which is tourniquet, gauze, splint, burndressing, medbag, defib, stretcher
+
+maybe restorant job
+
+make able to shot or hur people in the same vehicle
+
+most likely if it has change garages green and red marker on the ground to sometihng more modern like target or textui
+
+add in the anti clip trough walls maybe
+
+add logs maybe
