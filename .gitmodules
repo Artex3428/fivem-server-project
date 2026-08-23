@@ -76,3 +76,21 @@
 [submodule "server-data/resources/qbx_vehiclesales"]
 	path = server-data/resources/qbx_vehiclesales
 	url = https://github.com/Artex3428/qbx_vehiclesales.git
+[submodule "server-data/resources/ox_fuel"]
+	path = server-data/resources/ox_fuel
+	url = https://github.com/Artex3428/ox_fuel.git
+[submodule "server-data/resources/ox_doorlock"]
+	path = server-data/resources/ox_doorlock
+	url = https://github.com/Artex3428/ox_doorlock.git
+[submodule "server-data/resources/fivem-freecam"]
+	path = server-data/resources/fivem-freecam
+	url = https://github.com/Artex3428/fivem-freecam.git
+[submodule "server-data/resources/ps-housing"]
+	path = server-data/resources/ps-housing
+	url = https://github.com/Artex3428/ps-housing.git
+[submodule "server-data/resources/ps-realtor"]
+	path = server-data/resources/ps-realtor
+	url = https://github.com/Artex3428/ps-realtor.git
+[submodule "server-data/resources/Renewed-Banking"]
+	path = server-data/resources/Renewed-Banking
+	url = https://github.com/Artex3428/Renewed-Banking.git

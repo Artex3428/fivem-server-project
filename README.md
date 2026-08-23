@@ -51,3 +51,6 @@ Make sure sim card and phone are sold somewhere
 might have to temp use pma-voice since fivem integrated voice might not work for phones etc
 configure adminmenu to use right fuel system, and also to use right garage etc
 remember to get a boss panel job panel for companies and police etc to manage employes
+add nozzle script to the fuel script from nd_fuel to ox_fuel that we use
+add report system if the current adminmenu don't have that
+add bank card incase bank system don't include it as item in inventory
