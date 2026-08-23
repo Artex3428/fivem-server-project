@@ -49,3 +49,5 @@ notes to remember
 Make sure sim card and phone are sold somewhere
 
 might have to temp use pma-voice since fivem integrated voice might not work for phones etc
+configure adminmenu to use right fuel system, and also to use right garage etc
+remember to get a boss panel job panel for companies and police etc to manage employes

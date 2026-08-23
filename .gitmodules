@@ -58,3 +58,21 @@
 [submodule "server-data/resources/illenium-appearance"]
 	path = server-data/resources/illenium-appearance
 	url = https://github.com/Artex3428/illenium-appearance.git
+[submodule "server-data/resources/ps-adminmenu"]
+	path = server-data/resources/ps-adminmenu
+	url = https://github.com/Artex3428/ps-adminmenu.git
+[submodule "server-data/resources/qbx_vehicles"]
+	path = server-data/resources/qbx_vehicles
+	url = https://github.com/Artex3428/qbx_vehicles.git
+[submodule "server-data/resources/qbx_garages"]
+	path = server-data/resources/qbx_garages
+	url = https://github.com/Artex3428/qbx_garages.git
+[submodule "server-data/resources/qbx_vehiclekeys"]
+	path = server-data/resources/qbx_vehiclekeys
+	url = https://github.com/Artex3428/qbx_vehiclekeys.git
+[submodule "server-data/resources/qbx_vehicleshop"]
+	path = server-data/resources/qbx_vehicleshop
+	url = https://github.com/Artex3428/qbx_vehicleshop.git
+[submodule "server-data/resources/qbx_vehiclesales"]
+	path = server-data/resources/qbx_vehiclesales
+	url = https://github.com/Artex3428/qbx_vehiclesales.git
