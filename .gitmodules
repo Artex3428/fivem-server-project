@@ -13,3 +13,21 @@
 [submodule "server-data/resources/ox_target"]
 	path = server-data/resources/ox_target
 	url = https://github.com/Artex3428/ox_target.git
+[submodule "server-data/resources/sd-phone"]
+	path = server-data/resources/sd-phone
+	url = https://github.com/Artex3428/sd-phone.git
+[submodule "server-data/resources/sd-phone-props"]
+	path = server-data/resources/sd-phone-props
+	url = https://github.com/Artex3428/sd-phone-props.git
+[submodule "server-data/resources/sd-tablet"]
+	path = server-data/resources/sd-tablet
+	url = https://github.com/Artex3428/sd-tablet.git
+[submodule "server-data/resources/sd-tablet-props"]
+	path = server-data/resources/sd-tablet-props
+	url = https://github.com/Artex3428/sd-tablet-props.git
+[submodule "server-data/resources/sd-itemspawner"]
+	path = server-data/resources/sd-itemspawner
+	url = https://github.com/Artex3428/sd-itemspawner.git
+[submodule "server-data/resources/sd-zonecreator"]
+	path = server-data/resources/sd-zonecreator
+	url = https://github.com/Artex3428/sd-zonecreator.git
