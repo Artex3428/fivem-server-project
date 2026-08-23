@@ -94,3 +94,48 @@
 [submodule "server-data/resources/Renewed-Banking"]
 	path = server-data/resources/Renewed-Banking
 	url = https://github.com/Artex3428/Renewed-Banking.git
+[submodule "server-data/resources/qbx_management"]
+	path = server-data/resources/qbx_management
+	url = https://github.com/Artex3428/qbx_management.git
+[submodule "server-data/resources/qbx_cityhall"]
+	path = server-data/resources/qbx_cityhall
+	url = https://github.com/Artex3428/qbx_cityhall.git
+[submodule "server-data/resources/qbx_truckerjob"]
+	path = server-data/resources/qbx_truckerjob
+	url = https://github.com/Artex3428/qbx_truckerjob.git
+[submodule "server-data/resources/qbx_busjob"]
+	path = server-data/resources/qbx_busjob
+	url = https://github.com/Artex3428/qbx_busjob.git
+[submodule "server-data/resources/qbx_garbagejob"]
+	path = server-data/resources/qbx_garbagejob
+	url = https://github.com/Artex3428/qbx_garbagejob.git
+[submodule "server-data/resources/qbx_taxijob"]
+	path = server-data/resources/qbx_taxijob
+	url = https://github.com/Artex3428/qbx_taxijob.git
+[submodule "server-data/resources/xt-prison"]
+	path = server-data/resources/xt-prison
+	url = https://github.com/Artex3428/xt-prison.git
+[submodule "server-data/resources/qbx_police"]
+	path = server-data/resources/qbx_police
+	url = https://github.com/Artex3428/qbx_police.git
+[submodule "server-data/resources/ND_Ambulance"]
+	path = server-data/resources/ND_Ambulance
+	url = https://github.com/Artex3428/ND_Ambulance.git
+[submodule "server-data/resources/qbx_mechanicjob"]
+	path = server-data/resources/qbx_mechanicjob
+	url = https://github.com/Artex3428/qbx_mechanicjob.git
+[submodule "server-data/resources/qbx_customs"]
+	path = server-data/resources/qbx_customs
+	url = https://github.com/Artex3428/qbx_customs.git
+[submodule "server-data/resources/qbx_towjob"]
+	path = server-data/resources/qbx_towjob
+	url = https://github.com/Artex3428/qbx_towjob.git
+[submodule "server-data/resources/qbx_newsjob"]
+	path = server-data/resources/qbx_newsjob
+	url = https://github.com/Artex3428/qbx_newsjob.git
+[submodule "server-data/resources/qbx_recyclejob"]
+	path = server-data/resources/qbx_recyclejob
+	url = https://github.com/Artex3428/qbx_recyclejob.git
+[submodule "server-data/resources/qbx_vineyard"]
+	path = server-data/resources/qbx_vineyard
+	url = https://github.com/Artex3428/qbx_vineyard.git

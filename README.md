@@ -43,6 +43,7 @@ all depending on what resource it is aobut and resources
 Use the startwithouttxadmin.bat if you don't want to use txadmin otherwise run the exe in the root
 
 
+!obs some resources capital letters might be wrong if any issues accure
 
 
 notes to remember
@@ -50,7 +51,30 @@ Make sure sim card and phone are sold somewhere
 
 might have to temp use pma-voice since fivem integrated voice might not work for phones etc
 configure adminmenu to use right fuel system, and also to use right garage etc
-remember to get a boss panel job panel for companies and police etc to manage employes
+remember to get a boss panel job panel for companies and police etc to manage employes with cool ui but the current might be okey for now
 add nozzle script to the fuel script from nd_fuel to ox_fuel that we use
 add report system if the current adminmenu don't have that
 add bank card incase bank system don't include it as item in inventory
+radio neded
+maybe duty blips needed
+maybe intereact-sound or simular needed
+maybe qbx tunerchip later
+maybe lockpick script like qbx if not added somewhere in another resource
+qbx helicam maybe
+loadingscreen
+vehiclefailure
+binocular
+drone
+rc car
+density control
+realastionchip between npc script
+weather sync
+maybe printer script like qbx one
+animations script
+add nd police job handcuff animations to the qbx police job the one that we use
+maybe add fireworks
+carwash
+
+if sd-simonsays and sd-dialog and sd-levels are not used in the end maybe remove them
+
+maybe change the images from nd_ambulance to match with the other images styles which is tourniquet, gauze, splint, burndressing, medbag, defib, stretcher
