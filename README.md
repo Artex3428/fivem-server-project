@@ -28,6 +28,10 @@ npm install
 npm run build
 
 or
+pnpm i
+pnpm run build
+
+or
 npm ci
 npm run build
 
@@ -88,3 +92,16 @@ most likely if it has change garages green and red marker on the ground to somet
 add in the anti clip trough walls maybe
 
 add logs maybe
+
+ragdoll
+
+added tirekit.png and advancedrepairkit.png to inventory images looked almost like the others i belive
+
+make sure to add flip vehicle with command or item since vehiclehandler might not have that
+
+make sure to find what resource that we used a stable realese version instead of main
+
+maybe make not enough cops incative in scripts since its limiting roleplay that you can do
+
+make sure all items resources use exist with images and that images look the same in quality size etc
+

@@ -139,3 +139,51 @@
 [submodule "server-data/resources/qbx_vineyard"]
 	path = server-data/resources/qbx_vineyard
 	url = https://github.com/Artex3428/qbx_vineyard.git
+[submodule "server-data/resources/loadscreen"]
+	path = server-data/resources/loadscreen
+	url = https://github.com/Artex3428/loadscreen.git
+[submodule "server-data/resources/qbx_seatbelt"]
+	path = server-data/resources/qbx_seatbelt
+	url = https://github.com/Artex3428/qbx_seatbelt.git
+[submodule "server-data/resources/vehiclehandler"]
+	path = server-data/resources/vehiclehandler
+	url = https://github.com/Artex3428/vehiclehandler.git
+[submodule "server-data/resources/qbx_density"]
+	path = server-data/resources/qbx_density
+	url = https://github.com/Artex3428/qbx_density.git
+[submodule "server-data/resources/Renewed-Weathersync"]
+	path = server-data/resources/Renewed-Weathersync
+	url = https://github.com/Artex3428/Renewed-Weathersync.git
+[submodule "server-data/resources/qbx_carwash"]
+	path = server-data/resources/qbx_carwash
+	url = https://github.com/Artex3428/qbx_carwash.git
+[submodule "server-data/resources/qbx_binoculars"]
+	path = server-data/resources/qbx_binoculars
+	url = https://github.com/Artex3428/qbx_binoculars.git
+[submodule "server-data/resources/qbx_fireworks"]
+	path = server-data/resources/qbx_fireworks
+	url = https://github.com/Artex3428/qbx_fireworks.git
+[submodule "server-data/resources/mm_radio"]
+	path = server-data/resources/mm_radio
+	url = https://github.com/Artex3428/mm_radio.git
+[submodule "server-data/resources/qbx_houserobbery"]
+	path = server-data/resources/qbx_houserobbery
+	url = https://github.com/Artex3428/qbx_houserobbery.git
+[submodule "server-data/resources/ultra-voltlab"]
+	path = server-data/resources/ultra-voltlab
+	url = https://github.com/Artex3428/ultra-voltlab.git
+[submodule "server-data/resources/qbx_jewelery"]
+	path = server-data/resources/qbx_jewelery
+	url = https://github.com/Artex3428/qbx_jewelery.git
+[submodule "server-data/resources/qbx_bankrobbery"]
+	path = server-data/resources/qbx_bankrobbery
+	url = https://github.com/Artex3428/qbx_bankrobbery.git
+[submodule "server-data/resources/qbx_pawnshop"]
+	path = server-data/resources/qbx_pawnshop
+	url = https://github.com/Artex3428/qbx_pawnshop.git
+[submodule "server-data/resources/qbx_scrapyard"]
+	path = server-data/resources/qbx_scrapyard
+	url = https://github.com/Artex3428/qbx_scrapyard.git
+[submodule "server-data/resources/qbx_storerobbery"]
+	path = server-data/resources/qbx_storerobbery
+	url = https://github.com/Artex3428/qbx_storerobbery.git
