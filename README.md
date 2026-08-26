@@ -105,3 +105,4 @@ maybe make not enough cops incative in scripts since its limiting roleplay that 
 
 make sure all items resources use exist with images and that images look the same in quality size etc
 
+Add els for emergency vehicles

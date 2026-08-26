@@ -187,3 +187,6 @@
 [submodule "server-data/resources/qbx_storerobbery"]
 	path = server-data/resources/qbx_storerobbery
 	url = https://github.com/Artex3428/qbx_storerobbery.git
+[submodule "server-data/resources/scully_emotemenu"]
+	path = server-data/resources/scully_emotemenu
+	url = https://github.com/Artex3428/scully_emotemenu.git
