@@ -190,3 +190,57 @@
 [submodule "server-data/resources/scully_emotemenu"]
 	path = server-data/resources/scully_emotemenu
 	url = https://github.com/Artex3428/scully_emotemenu.git
+[submodule "server-data/resources/serverdepth-businesses"]
+	path = server-data/resources/serverdepth-businesses
+	url = https://github.com/Artex3428/serverdepth-businesses.git
+[submodule "server-data/resources/dynamic-sit"]
+	path = server-data/resources/dynamic-sit
+	url = https://github.com/Artex3428/dynamic-sit.git
+[submodule "server-data/resources/v-sport"]
+	path = server-data/resources/v-sport
+	url = https://github.com/Artex3428/v-sport-fivem.git
+[submodule "server-data/resources/qbx_helicam"]
+	path = server-data/resources/qbx_helicam
+	url = https://github.com/Artex3428/qbx_helicam.git
+[submodule "server-data/resources/wz-blindfold"]
+	path = server-data/resources/wz-blindfold
+	url = https://github.com/Artex3428/wz-blindfold.git
+[submodule "server-data/resources/Torque_hideintrunk"]
+	path = server-data/resources/Torque_hideintrunk
+	url = https://github.com/Artex3428/Torque_hideintrunk.git
+[submodule "server-data/resources/mt_fakeplates"]
+	path = server-data/resources/mt_fakeplates
+	url = https://github.com/Artex3428/mt_fakeplates.git
+[submodule "server-data/resources/Croll-PropStuck"]
+	path = server-data/resources/Croll-PropStuck
+	url = https://github.com/Artex3428/Croll-PropStuck.git
+[submodule "server-data/resources/s4t4n667_elevators"]
+	path = server-data/resources/s4t4n667_elevators
+	url = https://github.com/Artex3428/s4t4n667_elevators.git
+[submodule "server-data/resources/qbx_smallresources"]
+	path = server-data/resources/qbx_smallresources
+	url = https://github.com/Artex3428/qbx_smallresources.git
+[submodule "server-data/resources/cfx-anes-gates"]
+	path = server-data/resources/cfx-anes-gates
+	url = https://github.com/Artex3428/cfx-anes-gates.git
+[submodule "server-data/resources/qbx_drugs"]
+	path = server-data/resources/qbx_drugs
+	url = https://github.com/Artex3428/qbx_drugs.git
+[submodule "server-data/resources/gs_els"]
+	path = server-data/resources/gs_els
+	url = https://github.com/Artex3428/gs_els.git
+[submodule "server-data/resources/dev-fishing"]
+	path = server-data/resources/dev-fishing
+	url = https://github.com/Artex3428/dev-fishing.git
+[submodule "server-data/resources/ap_pet"]
+	path = server-data/resources/ap_pet
+	url = https://github.com/Artex3428/ap_pet.git
+[submodule "server-data/resources/crosshair"]
+	path = server-data/resources/crosshair
+	url = https://github.com/Artex3428/crosshair.git
+[submodule "server-data/resources/noautohelmet"]
+	path = server-data/resources/noautohelmet
+	url = https://github.com/Artex3428/noautohelmet.git
+[submodule "server-data/resources/scoreboard"]
+	path = server-data/resources/scoreboard
+	url = https://github.com/Artex3428/scoreboard.git

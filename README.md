@@ -41,10 +41,23 @@ bun run build
 
 all depending on what resource it is aobut and resources
 
-
-
-
 Use the startwithouttxadmin.bat if you don't want to use txadmin otherwise run the exe in the root
+
+
+Add submodule
+git submodule add https://github.com/Artex3428/RESOURCENAME.git server-data/resources/RESOURCENAME
+
+Add original author repo as upstream
+git remote add upstream https://github.com/ORIGINALOWNER/RESOURCENAME.git
+
+
+
+removing added repo
+git submodule deinit -f -- server-data/resources/recoursename
+git rm -f server-data/resources/recoursename
+rmdir /s /q .git\modules\server-data\resources\recoursename
+then commit it
+and also remove fork from github i guess
 
 
 !obs some resources capital letters might be wrong if any issues accure
@@ -95,7 +108,34 @@ add logs maybe
 
 ragdoll
 
-added tirekit.png and advancedrepairkit.png to inventory images looked almost like the others i belive
+add vehicle teleport to the s4t4n667_elevators
+
+skipped to run sql for v-sport since they said it would be ran on first start if it did not exist
+
+added tirekit.png and advancedrepairkit.png to inventory images looked almost like the others i belive added also for gym items pre_workout.png, protein_bar.png, sports_drink.png, and whey.png and also the items also from wz-blindfold added a blindfold.png and item to it aswell also added anchovy, sardine, mackerel, bass, salmon, tuna, swordfish, clam, treasure_map, ancient_relic, lottery_ticket, fishing_voucher and images to it where only for that where added strippedbass_fish.png swordfish.png lottery_scratchcards.png mapa.png contract_paper.png and currently clam tuna salmon mackerel sardine anchovy and maybe also bass need accurate images all of them exept bass use same fish img added also pet_medkit pet_revive pet_food pet_water but no images just items in inventory
+
+removed duplicate screwdriver and added config not included for the mt_fakeplates screwdriver the old one was looking like this
+['screwdriver'] = {
+    label = 'Screwdriver',
+    rarity = 'common',
+    weight = 300,
+    stack = true,
+    close = true,
+    description = 'A flathead screwdriver for prying coin boxes and unbolting fixtures.',
+},
+
+also removed powersaw dublicate old one was
+['powersaw'] = {
+    label = 'Power Saw',
+    rarity = 'uncommon',
+    grid = { 2, 2 },
+    weight = 4000,
+    stack = true,
+    close = true,
+    description = 'A cordless reciprocating saw for cutting through metal.',
+},
+
+powersaw item inside of the inventory has a dupplicate
 
 make sure to add flip vehicle with command or item since vehiclehandler might not have that
 
@@ -106,3 +146,7 @@ maybe make not enough cops incative in scripts since its limiting roleplay that 
 make sure all items resources use exist with images and that images look the same in quality size etc
 
 Add els for emergency vehicles
+
+gunrange
+
+hunting
