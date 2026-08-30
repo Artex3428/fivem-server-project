@@ -199,9 +199,6 @@
 [submodule "server-data/resources/v-sport"]
 	path = server-data/resources/v-sport
 	url = https://github.com/Artex3428/v-sport-fivem.git
-[submodule "server-data/resources/qbx_helicam"]
-	path = server-data/resources/qbx_helicam
-	url = https://github.com/Artex3428/qbx_helicam.git
 [submodule "server-data/resources/wz-blindfold"]
 	path = server-data/resources/wz-blindfold
 	url = https://github.com/Artex3428/wz-blindfold.git
@@ -244,3 +241,21 @@
 [submodule "server-data/resources/scoreboard"]
 	path = server-data/resources/scoreboard
 	url = https://github.com/Artex3428/scoreboard.git
+[submodule "server-data/resources/qbx_divegear"]
+	path = server-data/resources/qbx_divegear
+	url = https://github.com/Artex3428/qbx_divegear.git
+[submodule "server-data/resources/qbx_diving"]
+	path = server-data/resources/qbx_diving
+	url = https://github.com/Artex3428/qbx_diving.git
+[submodule "server-data/resources/qb-vehicle-tracker"]
+	path = server-data/resources/qb-vehicle-tracker
+	url = https://github.com/Artex3428/qb-vehicle-tracker.git
+[submodule "server-data/resources/myid"]
+	path = server-data/resources/myid
+	url = https://github.com/Artex3428/myid.git
+[submodule "server-data/resources/nzkfc_drone"]
+	path = server-data/resources/nzkfc_drone
+	url = https://github.com/Artex3428/nzkfc_drone.git
+[submodule "server-data/resources/mth-rc"]
+	path = server-data/resources/mth-rc
+	url = https://github.com/Artex3428/mth-rc.git

@@ -88,7 +88,7 @@ realastionchip between npc script
 weather sync
 maybe printer script like qbx one
 animations script
-add nd police job handcuff animations to the qbx police job the one that we use
+change nd_police name on files like audio in qbx_police to only be police or something, ps need compiling and chaning xml files also
 maybe add fireworks
 carwash
 
@@ -135,6 +135,37 @@ also removed powersaw dublicate old one was
     description = 'A cordless reciprocating saw for cutting through metal.',
 },
 
+removed
+["diving_fill"] = {
+    label = "Diving Tube",
+    rarity = 'common',
+    grid = { 1, 2 },
+    weight = 1000,
+    stack = false,
+    close = true,
+    consume = 0,
+    description = "Refill your oxygen tank with this diving tube.",
+    client = {
+        image = "diving_tube.png",
+    },
+    server = {
+        export = 'sd-civjobs.useDivingFill'
+    }
+},
+since its for sd-multijob diving and i use qbx_divegear which looks like this that i added
+['diving_fill'] = {
+    label = 'Diving Tube',
+    weight = 3000,
+    stack = false,
+    close = true,
+    description = "used to refill your diving gear's oxygen supply."
+},
+and added diving_fill image
+
+added also drone_battery_empty drone_battery and drone for nzkfc_drone and images
+
+added rc-bandito item and image
+
 powersaw item inside of the inventory has a dupplicate
 
 make sure to add flip vehicle with command or item since vehiclehandler might not have that
@@ -149,4 +180,19 @@ Add els for emergency vehicles
 
 gunrange
 
+add to when anti animate trough wall is added check to see if they are in prison and use the prison script tp back to prison for if you relog and also check if is cuffed and if they are cuffed tp them back to the police who put the cuffs on them or maybe set a specifik spot that cops only can open a cage somewhere or if its zip ties put them somewhere where only people from the outside can find them something like it
+
 hunting
+
+should remove images that are only for install in the different resources to save space and have it more clean
+
+
+
+
+
+
+
+
+
+
+!!!!!! Important is that qbx_heli or wathever being used is not needed since qbx_police include that
