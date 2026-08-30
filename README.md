@@ -69,7 +69,6 @@ Make sure sim card and phone are sold somewhere
 might have to temp use pma-voice since fivem integrated voice might not work for phones etc
 configure adminmenu to use right fuel system, and also to use right garage etc
 remember to get a boss panel job panel for companies and police etc to manage employes with cool ui but the current might be okey for now
-add nozzle script to the fuel script from nd_fuel to ox_fuel that we use
 add report system if the current adminmenu don't have that
 add bank card incase bank system don't include it as item in inventory
 radio neded
@@ -186,13 +185,4 @@ hunting
 
 should remove images that are only for install in the different resources to save space and have it more clean
 
-
-
-
-
-
-
-
-
-
-!!!!!! Important is that qbx_heli or wathever being used is not needed since qbx_police include that
+Seatbelt resource might need to make sure that the harnes if it is a prop don't do like one music and mayham i think if a player disconnects or something like that just freezes in the air i gues easy if it is that way just to check status on player now and then if it disconects and delete the harnes or wathever check if its aboneoned and delete the entity
