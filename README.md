@@ -91,8 +91,6 @@ change nd_police name on files like audio in qbx_police to only be police or som
 maybe add fireworks
 carwash
 
-if sd-simonsays and sd-dialog and sd-levels are not used in the end maybe remove them
-
 maybe change the images from nd_ambulance to match with the other images styles which is tourniquet, gauze, splint, burndressing, medbag, defib, stretcher
 
 maybe restorant job
@@ -168,6 +166,10 @@ removed
     },
 after adding driver_license cdl_license and motorcycle_license as item from sd-vehicleschool did not have to add driver-license img tho since it already existed
 
+added skining_knife, boar_meat, boar_skin, deer_meat, deer_skin, coyote_meat, coyote_skin, rabbit_meat, rabbit_skin, cow_meat, cow_skin, chicken_meat, chicken_skin, pig_meat, pig_skin, hunting_talent_reset, hunting_xpboost item and imgaes
+
+added item gunrangereceipt for complex-gunrange
+
 added also drone_battery_empty drone_battery and drone for nzkfc_drone and images
 
 added rc-bandito item and image
@@ -195,3 +197,14 @@ hunting
 should remove images that are only for install in the different resources to save space and have it more clean
 
 Seatbelt resource might need to make sure that the harnes if it is a prop don't do like one music and mayham i think if a player disconnects or something like that just freezes in the air i gues easy if it is that way just to check status on player now and then if it disconects and delete the harnes or wathever check if its aboneoned and delete the entity
+
+add bobipl maybe
+
+
+
+
+
+Realy need testing if it even works is
+vehicle-occupant-combat
+
+to remove now i gues

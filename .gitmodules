@@ -40,12 +40,6 @@
 [submodule "server-data/resources/sd-selfstorage"]
 	path = server-data/resources/sd-selfstorage
 	url = https://github.com/Artex3428/sd-selfstorage.git
-[submodule "server-data/resources/sd-levels"]
-	path = server-data/resources/sd-levels
-	url = https://github.com/Artex3428/sd-levels.git
-[submodule "server-data/resources/sd-cases"]
-	path = server-data/resources/sd-cases
-	url = https://github.com/Artex3428/sd-cases.git
 [submodule "server-data/resources/qbx_hud"]
 	path = server-data/resources/qbx_hud
 	url = https://github.com/Artex3428/qbx_hud.git
@@ -265,3 +259,27 @@
 [submodule "server-data/resources/sd-drivingschool"]
 	path = server-data/resources/sd-drivingschool
 	url = https://github.com/Artex3428/sd-drivingschool.git
+[submodule "server-data/resources/complex-gunrange"]
+	path = server-data/resources/complex-gunrange
+	url = https://github.com/Artex3428/complex-gunrange.git
+[submodule "server-data/resources/xrb-hunting"]
+	path = server-data/resources/xrb-hunting
+	url = https://github.com/Artex3428/xrb-hunting.git
+[submodule "server-data/resources/rpchat"]
+	path = server-data/resources/rpchat
+	url = https://github.com/Artex3428/rpchat.git
+[submodule "server-data/resources/noNpcVehicleDespawn"]
+	path = server-data/resources/noNpcVehicleDespawn
+	url = https://github.com/Artex3428/noNpcVehicleDespawn.git
+[submodule "server-data/resources/takehostage"]
+	path = server-data/resources/takehostage
+	url = https://github.com/Artex3428/takehostage.git
+[submodule "server-data/resources/carry"]
+	path = server-data/resources/carry
+	url = https://github.com/Artex3428/carry.git
+[submodule "server-data/resources/vehicle-occupant-combat"]
+	path = server-data/resources/vehicle-occupant-combat
+	url = https://github.com/Artex3428/vehicle-occupant-combat.git
+[submodule "server-data/resources/XNL-FiveM-Trains-U3"]
+	path = server-data/resources/XNL-FiveM-Trains-U3
+	url = https://github.com/Artex3428/XNL-FiveM-Trains-U3.git
