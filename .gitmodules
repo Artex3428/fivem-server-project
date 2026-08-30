@@ -259,3 +259,9 @@
 [submodule "server-data/resources/mth-rc"]
 	path = server-data/resources/mth-rc
 	url = https://github.com/Artex3428/mth-rc.git
+[submodule "server-data/resources/qbx_rentals"]
+	path = server-data/resources/qbx_rentals
+	url = https://github.com/Artex3428/qbx_rentals.git
+[submodule "server-data/resources/sd-drivingschool"]
+	path = server-data/resources/sd-drivingschool
+	url = https://github.com/Artex3428/sd-drivingschool.git

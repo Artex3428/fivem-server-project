@@ -103,7 +103,7 @@ most likely if it has change garages green and red marker on the ground to somet
 
 add in the anti clip trough walls maybe
 
-add logs maybe
+use the qbx_core logs functionality to make sure that admins can see it either in current admin menu or in a seperete ui and add logs that checks for things like connect/leave(if they where dead when they left/combatlogged), if someone suddenly traveled to fast in a way that you can't with any meant to be game mechanics, if they dublicate items and more. 
 
 ragdoll
 
@@ -161,9 +161,18 @@ since its for sd-multijob diving and i use qbx_divegear which looks like this th
 },
 and added diving_fill image
 
+removed
+    ['driver_license'] = {
+        label = 'Drivers License',
+        rarity = 'common',
+    },
+after adding driver_license cdl_license and motorcycle_license as item from sd-vehicleschool did not have to add driver-license img tho since it already existed
+
 added also drone_battery_empty drone_battery and drone for nzkfc_drone and images
 
 added rc-bandito item and image
+
+also added rentalpapers and image
 
 powersaw item inside of the inventory has a dupplicate
 
