@@ -280,3 +280,18 @@
 [submodule "server-data/resources/XNL-FiveM-Trains-U3"]
 	path = server-data/resources/XNL-FiveM-Trains-U3
 	url = https://github.com/Artex3428/XNL-FiveM-Trains-U3.git
+[submodule "server-data/resources/renzu_motels"]
+	path = server-data/resources/renzu_motels
+	url = https://github.com/Artex3428/renzu_motels.git
+[submodule "server-data/resources/SJCrafting"]
+	path = server-data/resources/SJCrafting
+	url = https://github.com/Artex3428/SJCrafting.git
+[submodule "server-data/resources/keepclothinginvehicle"]
+	path = server-data/resources/keepclothinginvehicle
+	url = https://github.com/Artex3428/keepclothinginvehicle.git
+[submodule "server-data/resources/keepsilencerinvehicle"]
+	path = server-data/resources/keepsilencerinvehicle
+	url = https://github.com/Artex3428/keepsilencerinvehicle.git
+[submodule "server-data/resources/noinstakill"]
+	path = server-data/resources/noinstakill
+	url = https://github.com/Artex3428/noinstakill.git

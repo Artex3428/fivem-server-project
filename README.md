@@ -176,6 +176,9 @@ pre_workout protein_bar sports_drink whey
 blindfold
 anchovy, sardine, mackerel, bass, salmon, tuna, swordfish, clam, treasure_map, ancient_relic, lottery_ticket, fishing_voucher
 pet_medkit pet_revive pet_food pet_water
+keys
+crafting_bench_w
+police_crafting_bench
 
 ADDED IMAGES
 drone_battery_empty drone_battery and drone for nzkfc_drone
