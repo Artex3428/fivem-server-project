@@ -228,10 +228,11 @@ List of things that i should do
 - Can't open gunstore shop keep saying you cant open inventory right now
 - 
 
-Add own shuff
 Add enter any doors with ox
 
 crashed when consumed item item was both burger and water but not on the laptop tho
+
+Seems to be alot of props that crashes and maybe we have not converted thos think its even default gtas
 
 recoil not working
 
