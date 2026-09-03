@@ -192,3 +192,53 @@ tirekit advancedrepairkit
 pre_workout protein_bar sports_drink whey
 blindfold
 strippedbass_fish swordfish lottery_scratchcards mapa contract_paper
+
+-- GOALS -- 
+Make the server pve and pvp compatible either automaticly, depending on playerbase, both, or either one.
+Make all resources safe to restart while ingame and using the script for easier development as well as be able to set it up and install it.
+All resource should be authoritative and not abusable.
+No glitches, bugs, or errors.
+All resources should use the same standard like naming convention and more.
+
+
+
+List of things that i should do
+
+- Fix so that the chat is not register key input for opening menus while typing as well as changing the design.
+- Look into what the z radial menu comes from and look if that is realy neccesery
+- Admin say duty is required and giving admin seems not to work
+- The target makes the screen dark when using it disable that maybe but kind of nice tho
+- There is currently crouch and stance try set them both to control or wathever my old server courch crawl script uses or just add that if crawl dos not exist
+- Holding up hands script seems to be inflicting with another one or its just wierdly made
+- Add the center cursor once you enter inventory btw quick thinking is that because we center the cursor that item info reapears becuase its where it was left before maybe you can center it before you close it to so it have time to get rid of it not pointing at a item
+- Add so you can run and possible run while using the inventory
+- preconfigure the keybinds better
+- change the chat theme not to have background
+- change chat performance if needed
+- unbind chat keybinds by default
+- The character might have a bug where after first load it fucks up what you did like face thicknes etc but it might be that the character face is on 1 but looks like 0 yes it starts at 1 by default tho face is as 0
+- Check first if inventory settings ingame when you open inventory have something for the inventory above
+- Disable hud money coming upp while losing or reciving money
+- Seems not able to delete character
+- Sim card might not have image
+- Phone item config in inventory might need button for simtray
+- How do you revive maybe because we use nd_ambulance
+- The old status stil showing maybe while in a vehicle
+- Admin keep saying you are not admin or god
+- Fix the cfg structure
+- Can't open gunstore shop keep saying you cant open inventory right now
+- 
+
+
+
+@qbx_smallresources/qbx_removeentities/client.lua:5: attempt to index a nil value (upvalue 'config')
+> [global chunk] (qbx_smallresources/qbx_removeentities/client.lua:5)
+
+
+@qbx_idcard/main/client.lua:87: No such export displayMetadata in resource ox_inventory
+> error
+> index (scheduler.lua:599)
+> [global chunk] (qbx_idcard/main/client.lua:87)
+
+Failed to load data file cfx_resource_ultra-voltlab:/audiodata/dlchei4_game.dat of type AUDIO_GAMEDATA for resource ultra-voltlab
+Failed to load data file cfx_resource_ultra-voltlab:/audiodata/dlchei4_sounds.dat of type AUDIO_SOUNDDATA for resource ultra-voltlab
