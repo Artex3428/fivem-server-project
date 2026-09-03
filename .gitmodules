@@ -298,3 +298,6 @@
 [submodule "server-data/resources/noshuff"]
 	path = server-data/resources/noshuff
 	url = https://github.com/Artex3428/noshuff.git
+[submodule "server-data/resources/crouch_crawl"]
+	path = server-data/resources/crouch_crawl
+	url = https://github.com/Artex3428/crouch_crawl.git
