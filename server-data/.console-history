@@ -24,7 +24,13 @@ stop scully_emotemenu
 start scully_emotemenu
 ### 2026-09-03 23:22:57.531
 restart scully_emotemenu
-### 2026-09-03 23:35:07.884
+### 2026-09-04 00:09:00.358
+stop qbx_police
+### 2026-09-04 00:09:06.145
+start qbx_police
+### 2026-09-04 00:12:07.333
 refresh
-### 2026-09-03 23:35:08.431
+### 2026-09-04 00:12:10.250
 restart crouch_crawl
+### 2026-09-04 00:12:13.030
+restart qbx_police

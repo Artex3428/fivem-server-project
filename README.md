@@ -246,6 +246,8 @@ stance might not be by default i remember you did some logic
 Not that the chat don't take input to open tings when you write and press their keybind all the time and it seems like it has something with the inventory to do and best gues is 1.
 1. When you have enter the search input in the inventory and close it with escape which unlike tab does not close out of the search input before the above happens but else if you close with tab or simple has not selected the search input field when you close the inventory. Might not be the input specificly but inventory maybe
 
+isbusyinventory realy bad made
+
 holding up hands on laptops work fine without it looking wierd
 
 Failed to load data file cfx_resource_ultra-voltlab:/audiodata/dlchei4_game.dat of type AUDIO_GAMEDATA for resource ultra-voltlab
