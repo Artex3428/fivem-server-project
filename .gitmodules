@@ -295,6 +295,3 @@
 [submodule "server-data/resources/crouch_crawl"]
 	path = server-data/resources/crouch_crawl
 	url = https://github.com/Artex3428/crouch_crawl.git
-[submodule "server-data/resources/hrm_minimap"]
-	path = server-data/resources/hrm_minimap
-	url = https://github.com/Artex3428/hrm_minimap.git
