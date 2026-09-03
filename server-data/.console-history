@@ -28,9 +28,11 @@ restart scully_emotemenu
 stop qbx_police
 ### 2026-09-04 00:09:06.145
 start qbx_police
-### 2026-09-04 00:12:07.333
-refresh
 ### 2026-09-04 00:12:10.250
 restart crouch_crawl
 ### 2026-09-04 00:12:13.030
 restart qbx_police
+### 2026-09-04 00:23:25.781
+refresh
+### 2026-09-04 00:23:26.381
+restart noshuff

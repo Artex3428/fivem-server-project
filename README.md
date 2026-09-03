@@ -248,6 +248,10 @@ Not that the chat don't take input to open tings when you write and press their 
 
 isbusyinventory realy bad made
 
+crosshair in vehicle flickering only in first person
+
+silencerinvehicle script not working
+
 holding up hands on laptops work fine without it looking wierd
 
 Failed to load data file cfx_resource_ultra-voltlab:/audiodata/dlchei4_game.dat of type AUDIO_GAMEDATA for resource ultra-voltlab
