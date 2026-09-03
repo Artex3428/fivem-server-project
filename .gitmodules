@@ -292,3 +292,6 @@
 [submodule "server-data/resources/noinstakill"]
 	path = server-data/resources/noinstakill
 	url = https://github.com/Artex3428/noinstakill.git
+[submodule "server-data/resources/ragdoll"]
+	path = server-data/resources/ragdoll
+	url = https://github.com/Artex3428/ragdoll.git

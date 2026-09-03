@@ -228,6 +228,11 @@ List of things that i should do
 - Can't open gunstore shop keep saying you cant open inventory right now
 - 
 
+Add own shuff
+Add enter any doors with ox
+
+crashed when consumed item item was both burger and water but not on the laptop tho
+
 Not that the chat don't take input to open tings when you write and press their keybind all the time and it seems like it has something with the inventory to do and best gues is 1.
 1. When you have enter the search input in the inventory and close it with escape which unlike tab does not close out of the search input before the above happens but else if you close with tab or simple has not selected the search input field when you close the inventory. Might not be the input specificly but inventory maybe
 
