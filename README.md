@@ -228,16 +228,13 @@ List of things that i should do
 - Can't open gunstore shop keep saying you cant open inventory right now
 - 
 
+Not that the chat don't take input to open tings when you write and press their keybind all the time and it seems like it has something with the inventory to do and best gues is 1.
+1. When you have enter the search input in the inventory and close it with escape which unlike tab does not close out of the search input before the above happens but else if you close with tab or simple has not selected the search input field when you close the inventory. Might not be the input specificly but inventory maybe
 
+holding up hands on laptops work fine without it looking wierd
 
 @qbx_smallresources/qbx_removeentities/client.lua:5: attempt to index a nil value (upvalue 'config')
 > [global chunk] (qbx_smallresources/qbx_removeentities/client.lua:5)
-
-
-@qbx_idcard/main/client.lua:87: No such export displayMetadata in resource ox_inventory
-> error
-> index (scheduler.lua:599)
-> [global chunk] (qbx_idcard/main/client.lua:87)
 
 Failed to load data file cfx_resource_ultra-voltlab:/audiodata/dlchei4_game.dat of type AUDIO_GAMEDATA for resource ultra-voltlab
 Failed to load data file cfx_resource_ultra-voltlab:/audiodata/dlchei4_sounds.dat of type AUDIO_SOUNDDATA for resource ultra-voltlab

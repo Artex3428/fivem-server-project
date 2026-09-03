@@ -16,3 +16,7 @@ setjob admin
 setjob 1 admin
 ### 2026-09-02 21:55:38.230
 setgroup admin
+### 2026-09-03 20:25:38.400
+restart qbx_smallresources
+### 2026-09-03 20:29:18.060
+refresh
