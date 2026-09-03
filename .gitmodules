@@ -271,9 +271,6 @@
 [submodule "server-data/resources/takehostage"]
 	path = server-data/resources/takehostage
 	url = https://github.com/Artex3428/takehostage.git
-[submodule "server-data/resources/carry"]
-	path = server-data/resources/carry
-	url = https://github.com/Artex3428/carry.git
 [submodule "server-data/resources/vehicle-occupant-combat"]
 	path = server-data/resources/vehicle-occupant-combat
 	url = https://github.com/Artex3428/vehicle-occupant-combat.git
