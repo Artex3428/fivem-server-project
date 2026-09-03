@@ -199,8 +199,7 @@ Make all resources safe to restart while ingame and using the script for easier 
 All resource should be authoritative and not abusable.
 No glitches, bugs, or errors.
 All resources should use the same standard like naming convention and more.
-
-
+Compatability for different controls like handcontroller, vr, steeringwheel and other sim gear and of curse keyboard and mouse.
 
 List of things that i should do
 
