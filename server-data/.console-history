@@ -20,3 +20,7 @@ setgroup admin
 restart qbx_smallresources
 ### 2026-09-03 20:29:18.060
 refresh
+### 2026-09-03 21:31:11.409
+stop scully_emotemenu
+### 2026-09-03 21:31:32.758
+start scully_emotemenu
