@@ -22,7 +22,9 @@ restart qbx_smallresources
 stop scully_emotemenu
 ### 2026-09-03 21:31:32.758
 start scully_emotemenu
-### 2026-09-03 23:22:54.068
-refresh
 ### 2026-09-03 23:22:57.531
 restart scully_emotemenu
+### 2026-09-03 23:35:07.884
+refresh
+### 2026-09-03 23:35:08.431
+restart crouch_crawl
