@@ -228,7 +228,7 @@ List of things that i should do
 - Can't open gunstore shop keep saying you cant open inventory right now
 - 
 
-Add enter any doors with ox
+Add enter any vehicle doors with ox
 
 crashed when consumed item item was both burger and water but not on the laptop tho
 
@@ -240,9 +240,9 @@ add remove status bar
 
 remove multi char system backgrounds that glitches
 
-add bob ipl might be why some background bug but still incase someone dont use it only use what is there by default
+check if shoot people in same vehicle works
 
-stance might not be by default i remember you did some logic
+add bob ipl might be why some background bug but still incase someone dont use it only use what is there by default
 
 Not that the chat don't take input to open tings when you write and press their keybind all the time and it seems like it has something with the inventory to do and best gues is 1.
 1. When you have enter the search input in the inventory and close it with escape which unlike tab does not close out of the search input before the above happens but else if you close with tab or simple has not selected the search input field when you close the inventory. Might not be the input specificly but inventory maybe
@@ -251,9 +251,8 @@ isbusyinventory realy bad made
 
 crosshair in vehicle flickering only in first person
 
-silencerinvehicle script not working
-
-holding up hands on laptops work fine without it looking wierd
-
 Failed to load data file cfx_resource_ultra-voltlab:/audiodata/dlchei4_game.dat of type AUDIO_GAMEDATA for resource ultra-voltlab
 Failed to load data file cfx_resource_ultra-voltlab:/audiodata/dlchei4_sounds.dat of type AUDIO_SOUNDDATA for resource ultra-voltlab
+
+
+Failed to add replacement texture: Could not find original texture. Dict name: platform:/textures/graphics, Tex name: radarmask1g.
