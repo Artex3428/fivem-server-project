@@ -41,7 +41,7 @@
         "checking_whitelisted": "Hej %s. Vi tjekker din tilladelse.",
         "exploit_banned": "Du er blevet udelukket for at snyde. Tjek vores Discord for mere information: %s",
         "exploit_dropped": "Du er blevet smidt ud for udnyttelse",
-        "multichar_title": "Qbox Multikarakter",
+        "multichar_title": "Character selection",
         "multichar_new_character": "Ny karakter #%s",
         "char_male": "Mand",
         "char_female": "Kvinde",

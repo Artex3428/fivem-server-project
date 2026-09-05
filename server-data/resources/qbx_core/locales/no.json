@@ -41,7 +41,7 @@
         "checking_whitelisted": "Hei %s. Vi sjekker tilganger.",
         "exploit_banned": "Du har blitt utestengt for juks. Sjekk vår Discord for mer informasjon: %s",
         "exploit_dropped": "Du har blitt sparket for utnyttelse",
-        "multichar_title": "Qbox Multichar",
+        "multichar_title": "Character selection",
         "multichar_new_character": "New Character #%s",
         "char_male": "Male",
         "char_female": "Female",

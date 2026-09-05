@@ -211,9 +211,6 @@ List of things that i should do
 - Add the center cursor once you enter inventory btw quick thinking is that because we center the cursor that item info reapears becuase its where it was left before maybe you can center it before you close it to so it have time to get rid of it not pointing at a item
 - Add so you can run and possible run while using the inventory
 - preconfigure the keybinds better
-- change the chat theme not to have background
-- change chat performance if needed
-- unbind chat keybinds by default
 - The character might have a bug where after first load it fucks up what you did like face thicknes etc but it might be that the character face is on 1 but looks like 0 yes it starts at 1 by default tho face is as 0
 - Check first if inventory settings ingame when you open inventory have something for the inventory above
 - Disable hud money coming upp while losing or reciving money
@@ -244,6 +241,9 @@ change anme for car spawn to vehicle command name
 add bob ipl might be why some background bug but still incase someone dont use it only use what is there by default
 
 isbusyinventory realy bad made
+
+Fix character cant be deleted
+Remove people joined writing out in chat
 
 crosshair in vehicle flickering only in first person
 

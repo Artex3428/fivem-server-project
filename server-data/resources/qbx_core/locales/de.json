@@ -41,7 +41,7 @@
         "checking_whitelisted": "Hallo %s. Wir prüfen deine Erlaubnis.",
         "exploit_banned": "Du wurdest fürs Cheaten gebannt. Meld dich auf dem Discord: %s",
         "exploit_dropped": "Du wurdest gekickt, für das Ausnutzen von Exploits",
-        "multichar_title": "Qbox Multichar",
+        "multichar_title": "Character selection",
         "multichar_new_character": "Neuen Charakter #%s",
         "char_male": "Männlich",
         "char_female": "Weiblich",

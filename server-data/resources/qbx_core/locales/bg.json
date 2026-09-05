@@ -41,7 +41,7 @@
         "checking_whitelisted": "Здравей %s. Проверяваме вашето разрешение.",
         "exploit_banned": "Бяхте баннат за измама. Проверете нашия Discord за повече информация: %s",
         "exploit_dropped": "Бяхте изхвърлен за използване на експлоит",
-        "multichar_title": "Qbox Multichar",
+        "multichar_title": "Character selection",
         "multichar_new_character": "New Character #%s",
         "char_male": "Male",
         "char_female": "Female",

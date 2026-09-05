@@ -41,7 +41,7 @@
         "checking_whitelisted": "Tere %s. Kontrollime teie Allowlisti staatust.",
         "exploit_banned": "Olete saanud petmise eest mängukeelu. Lisateabe saamiseks vaadake meie Discordi: %s",
         "exploit_dropped": "Sind visati serverist välja petmise tõttu.",
-        "multichar_title": "Qbox Multichar",
+        "multichar_title": "Character selection",
         "multichar_new_character": "New Character #%s",
         "char_male": "Male",
         "char_female": "Female",

@@ -41,7 +41,7 @@
         "checking_whitelisted": ".אנחנו בודקים אם את/ה ברשימת המותרים .%s שלום",
         "exploit_banned": "%s :נחסמת מהשרת על רמאות. למידע נוסף, הצטרף/י לשרת הדיסקורד שלנו",
         "exploit_dropped": "הועפת מהשרת על רמאות",
-        "multichar_title": "Qbox Multichar",
+        "multichar_title": "Character selection",
         "multichar_new_character": "New Character #%s",
         "char_male": "Male",
         "char_female": "Female",

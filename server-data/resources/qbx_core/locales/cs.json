@@ -41,7 +41,7 @@
         "checking_whitelisted": "Ahoj %s. Kontrolujeme vaši povolenost.",
         "exploit_banned": "Byli jste zakázáni za podvádění. Podívejte se na náš Discord pro více informací: %s",
         "exploit_dropped": "Byli jste vyhoštěni za zneužívání",
-        "multichar_title": "Qbox Multichar",
+        "multichar_title": "Character selection",
         "multichar_new_character": "Nová postava #%s",
         "char_male": "Muž",
         "char_female": "Žena",

@@ -41,7 +41,7 @@
         "checking_whitelisted": "Sveiki %s. Tikriname jūsų leidimą.",
         "exploit_banned": "Jūs esate užblokuotas dėl klaidų išnaudojimo. Daugiau informacijos rasite mūsų Discord serveryje: %s",
         "exploit_dropped": "Jūs buvote išmestas už klaidų išnaudojimą",
-        "multichar_title": "Qbox Multichar",
+        "multichar_title": "Character selection",
         "multichar_new_character": "Naujas veikėjas #%s",
         "char_male": "Vyras",
         "char_female": "Moteris",

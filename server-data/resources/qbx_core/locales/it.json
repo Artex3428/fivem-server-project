@@ -41,7 +41,7 @@
     "checking_whitelisted": "Ciao %s. Sto controllando la allowlist.",
     "exploit_banned": "Sei stato bannato per Cheating o Exploit. Apri un ticket per maggiori informazioni: %s",
     "exploit_dropped": "Sei stato espulso per Exploit",
-    "multichar_title": "Qbox Multichar",
+    "multichar_title": "Character selection",
     "multichar_new_character": "Nuovo Personaggio #%s",
     "char_male": "Maschio",
     "char_female": "Femmina",

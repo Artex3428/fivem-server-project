@@ -41,7 +41,7 @@
         "checking_whitelisted": "Привет %s. Мы проверяем если вы в белом списке.",
         "exploit_banned": "Вы были забанены за мошенничество. Чтобы узнать больше, присоединяйтесь к нашему серверу Discord: %s",
         "exploit_dropped": "Вас выгнали с сервера за мошенничество",
-        "multichar_title": "Qbox Multichar",
+        "multichar_title": "Character selection",
         "multichar_new_character": "New Character #%s",
         "char_male": "Male",
         "char_female": "Female",

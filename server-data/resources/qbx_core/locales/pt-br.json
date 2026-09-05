@@ -40,7 +40,7 @@
         "checking_whitelisted": "Olá %s. Estamos verificando sua whitelist.",
         "exploit_banned": "Você foi banido por trapaça. Verifique nosso Discord para mais informações: %s",
         "exploit_dropped": "Você foi expulso por exploração",
-        "multichar_title": "Qbox Multichar",
+        "multichar_title": "Character selection",
         "multichar_new_character": "Novo Personagem #%s",
         "char_male": "Masculino",
         "char_female": "Feminino",

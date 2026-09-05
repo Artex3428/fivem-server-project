@@ -41,7 +41,7 @@
         "checking_whitelisted": "Halló %s. Við erum að athuga vasapeningana þína.",
         "exploit_banned": "Þú hefur verið bannaður fyrir svindl. Athugaðu Discord okkar til að fá frekari upplýsingar: %s",
         "exploit_dropped": "Þér hefur verið sparkað fyrir arðrán",
-        "multichar_title": "Qbox Multichar",
+        "multichar_title": "Character selection",
         "multichar_new_character": "New Character #%s",
         "char_male": "Male",
         "char_female": "Female",

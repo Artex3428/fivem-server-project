@@ -41,7 +41,7 @@
         "checking_whitelisted": "Witaj %s. Sprawdzamy twoje uprawnienia.",
         "exploit_banned": "Zbanowano za oszustwo. Sprawdź nasz Discord, aby uzyskać więcej informacji: %s",
         "exploit_dropped": "Wyrzucono za wykorzystywanie błędów",
-        "multichar_title": "Qbox Multichar",
+        "multichar_title": "Character selection",
         "multichar_new_character": "Nowa postać #%s",
         "char_male": "Mężczyzna",
         "char_female": "Kobieta",

@@ -40,7 +40,7 @@
         "checking_whitelisted": "Hej %s. Vi kontrollerar ditt medlemskap.",
         "exploit_banned": "Du har blivit bannlyst för fusk. Besök vår Discord för mer information: %s",
         "exploit_dropped": "Du har blivit utslängd för att ha utnyttjat en bugg.",
-        "multichar_title": "Qbox Multichar",
+        "multichar_title": "Character selection",
         "multichar_new_character": "Ny karaktär #%s",
         "char_male": "Man",
         "char_female": "Kvinna",

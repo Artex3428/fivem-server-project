@@ -2,16 +2,16 @@ return {
     statusIntervalSeconds = 5, -- how often to check hunger/thirst status to remove health if 0.
     loadingModelsTimeout = 30000, -- Waiting time for ox_lib to load the models before throws an error, for low specs pc
 
-    pauseMapText = 'Powered by Qbox', -- Text shown above the map when ESC is pressed. If left empty 'FiveM' will appear
+    pauseMapText = 'Pause menu', -- Text shown above the map when ESC is pressed. If left empty 'FiveM' will appear
 
     characters = {
         useExternalCharacters = false, -- Whether you have an external character management resource. (If true, disables the character management inside the core)
         enableDeleteButton = true, -- Whether players should be able to delete characters themselves.
-        startingApartment = true, -- If set to false, skips apartment choice in the beginning (requires qbx_spawn if true)
+        startingApartment = false, -- If set to false, skips apartment choice in the beginning (requires qbx_spawn if true)
 
         dateFormat = 'YYYY-MM-DD',
         dateMin = '1900-01-01', -- Has to be in the same format as the dateFormat config
-        dateMax = '2006-12-31', -- Has to be in the same format as the dateFormat config
+        dateMax = '2026-09-05', -- Has to be in the same format as the dateFormat config
 
         limitNationalities = true, -- Setting this to false will allow people to enter whatever they want in the nationality field (To edit the list of nationalities, head to data/nationalities.lua)
 
@@ -21,24 +21,12 @@ return {
 
         locations = { -- Spawn locations for multichar, these are chosen randomly
             {
-                pedCoords = vec4(969.25, 72.61, 116.18, 276.55),
-                camCoords = vec4(972.2, 72.9, 116.68, 97.27),
-            },
-            {
-                pedCoords = vec4(1104.49, 195.9, -49.44, 44.22),
-                camCoords = vec4(1102.29, 198.14, -48.86, 225.07),
-            },
-            {
                 pedCoords = vec4(-2163.87, 1134.51, -24.37, 310.05),
                 camCoords = vec4(-2161.7, 1136.4, -23.77, 131.52),
             },
             {
                 pedCoords = vec4(-996.71, -68.07, -99.0, 57.61),
                 camCoords = vec4(-999.90, -66.30, -98.45, 241.68),
-            },
-            {
-                pedCoords = vec4(-1023.45, -418.42, 67.66, 205.69),
-                camCoords = vec4(-1021.8, -421.7, 68.14, 27.11),
             },
             {
                 pedCoords = vec4(2265.27, 2925.02, -84.8, 267.77),
@@ -52,7 +40,7 @@ return {
     },
 
     discord = {
-        enabled = true, -- This will enable or disable the built in discord rich presence.
+        enabled = false, -- This will enable or disable the built in discord rich presence.
 
         richPresence = 'Players {currentPlayers}/{maxPlayers}', -- Rich presence text. Placeholders: {id}, {charName}, {playerName}, {currentPlayers}, {maxPlayers}, {streetName}
 

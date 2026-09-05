@@ -41,7 +41,7 @@
         "checking_whitelisted": "Hola %s. Estamos revisando si tienes acceso a nuestro servidor.",
         "exploit_banned": "Has sido expulsado por hacer trampas. Consulta nuestro Discord para más información: %s",
         "exploit_dropped": "Has sido expulsado por hacer trampas",
-        "multichar_title": "Qbox Multicharacter",
+        "multichar_title": "Character selection",
         "multichar_new_character": "Nuevo Personaje #%s",
         "char_male": "Hombre",
         "char_female": "Mujer",
