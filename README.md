@@ -234,8 +234,6 @@ recoil not working
 
 add remove status bar
 
-remove multi char system backgrounds that glitches
-
 change anme for car spawn to vehicle command name
 
 add bob ipl might be why some background bug but still incase someone dont use it only use what is there by default

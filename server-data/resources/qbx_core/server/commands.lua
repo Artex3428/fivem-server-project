@@ -171,7 +171,7 @@ lib.addCommand('closeserver', {
     end
 end)
 
-lib.addCommand('car', {
+lib.addCommand('vehicle', {
     help = locale('command.car.help'),
     params = {
         { name = locale('command.car.params.model.name'), help = locale('command.car.params.model.help') },
