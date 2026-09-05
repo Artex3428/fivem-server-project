@@ -232,13 +232,23 @@ Seems to be alot of props that crashes and maybe we have not converted thos thin
 
 recoil not working
 
+saved walk styles might be between all characters
+
+change load screen text to just say welcome or something like that without the logo by default with better default images
+
+medical death dont show how long you got left is there even a bleedouttimer
+
 add remove status bar
 
 add bob ipl might be why some background bug but still incase someone dont use it only use what is there by default
 
 isbusyinventory realy bad made
 
-Fix character cant be deleted
+Fix character cant be deleted maybe its that we changed config for what tables to get deleted when you delete character or check errors when you try to delete character
+
+renzu motel textui might be way to big radius even all the way out on the road
+
+for making it more plesent in the begining of loading in alot of things show up that loaded on the screen hide that maybe somehow
 
 crosshair in vehicle flickering only in first person
 
