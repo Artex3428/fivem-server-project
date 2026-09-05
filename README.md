@@ -203,7 +203,6 @@ Compatability for different controls like handcontroller, vr, steeringwheel and 
 
 List of things that i should do
 
-- Fix so that the chat is not register key input for opening menus while typing as well as changing the design.
 - Look into what the z radial menu comes from and look if that is realy neccesery
 - Admin say duty is required and giving admin seems not to work
 - The target makes the screen dark when using it disable that maybe but kind of nice tho
@@ -240,12 +239,9 @@ add remove status bar
 
 remove multi char system backgrounds that glitches
 
-check if shoot people in same vehicle works
+change anme for car spawn to vehicle command name
 
 add bob ipl might be why some background bug but still incase someone dont use it only use what is there by default
-
-Not that the chat don't take input to open tings when you write and press their keybind all the time and it seems like it has something with the inventory to do and best gues is 1.
-1. When you have enter the search input in the inventory and close it with escape which unlike tab does not close out of the search input before the above happens but else if you close with tab or simple has not selected the search input field when you close the inventory. Might not be the input specificly but inventory maybe
 
 isbusyinventory realy bad made
 
