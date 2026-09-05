@@ -217,7 +217,6 @@ List of things that i should do
 - How do you revive maybe because we use nd_ambulance
 - The old status stil showing maybe while in a vehicle
 - Admin keep saying you are not admin or god
-- Fix the cfg structure
 - Can't open gunstore shop keep saying you cant open inventory right now
 - 
 
