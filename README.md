@@ -202,7 +202,6 @@ Compatability for different controls like handcontroller, vr, steeringwheel and 
 List of things that i should do
 
 - Look into what the z radial menu comes from and look if that is realy neccesery
-- Admin say duty is required and giving admin seems not to work
 - The target makes the screen dark when using it disable that maybe but kind of nice tho
 - There is currently crouch and stance try set them both to control or wathever my old server courch crawl script uses or just add that if crawl dos not exist
 - Holding up hands script seems to be inflicting with another one or its just wierdly made
@@ -216,9 +215,7 @@ List of things that i should do
 - Phone item config in inventory might need button for simtray
 - How do you revive maybe because we use nd_ambulance
 - The old status stil showing maybe while in a vehicle
-- Admin keep saying you are not admin or god
 - Can't open gunstore shop keep saying you cant open inventory right now
-- 
 
 Add enter any vehicle doors with ox
 
