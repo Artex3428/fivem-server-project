@@ -112,8 +112,6 @@ should remove images that are only for install in the different resources to sav
 
 Seatbelt resource might need to make sure that the harnes if it is a prop don't do like one music and mayham i think if a player disconnects or something like that just freezes in the air i gues easy if it is that way just to check status on player now and then if it disconects and delete the harnes or wathever check if its aboneoned and delete the entity
 
-add bobipl maybe
-
 make sure that property script uses the houses and apartments that actually got windows but that still has different instances
 
 -- Inventory items --
@@ -238,8 +236,6 @@ change load screen text to just say welcome or something like that without the l
 medical death dont show how long you got left is there even a bleedouttimer
 
 add remove status bar
-
-add bob ipl might be why some background bug but still incase someone dont use it only use what is there by default
 
 isbusyinventory realy bad made
 
