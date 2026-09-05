@@ -234,14 +234,11 @@ recoil not working
 
 add remove status bar
 
-change anme for car spawn to vehicle command name
-
 add bob ipl might be why some background bug but still incase someone dont use it only use what is there by default
 
 isbusyinventory realy bad made
 
 Fix character cant be deleted
-Remove people joined writing out in chat
 
 crosshair in vehicle flickering only in first person
 
