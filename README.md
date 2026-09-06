@@ -214,7 +214,6 @@ List of things that i should do
 - Sim card might not have image
 - Phone item config in inventory might need button for simtray
 - How do you revive maybe because we use nd_ambulance
-- The old status stil showing maybe while in a vehicle
 - Can't open gunstore shop keep saying you cant open inventory right now maybe you need gun lisence as item in inventory
 
 Add enter any vehicle doors with ox
@@ -222,6 +221,12 @@ Add enter any vehicle doors with ox
 crashed when consumed item item was both burger and water but not on the laptop tho
 
 Seems to be alot of props that crashes and maybe we have not converted thos think its even default gtas
+
+Remove dropped items marker
+
+Remove notify that gunpowder is on your clothing
+
+add sound for seatbelt on of maybe
 
 recoil not working
 
@@ -235,7 +240,9 @@ Remove so that bike don't show seatbelt icon
 
 add remove status bar
 
-both fuel meters on the hud is not useful to have
+Sound in vehicles still come at least in polmav heli mission sound
+
+Remove so vehicles don't despawn while you noclip trough them its true for npc vehicles
 
 isbusyinventory realy bad made
 
