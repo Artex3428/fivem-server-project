@@ -259,3 +259,14 @@ Failed to load data file cfx_resource_ultra-voltlab:/audiodata/dlchei4_sounds.da
 
 
 Failed to add replacement texture: Could not find original texture. Dict name: platform:/textures/graphics, Tex name: radarmask1g.
+
+
+
+@nd_ambulance/client/main.lua:393: No such export toggleHandsUp in resource qbx_police
+> error
+> index (scheduler.lua:599)
+> revive (nd_ambulance/client/main.lua:393)
+> [global chunk] (nd_ambulance/client/main.lua:421)
+> CreateThreadNow
+> handler (scheduler.lua:172)
+> [global chunk] (scheduler.lua:135)
