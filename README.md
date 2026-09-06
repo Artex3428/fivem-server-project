@@ -239,11 +239,11 @@ Remove so that bike don't show seatbelt icon
 
 add remove status bar
 
+both fuel meters on the hud is not useful to have
+
 isbusyinventory realy bad made
 
 Fix character cant be deleted maybe its that we changed config for what tables to get deleted when you delete character or check errors when you try to delete character
-
-renzu motel textui might be way to big radius even all the way out on the road
 
 for making it more plesent in the begining of loading in alot of things show up that loaded on the screen hide that maybe somehow
 
