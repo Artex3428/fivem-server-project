@@ -246,6 +246,8 @@ Remove so vehicles don't despawn while you noclip trough them its true for npc v
 
 isbusyinventory realy bad made
 
+character face seem to still change randomly
+
 The character clthing preset did not work
 
 Fix character cant be deleted maybe its that we changed config for what tables to get deleted when you delete character or check errors when you try to delete character
@@ -257,16 +259,4 @@ crosshair in vehicle flickering only in first person
 Failed to load data file cfx_resource_ultra-voltlab:/audiodata/dlchei4_game.dat of type AUDIO_GAMEDATA for resource ultra-voltlab
 Failed to load data file cfx_resource_ultra-voltlab:/audiodata/dlchei4_sounds.dat of type AUDIO_SOUNDDATA for resource ultra-voltlab
 
-
 Failed to add replacement texture: Could not find original texture. Dict name: platform:/textures/graphics, Tex name: radarmask1g.
-
-
-
-@nd_ambulance/client/main.lua:393: No such export toggleHandsUp in resource qbx_police
-> error
-> index (scheduler.lua:599)
-> revive (nd_ambulance/client/main.lua:393)
-> [global chunk] (nd_ambulance/client/main.lua:421)
-> CreateThreadNow
-> handler (scheduler.lua:172)
-> [global chunk] (scheduler.lua:135)
