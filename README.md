@@ -1,3 +1,6 @@
+**INFO IF SOMEONE SEES THIS REPO. THIS SERVER IS NOT FINISHED AND FEEL FREE TO DOWNLOAD BUT MIGHT REQUIRE ALOT OF CONFIGURATION WHICH I AM WORKING ON RIGHT NOW**
+
+
 --SETUP--
 To add a resource
 * Make a fork of their repo
@@ -64,8 +67,6 @@ and also remove fork from github i guess
 Make sure sim card and phone are sold somewhere
 
 might have to temp use pma-voice since fivem integrated voice might not work for phones etc
-
-configure adminmenu to use right fuel system, and also to use right garage etc
 
 remember to get a boss panel job panel for companies and police etc to manage employes with cool ui but the current might be okey for now
 
@@ -208,14 +209,15 @@ List of things that i should do
 - Add the center cursor once you enter inventory btw quick thinking is that because we center the cursor that item info reapears becuase its where it was left before maybe you can center it before you close it to so it have time to get rid of it not pointing at a item
 - Add so you can run and possible run while using the inventory
 - preconfigure the keybinds better
-- Check first if inventory settings ingame when you open inventory have something for the inventory above
 - Disable hud money coming upp while losing or reciving money
 - Seems not able to delete character
 - Sim card might not have image
 - Phone item config in inventory might need button for simtray
 - How do you revive maybe because we use nd_ambulance
 - The old status stil showing maybe while in a vehicle
-- Can't open gunstore shop keep saying you cant open inventory right now
+- Can't open gunstore shop keep saying you cant open inventory right now maybe you need gun lisence as item in inventory
+
+noclip works for admins even tho they are not opted in for admin duty
 
 Add enter any vehicle doors with ox
 
@@ -227,9 +229,13 @@ recoil not working
 
 saved walk styles might be between all characters
 
+migrate the noclip functionality from my old server that completly removes your collision and removes shadow from your ped as well as making you not despawn npc vehicles and more when you go trough them
+
 change load screen text to just say welcome or something like that without the logo by default with better default images
 
 medical death dont show how long you got left is there even a bleedouttimer
+
+Remove so that bike don't show seatbelt icon
 
 add remove status bar
 
