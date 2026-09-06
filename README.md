@@ -212,7 +212,6 @@ List of things that i should do
 - Disable hud money coming upp while losing or reciving money
 - Seems not able to delete character
 - Sim card might not have image
-- Phone item config in inventory might need button for simtray
 - How do you revive maybe because we use nd_ambulance
 - Can't open gunstore shop keep saying you cant open inventory right now maybe you need gun lisence as item in inventory
 
@@ -238,8 +237,6 @@ medical death dont show how long you got left is there even a bleedouttimer
 
 Remove so that bike don't show seatbelt icon
 
-add remove status bar
-
 Sound in vehicles still come at least in polmav heli mission sound
 
 Remove so vehicles don't despawn while you noclip trough them its true for npc vehicles
@@ -258,5 +255,3 @@ crosshair in vehicle flickering only in first person
 
 Failed to load data file cfx_resource_ultra-voltlab:/audiodata/dlchei4_game.dat of type AUDIO_GAMEDATA for resource ultra-voltlab
 Failed to load data file cfx_resource_ultra-voltlab:/audiodata/dlchei4_sounds.dat of type AUDIO_SOUNDDATA for resource ultra-voltlab
-
-Failed to add replacement texture: Could not find original texture. Dict name: platform:/textures/graphics, Tex name: radarmask1g.
