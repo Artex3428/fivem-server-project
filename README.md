@@ -217,8 +217,6 @@ List of things that i should do
 - The old status stil showing maybe while in a vehicle
 - Can't open gunstore shop keep saying you cant open inventory right now maybe you need gun lisence as item in inventory
 
-noclip works for admins even tho they are not opted in for admin duty
-
 Add enter any vehicle doors with ox
 
 crashed when consumed item item was both burger and water but not on the laptop tho
@@ -228,8 +226,6 @@ Seems to be alot of props that crashes and maybe we have not converted thos thin
 recoil not working
 
 saved walk styles might be between all characters
-
-migrate the noclip functionality from my old server that completly removes your collision and removes shadow from your ped as well as making you not despawn npc vehicles and more when you go trough them
 
 change load screen text to just say welcome or something like that without the logo by default with better default images
 
@@ -242,6 +238,8 @@ add remove status bar
 both fuel meters on the hud is not useful to have
 
 isbusyinventory realy bad made
+
+The character clthing preset did not work
 
 Fix character cant be deleted maybe its that we changed config for what tables to get deleted when you delete character or check errors when you try to delete character
 
