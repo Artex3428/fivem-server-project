@@ -204,15 +204,10 @@ List of things that i should do
 
 - Look into what the z radial menu comes from and look if that is realy neccesery
 - The target makes the screen dark when using it disable that maybe but kind of nice tho
-- There is currently crouch and stance try set them both to control or wathever my old server courch crawl script uses or just add that if crawl dos not exist
-- Holding up hands script seems to be inflicting with another one or its just wierdly made
 - Add the center cursor once you enter inventory btw quick thinking is that because we center the cursor that item info reapears becuase its where it was left before maybe you can center it before you close it to so it have time to get rid of it not pointing at a item
-- Add so you can run and possible run while using the inventory
-- preconfigure the keybinds better
-- Disable hud money coming upp while losing or reciving money
+- Add so you can run and possible drive while using the inventory
 - Seems not able to delete character
 - Sim card might not have image
-- How do you revive maybe because we use nd_ambulance
 - Can't open gunstore shop keep saying you cant open inventory right now maybe you need gun lisence as item in inventory
 
 Add enter any vehicle doors with ox
@@ -221,7 +216,7 @@ crashed when consumed item item was both burger and water but not on the laptop 
 
 Seems to be alot of props that crashes and maybe we have not converted thos think its even default gtas
 
-Remove dropped items marker
+Remove dropped items marker and make it like ox inventory where bag prop is dropped
 
 Remove notify that gunpowder is on your clothing
 
