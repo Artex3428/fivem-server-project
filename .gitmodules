@@ -298,3 +298,6 @@
 [submodule "server-data/resources/bob74_ipl"]
 	path = server-data/resources/bob74_ipl
 	url = https://github.com/Artex3428/bob74_ipl.git
+[submodule "server-data/resources/tc-wepRecoil"]
+	path = server-data/resources/tc-wepRecoil
+	url = https://github.com/Artex3428/tc-wepRecoil.git

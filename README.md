@@ -218,11 +218,7 @@ Seems to be alot of props that crashes and maybe we have not converted thos thin
 
 Remove dropped items marker and make it like ox inventory where bag prop is dropped
 
-Remove notify that gunpowder is on your clothing
-
 add sound for seatbelt on of maybe
-
-recoil not working
 
 saved walk styles might be between all characters
 
