@@ -222,13 +222,9 @@ add sound for seatbelt on of maybe
 
 saved walk styles might be between all characters
 
-change load screen text to just say welcome or something like that without the logo by default with better default images
-
-medical death dont show how long you got left is there even a bleedouttimer
-
-Remove so that bike don't show seatbelt icon
-
 Sound in vehicles still come at least in polmav heli mission sound
+
+Disable default street names
 
 Remove so vehicles don't despawn while you noclip trough them its true for npc vehicles
 
