@@ -222,9 +222,7 @@ add sound for seatbelt on of maybe
 
 saved walk styles might be between all characters
 
-Sound in vehicles still come at least in polmav heli mission sound
-
-Disable default street names
+Fix minimap border disabled by default and fix border being little to short and also fixing so the street names and compas is hidden while the escape menu is open and inventory and other menus if thats the case
 
 Remove so vehicles don't despawn while you noclip trough them its true for npc vehicles
 
