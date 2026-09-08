@@ -222,7 +222,7 @@ add sound for seatbelt on of maybe
 
 saved walk styles might be between all characters
 
-Fix minimap border disabled by default and fix border being little to short and also fixing so the street names and compas is hidden while the escape menu is open and inventory and other menus if thats the case
+Fix minimap border disabled by default and fix border being little to short and also fixing so the street names and compas is hidden while the escape menu is open and inventory and other menus if thats the case fix force minmap hidden either on foot or in vehicle or both via config
 
 Remove so vehicles don't despawn while you noclip trough them its true for npc vehicles
 
@@ -240,3 +240,12 @@ crosshair in vehicle flickering only in first person
 
 Failed to load data file cfx_resource_ultra-voltlab:/audiodata/dlchei4_game.dat of type AUDIO_GAMEDATA for resource ultra-voltlab
 Failed to load data file cfx_resource_ultra-voltlab:/audiodata/dlchei4_sounds.dat of type AUDIO_SOUNDDATA for resource ultra-voltlab
+
+Things to add in menu option
+Vehicle
+* Open all doors
+* Lock
+* Open all windows
+* Extras
+* Air supspension
+
