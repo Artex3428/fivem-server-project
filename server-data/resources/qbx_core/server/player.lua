@@ -673,7 +673,7 @@ function CheckPlayerData(source, playerData)
     }
     playerData.metadata.licences = playerData.metadata.licences or {
         id = true,
-        driver = true,
+        driver = false,
         weapon = false,
     }
     playerData.metadata.inside = playerData.metadata.inside or {

@@ -21,18 +21,6 @@ return {
 
         locations = { -- Spawn locations for multichar, these are chosen randomly
             {
-                pedCoords = vec4(-2163.87, 1134.51, -24.37, 310.05),
-                camCoords = vec4(-2161.7, 1136.4, -23.77, 131.52),
-            },
-            {
-                pedCoords = vec4(-996.71, -68.07, -99.0, 57.61),
-                camCoords = vec4(-999.90, -66.30, -98.45, 241.68),
-            },
-            {
-                pedCoords = vec4(2265.27, 2925.02, -84.8, 267.77),
-                camCoords = vec4(2268.24, 2925.02, -84.36, 90.88),
-            },
-            {
                 pedCoords = vec4(-1004.5, -478.51, 50.03, 28.19),
                 camCoords = vec4(-1006.36, -476.19, 50.50, 210.38),
             }
@@ -50,7 +38,7 @@ return {
 
         largeIcon = { -- To set this up, visit https://forum.cfx.re/t/how-to-updated-discord-rich-presence-custom-image/157686
             icon = 'duck', -- Here you will have to put the image name for the 'large' icon.
-            text = 'Qbox Ducky', -- Here you can add hover text for the 'large' icon.
+            text = 'Server', -- Here you can add hover text for the 'large' icon.
         },
 
         smallIcon = {
@@ -59,7 +47,7 @@ return {
         },
 
         firstButton = {
-            text = 'Qbox Discord',
+            text = 'Server Discord',
             link = 'https://discord.gg/Z6Whda5hHA',
         },
 

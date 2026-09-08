@@ -178,6 +178,8 @@ pet_medkit pet_revive pet_food pet_water
 keys
 crafting_bench_w
 police_crafting_bench
+pilot_license
+boat_license
 
 ADDED IMAGES
 drone_battery_empty drone_battery and drone for nzkfc_drone
@@ -191,6 +193,8 @@ tirekit advancedrepairkit
 pre_workout protein_bar sports_drink whey
 blindfold
 strippedbass_fish swordfish lottery_scratchcards mapa contract_paper
+pilot_license
+boat_license
 
 -- GOALS -- 
 Make the server pve and pvp compatible either automaticly, depending on playerbase, both, or either one.
@@ -222,9 +226,11 @@ add sound for seatbelt on of maybe
 
 saved walk styles might be between all characters
 
-Fix minimap border disabled by default and fix border being little to short and also fixing so the street names and compas is hidden while the escape menu is open and inventory and other menus if thats the case fix force minmap hidden either on foot or in vehicle or both via config
+fixing so the street names and compas is hidden while the escape menu is open and inventory and other menus if thats the case fix force minmap hidden either on foot or in vehicle or both via config
 
 Remove so vehicles don't despawn while you noclip trough them its true for npc vehicles
+
+Fix ox_lib notify and look over the train and subway script
 
 isbusyinventory realy bad made
 
@@ -246,6 +252,48 @@ Vehicle
 * Open all doors
 * Lock
 * Open all windows
+* Engine shut on off
+* Neon control
 * Extras
 * Air supspension
 
+Feuture that might be hard or inflict with game alot
+Make silencer in vehicle allowed
+Make clothing like hats or fat jackets allowed in vehicles
+Make trailers or other things attached to vehicles like towtrucks be treated as a vehicle otherwize npc will run straight trough the trailer not thinking its something in the whay and lights wont work etc
+Mirrors in vehicles working
+First person only
+
+
+
+[21:44:22] [ info] [        sd-phone] SCRIPT ERROR: @sd-phone/server/settings/store.lua:2337: sd-phone was unable to execute a query!
+Query:         SELECT *,
+               hour24             IS NULL AS hour24_unset,
+               wallpaper_parallax IS NULL AS parallax_unset,
+               caller_id          IS NULL AS caller_id_unset
+        FROM phone_settings WHERE citizenid = ? AND device = ?
+
+["sim:6630893051","phone"]
+Should not reach here: undefined
+> [global chunk]
+> InvokeNative
+> callbackResponse (ox_lib/imports/callback/server.lua:101)
+> [global chunk] (ox_lib/imports/callback/server.lua:122)
+> [global chunk]
+> pcall
+> nonpromisecb (deferred.lua:78)
+> promise (deferred.lua:57)
+> fire (deferred.lua:66)
+> [global chunk] (deferred.lua:112)
+> finish (deferred.lua:24)
+> nonpromisecb (deferred.lua:102)
+> promise (deferred.lua:57)
+> nonpromisecb (deferred.lua:97)
+> promise (deferred.lua:57)
+> fire (deferred.lua:66)
+> [global chunk] (deferred.lua:112)
+> [global chunk] (scheduler.lua:365)
+> pcall
+> [global chunk] (scheduler.lua:364)
+> CreateThreadNow
+> [global chunk] (scheduler.lua:363)
