@@ -234,7 +234,7 @@ Fix ox_lib notify and look over the train and subway script
 
 isbusyinventory realy bad made
 
-character face seem to still change randomly
+character face seem to still change randomly and the character that you start with seems not to be about that config in qbx core but maybe inside illenium appearance somewhere
 
 The character clthing preset did not work
 
@@ -297,3 +297,18 @@ Should not reach here: undefined
 > [global chunk] (scheduler.lua:364)
 > CreateThreadNow
 > [global chunk] (scheduler.lua:363)
+
+
+
+Received non-vehicle model hash 0x6dbcfc99. Can't create the vehicle.
+
+Not allowed to execute command: -gizmotranslation
+
+
+
+
+when deleting
+
+[22:54:54] [ info] [         oxmysql] Error: qbx_core was unable to complete a transaction!
+DELETE FROM properties WHERE owner = 'ST99X98P'
+Unknown column 'owner' in 'WHERE'
