@@ -107,7 +107,7 @@ Tip is use the startwithouttxadmin.bat if you don't want to use txadmin otherwis
 * Add anticheat maybe
 * Should maybe remove images that are only for install in the different resources to save space and have it more clean
 * Seatbelt resource might need to make sure harnes entity are deleted if a player uses it and disconnects or if the car despawns since sometimes it might be stuck in the air
-* make sure that property script uses the houses and apartments that actually got windows but that still has different instances
+* Make sure that property script uses the houses and apartments that actually got windows but that still has different instances
 
 **Changes**
 Inventory
