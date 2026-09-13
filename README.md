@@ -18,6 +18,7 @@ Goals for the server
 * Compatability for different controls like handcontroller, vr, steeringwheel and other sim gear and of curse keyboard and mouse.
 
 **SETUP**
+
 To add a resource
 * Make a fork of their repo
 * Add it as a module with git submodule add https://github.com/authorofforksname/resourcename.git server-data/resources/whatresourcefoldernameshouldbe
@@ -139,6 +140,7 @@ ADDED IMAGES
 * boat_license
 
 **TODO**
+
 FIXLIST
 * Look into what the z radial menu comes from and look if that is realy neccesery
 * Change nd_police name on files like audio in qbx_police to only be police or something, ps need compiling and chaning xml files also
