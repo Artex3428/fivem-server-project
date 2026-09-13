@@ -171,7 +171,6 @@ FIXLIST
 * Add sound for seatbelt on of maybe
 * Fixing so the street names and compas is hidden while the escape menu is open and inventory and other menus if thats the case fix force minmap hidden either on foot or in vehicle or both via config
 * Remove so vehicles don't despawn while you noclip trough them its true for npc vehicles
-* Fix ox_lib notify and look over the train and subway script
 * Fix character cant be deleted maybe its that we changed config for what tables to get deleted when you delete character or check errors when you try to delete character
 * For making it more plesent in the begining of loading in alot of things show up that loaded on the screen hide that maybe somehow
 * Fix crosshair in vehicle flickering only in first person
