@@ -228,9 +228,6 @@ Should not reach here: undefined
 
 Received non-vehicle model hash 0x6dbcfc99. Can't create the vehicle.
 
-Not allowed to execute command: -gizmoselect
-Not allowed to execute command: -gizmotranslation
-
 When deleting
 [22:54:54] [ info] [         oxmysql] Error: qbx_core was unable to complete a transaction!
 DELETE FROM properties WHERE owner = 'ST99X98P'
@@ -257,3 +254,17 @@ Unknown column 'owner' in 'WHERE'
 > [global chunk] (scheduler.lua:364)
 > CreateThreadNow
 > [global chunk] (scheduler.lua:363)
+
+Command getclothing-ambulance is already registered.
+
+Failed to parse pending replication value for ConfigVar loadscreen:externalShutdown: false
+
+Failed to parse pending replication value for ConfigVar inventory:target: true
+Failed to parse pending replication value for ConfigVar inventory:autoreload: false
+Failed to parse pending replication value for ConfigVar inventory:screenblur: true
+Failed to parse pending replication value for ConfigVar inventory:aimedfiring: false
+Failed to parse pending replication value for ConfigVar inventory:giveplayerlist: true
+Failed to parse pending replication value for ConfigVar inventory:weaponanims: true
+Failed to parse pending replication value for ConfigVar inventory:itemnotify: true
+Failed to parse pending replication value for ConfigVar inventory:weaponnotify: true
+Failed to parse pending replication value for ConfigVar inventory:dropprops: true
