@@ -235,3 +235,25 @@ When deleting
 [22:54:54] [ info] [         oxmysql] Error: qbx_core was unable to complete a transaction!
 DELETE FROM properties WHERE owner = 'ST99X98P'
 Unknown column 'owner' in 'WHERE'
+
+[00:29:07] [fatal] [ qbx_mechanicjob] @qbx_mechanicjob/server/main.lua:96: table index is nil
+> [global chunk] (qbx_mechanicjob/server/main.lua:96)
+> [global chunk]
+> pcall
+> nonpromisecb (deferred.lua:76)
+> promise (deferred.lua:57)
+> fire (deferred.lua:66)
+> [global chunk] (deferred.lua:112)
+> finish (deferred.lua:22)
+> nonpromisecb (deferred.lua:102)
+> promise (deferred.lua:57)
+> nonpromisecb (deferred.lua:97)
+> promise (deferred.lua:57)
+> fire (deferred.lua:66)
+> [global chunk] (deferred.lua:112)
+> func (oxmysql/lib/MySQL.lua:23)
+> [global chunk] (scheduler.lua:365)
+> pcall
+> [global chunk] (scheduler.lua:364)
+> CreateThreadNow
+> [global chunk] (scheduler.lua:363)
