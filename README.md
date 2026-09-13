@@ -166,7 +166,6 @@ FIXLIST
 * Add vehicle teleport to the s4t4n667_elevators
 * Change the images from nd_ambulance to match with the other images styles which is tourniquet, gauze, splint, burndressing, medbag, defib, stretcher
 * Add enter any vehicle doors with ox
-* Remove dropped items marker and make it like ox inventory where bag prop is dropped
 * Add sound for seatbelt on of maybe
 * Fixing so the street names and compas is hidden while the escape menu is open and inventory and other menus if thats the case fix force minmap hidden either on foot or in vehicle or both via config
 * Remove so vehicles don't despawn while you noclip trough them its true for npc vehicles
