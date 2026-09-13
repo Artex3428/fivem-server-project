@@ -159,7 +159,6 @@ FIXLIST
 * Change nd_police name on files like audio in qbx_police to only be police or something, ps need compiling and chaning xml files also
 * The target makes the screen dark when using it disable that maybe but kind of nice tho
 * Add the center cursor once you enter inventory btw quick thinking is that because we center the cursor that item info reapears becuase its where it was left before maybe you can center it before you close it to so it have time to get rid of it not pointing at a item
-* Add so you can run and possible drive while using the inventory
 * Seems not able to delete character
 * Sim card might not have image
 * Change garage markes to use target or textui

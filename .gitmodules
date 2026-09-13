@@ -265,9 +265,6 @@
 [submodule "server-data/resources/rpchat"]
 	path = server-data/resources/rpchat
 	url = https://github.com/Artex3428/rpchat.git
-[submodule "server-data/resources/noNpcVehicleDespawn"]
-	path = server-data/resources/noNpcVehicleDespawn
-	url = https://github.com/Artex3428/noNpcVehicleDespawn.git
 [submodule "server-data/resources/takehostage"]
 	path = server-data/resources/takehostage
 	url = https://github.com/Artex3428/takehostage.git
