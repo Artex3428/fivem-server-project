@@ -1,5 +1,8 @@
-**INFO IF SOMEONE SEES THIS REPO. THIS SERVER IS NOT FINISHED AND FEEL FREE TO DOWNLOAD BUT MIGHT REQUIRE ALOT OF CONFIGURATION WHICH I AM WORKING ON RIGHT NOW**
+**IMPORTANT**
+This server is work in progress. The server is working fine but might require some configuration and small amount of fixing. It is a good start and maybe the best one out there.
 
+**PREVIEW**
+<img width="1672" height="941" alt="ServerPreview" src="https://github.com/user-attachments/assets/b78f0272-3d0d-4942-b626-071d166c81a9" />
 
 --SETUP--
 To add a resource
