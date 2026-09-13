@@ -18,6 +18,7 @@ Goals for the server
 * Compatability for different controls like handcontroller, vr, steeringwheel and other sim gear and of curse keyboard and mouse.
 
 **SETUP**
+
 Steps to take to get the server up
 
 1. Download required software
