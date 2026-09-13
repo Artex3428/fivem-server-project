@@ -71,100 +71,100 @@ And if you want remove the fork from github
 Tip is use the startwithouttxadmin.bat if you don't want to use txadmin otherwise run the exe in the root
 
 **NOTES**
-* Make sure sim card and phone are sold somewhere
-* Some resources names might be wrong if any issues accure
-* Might have to use temporarly pma-voice since fivem integrated voice might not work for phones etc
-* Add boss panel ui
-* Add report system if the current adminmenu don't have that
-* Add bank card incase bank system don't include it as item in inventory
-* Add x-shound if a resource in the future requires it
-* Maybe qbx tunerchip later
-* Maybe lockpick script like qbx if not added somewhere in another resource
-* Maybe printer script like qbx one
-* Maybe restorant job
-* Maybe nightclub job
-* skipped to run sql for v-sport since they said it would be ran on first start if it did not exist
-* Make sure to find what resource that we used a stable realese version instead of main
-* Maybe make not enough cops incative in scripts since its limiting roleplay that you can do
-* Make sure all items resources use exist with images and that images look the same in quality size etc
-* Maybe add anti animate trough wall and check to see if they are in prison and use the prison script tp back to prison for if you relog or maybe set a specifik spot like a cell you tp to
-* Add anticheat maybe
-* Should maybe remove images that are only for install in the different resources to save space and have it more clean
-* Seatbelt resource might need to make sure harnes entity are deleted if a player uses it and disconnects or if the car despawns since sometimes it might be stuck in the air
-* make sure that property script uses the houses and apartments that actually got windows but that still has different instances
+- Make sure sim card and phone are sold somewhere
+- Some resources names might be wrong if any issues accure
+- Might have to use temporarly pma-voice since fivem integrated voice might not work for phones etc
+- Add boss panel ui
+- Add report system if the current adminmenu don't have that
+- Add bank card incase bank system don't include it as item in inventory
+- Add x-shound if a resource in the future requires it
+- Maybe qbx tunerchip later
+- Maybe lockpick script like qbx if not added somewhere in another resource
+- Maybe printer script like qbx one
+- Maybe restorant job
+- Maybe nightclub job
+- skipped to run sql for v-sport since they said it would be ran on first start if it did not exist
+- Make sure to find what resource that we used a stable realese version instead of main
+- Maybe make not enough cops incative in scripts since its limiting roleplay that you can do
+- Make sure all items resources use exist with images and that images look the same in quality size etc
+- Maybe add anti animate trough wall and check to see if they are in prison and use the prison script tp back to prison for if you relog or maybe set a specifik spot like a cell you tp to
+- Add anticheat maybe
+- Should maybe remove images that are only for install in the different resources to save space and have it more clean
+- Seatbelt resource might need to make sure harnes entity are deleted if a player uses it and disconnects or if the car despawns since sometimes it might be stuck in the air
+- make sure that property script uses the houses and apartments that actually got windows but that still has different instances
 
 **Changes**
 Inventory
 
 REMOVED ITEMS
-* diving_fill
-* driver_license
-* screwdriver
-* powersaw
+- diving_fill
+- driver_license
+- screwdriver
+- powersaw
 
 ADDED ITEMS
-* drone_battery_empty drone_battery and drone for nzkfc_drone
-* rc-bandito
-* rentalpapers
-* gunrangereceipt
-* skining_knife, boar_meat, boar_skin, deer_meat, deer_skin, coyote_meat, coyote_skin, rabbit_meat, rabbit_skin, cow_meat, cow_skin, chicken_meat, chicken_skin, pig_meat, pig_skin, hunting_talent_reset, hunting_xpboost
-* driver_license cdl_license and motorcycle_license
-* diving_fill
-* mt_fakeplates screwdriver
-* pre_workout protein_bar sports_drink whey
-* blindfold
-* anchovy, sardine, mackerel, bass, salmon, tuna, swordfish, clam, treasure_map, ancient_relic, lottery_ticket, fishing_voucher
-* pet_medkit pet_revive pet_food pet_water
-* keys
-* crafting_bench_w
-* police_crafting_bench
-* pilot_license
-* boat_license
+- drone_battery_empty drone_battery and drone for nzkfc_drone
+- rc-bandito
+- rentalpapers
+- gunrangereceipt
+- skining_knife, boar_meat, boar_skin, deer_meat, deer_skin, coyote_meat, coyote_skin, rabbit_meat, rabbit_skin, cow_meat, cow_skin, chicken_meat, chicken_skin, pig_meat, pig_skin, hunting_talent_reset, hunting_xpboost
+- driver_license cdl_license and motorcycle_license
+- diving_fill
+- mt_fakeplates screwdriver
+- pre_workout protein_bar sports_drink whey
+- blindfold
+- anchovy, sardine, mackerel, bass, salmon, tuna, swordfish, clam, treasure_map, ancient_relic, lottery_ticket, fishing_voucher
+- pet_medkit pet_revive pet_food pet_water
+- keys
+- crafting_bench_w
+- police_crafting_bench
+- pilot_license
+- boat_license
 
 ADDED IMAGES
-* drone_battery_empty drone_battery and drone for nzkfc_drone
-* rc-bandito
-* rentalpapers
-* skining_knife, boar_meat, boar_skin, deer_meat, deer_skin, coyote_meat, coyote_skin, rabbit_meat, rabbit_skin, cow_meat, cow_skin, chicken_meat, chicken_skin, pig_meat, pig_skin, hunting_talent_reset, hunting_xpboost
-* cdl_license and motorcycle_license
-* diving_fill
-* mt_fakeplates screwdriver
-* tirekit advancedrepairkit
-* pre_workout protein_bar sports_drink whey
-* blindfold
-* strippedbass_fish swordfish lottery_scratchcards mapa contract_paper
-* pilot_license
-* boat_license
+- drone_battery_empty drone_battery and drone for nzkfc_drone
+- rc-bandito
+- rentalpapers
+- skining_knife, boar_meat, boar_skin, deer_meat, deer_skin, coyote_meat, coyote_skin, rabbit_meat, rabbit_skin, cow_meat, cow_skin, chicken_meat, chicken_skin, pig_meat, pig_skin, hunting_talent_reset, hunting_xpboost
+- cdl_license and motorcycle_license
+- diving_fill
+- mt_fakeplates screwdriver
+- tirekit advancedrepairkit
+- pre_workout protein_bar sports_drink whey
+- blindfold
+- strippedbass_fish swordfish lottery_scratchcards mapa contract_paper
+- pilot_license
+- boat_license
 
 **TODO**
 FIXLIST
-* Look into what the z radial menu comes from and look if that is realy neccesery
-* Change nd_police name on files like audio in qbx_police to only be police or something, ps need compiling and chaning xml files also
-* The target makes the screen dark when using it disable that maybe but kind of nice tho
-* Add the center cursor once you enter inventory btw quick thinking is that because we center the cursor that item info reapears becuase its where it was left before maybe you can center it before you close it to so it have time to get rid of it not pointing at a item
-* Add so you can run and possible drive while using the inventory
-* Seems not able to delete character
-* Sim card might not have image
-* Change garage markes to use target or textui
-* Setup qbx_core logs to log things that also admins can see like left, joined, killed, and more anticheat kind of logs
-* Add vehicle teleport to the s4t4n667_elevators
-* Change the images from nd_ambulance to match with the other images styles which is tourniquet, gauze, splint, burndressing, medbag, defib, stretcher
-* Add enter any vehicle doors with ox
-* Remove dropped items marker and make it like ox inventory where bag prop is dropped
-* Add sound for seatbelt on of maybe
-* Fixing so the street names and compas is hidden while the escape menu is open and inventory and other menus if thats the case fix force minmap hidden either on foot or in vehicle or both via config
-* Remove so vehicles don't despawn while you noclip trough them its true for npc vehicles
-* Fix ox_lib notify and look over the train and subway script
-* Fix character cant be deleted maybe its that we changed config for what tables to get deleted when you delete character or check errors when you try to delete character
-* For making it more plesent in the begining of loading in alot of things show up that loaded on the screen hide that maybe somehow
-* Fix crosshair in vehicle flickering only in first person
-* Add menu options on either target menu, context or radial menu. Open all doors, Lock, Open all windows, Engine shut on off, Neon control, Extras, Air supspension
+- Look into what the z radial menu comes from and look if that is realy neccesery
+- Change nd_police name on files like audio in qbx_police to only be police or something, ps need compiling and chaning xml files also
+- The target makes the screen dark when using it disable that maybe but kind of nice tho
+- Add the center cursor once you enter inventory btw quick thinking is that because we center the cursor that item info reapears becuase its where it was left before maybe you can center it before you close it to so it have time to get rid of it not pointing at a item
+- Add so you can run and possible drive while using the inventory
+- Seems not able to delete character
+- Sim card might not have image
+- Change garage markes to use target or textui
+- Setup qbx_core logs to log things that also admins can see like left, joined, killed, and more anticheat kind of logs
+- Add vehicle teleport to the s4t4n667_elevators
+- Change the images from nd_ambulance to match with the other images styles which is tourniquet, gauze, splint, burndressing, medbag, defib, stretcher
+- Add enter any vehicle doors with ox
+- Remove dropped items marker and make it like ox inventory where bag prop is dropped
+- Add sound for seatbelt on of maybe
+- Fixing so the street names and compas is hidden while the escape menu is open and inventory and other menus if thats the case fix force minmap hidden either on foot or in vehicle or both via config
+- Remove so vehicles don't despawn while you noclip trough them its true for npc vehicles
+- Fix ox_lib notify and look over the train and subway script
+- Fix character cant be deleted maybe its that we changed config for what tables to get deleted when you delete character or check errors when you try to delete character
+- For making it more plesent in the begining of loading in alot of things show up that loaded on the screen hide that maybe somehow
+- Fix crosshair in vehicle flickering only in first person
+- Add menu options on either target menu, context or radial menu. Open all doors, Lock, Open all windows, Engine shut on off, Neon control, Extras, Air supspension
 
 UNCLEAR
-* Saved walk styles might be between all characters
-* Crashes when cunsuming items either caused by animation or prop might even be for default gta 5 props 
-* Can't open gunstore shop keep saying you cant open inventory right now maybe you need gun lisence as item in inventory
-* Character face seem to still change randomly and the character that you start with seems not to be about that config in qbx core but maybe inside illenium appearance somewhere
+- Saved walk styles might be between all characters
+- Crashes when cunsuming items either caused by animation or prop might even be for default gta 5 props 
+- Can't open gunstore shop keep saying you cant open inventory right now maybe you need gun lisence as item in inventory
+- Character face seem to still change randomly and the character that you start with seems not to be about that config in qbx core but maybe inside illenium appearance somewhere
 
 ERRORS
 Failed to load data file cfx_resource_ultra-voltlab:/audiodata/dlchei4_game.dat of type AUDIO_GAMEDATA for resource ultra-voltlab
@@ -214,8 +214,8 @@ DELETE FROM properties WHERE owner = 'ST99X98P'
 Unknown column 'owner' in 'WHERE'
 
 FEUTURE THINS MIGHT BE INFLICTING
-* Make silencer in vehicle allowed
-* Make clothing like hats or fat jackets allowed in vehicles
-* Make trailers or other things attached to vehicles like towtrucks be treated as a vehicle otherwize npc will run straight trough the trailer not thinking its something in the whay and lights wont work etc
-* Mirrors in vehicles working
-* First person only
+- Make silencer in vehicle allowed
+- Make clothing like hats or fat jackets allowed in vehicles
+- Make trailers or other things attached to vehicles like towtrucks be treated as a vehicle otherwize npc will run straight trough the trailer not thinking its something in the whay and lights wont work etc
+- Mirrors in vehicles working
+- First person only
