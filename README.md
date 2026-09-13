@@ -170,6 +170,13 @@ UNCLEAR
 * Can't open gunstore shop keep saying you cant open inventory right now maybe you need gun lisence as item in inventory
 * Character face seem to still change randomly and the character that you start with seems not to be about that config in qbx core but maybe inside illenium appearance somewhere
 
+FEUTURE THINS MIGHT BE INFLICTING
+* Make silencer in vehicle allowed
+* Make clothing like hats or fat jackets allowed in vehicles
+* Make trailers or other things attached to vehicles like towtrucks be treated as a vehicle otherwize npc will run straight trough the trailer not thinking its something in the whay and lights wont work etc
+* Mirrors in vehicles working
+* First person only
+
 ERRORS
 Failed to load data file cfx_resource_ultra-voltlab:/audiodata/dlchei4_game.dat of type AUDIO_GAMEDATA for resource ultra-voltlab
 Failed to load data file cfx_resource_ultra-voltlab:/audiodata/dlchei4_sounds.dat of type AUDIO_SOUNDDATA for resource ultra-voltlab
@@ -216,10 +223,3 @@ When deleting
 [22:54:54] [ info] [         oxmysql] Error: qbx_core was unable to complete a transaction!
 DELETE FROM properties WHERE owner = 'ST99X98P'
 Unknown column 'owner' in 'WHERE'
-
-FEUTURE THINS MIGHT BE INFLICTING
-* Make silencer in vehicle allowed
-* Make clothing like hats or fat jackets allowed in vehicles
-* Make trailers or other things attached to vehicles like towtrucks be treated as a vehicle otherwize npc will run straight trough the trailer not thinking its something in the whay and lights wont work etc
-* Mirrors in vehicles working
-* First person only
