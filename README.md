@@ -18,6 +18,18 @@ Goals for the server
 * Compatability for different controls like handcontroller, vr, steeringwheel and other sim gear and of curse keyboard and mouse.
 
 **SETUP**
+Steps to take to get the server up
+
+1. Download required software
+* Mariadb
+* Hedisql(optional if you want a database interface)
+* Vs code(optional for editing code and texts)
+
+2. Setup
+* Create a database in mariadb after you have set mariadb up with password for root user or recomended making a new user for your server. I recomend using hedisql to make the server database.
+* Run the backed up sql file in server-data in the newly created database
+* Download FiveM enhanced artifacts files and add to root. Leave the system resources folder the current one and do not replace with new if you want to keep the chat modification which i recomend.
+* Configure a server-private.cfg with the following: sv_licenseKey changeme, set steam_webApiKey "", #set rcon_password "", add_principal identifier.license:playerlicense group.admin # add the admin to the group, set mysql_connection_string "mysql://mariadbuser:password@ipwithporthere(default is 127.0.0.1:3306 if on local)/databasename"
 
 To add a resource
 * Make a fork of their repo
