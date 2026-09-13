@@ -302,8 +302,8 @@ Should not reach here: undefined
 
 Received non-vehicle model hash 0x6dbcfc99. Can't create the vehicle.
 
+Not allowed to execute command: -gizmoselect
 Not allowed to execute command: -gizmotranslation
-
 
 
 
