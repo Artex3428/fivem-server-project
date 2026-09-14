@@ -94,7 +94,6 @@ Tip is use the startwithouttxadmin.bat if you don't want to use txadmin otherwis
 * Add bank card incase bank system don't include it as item in inventory
 * Add x-shound if a resource in the future requires it
 * Maybe qbx tunerchip later
-* Maybe lockpick script like qbx if not added somewhere in another resource
 * Maybe printer script like qbx one
 * Maybe restorant job
 * Maybe nightclub job
