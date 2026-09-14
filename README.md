@@ -169,6 +169,8 @@ FIXLIST
 * For making it more plesent in the begining of loading in alot of things show up that loaded on the screen hide that maybe somehow
 * Fix crosshair in vehicle flickering only in first person
 * Add menu options on either target menu, context or radial menu. Open all doors, Lock, Open all windows, Engine shut on off, Neon control, Extras, Air supspension
+* Remove 3dme since it is not realistic to have text writen over peoples head and you should instead speak of what you do
+* Remove say command
 
 UNCLEAR
 * Saved walk styles might be between all characters
