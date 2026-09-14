@@ -157,7 +157,6 @@ FIXLIST
 * Change nd_police name on files like audio in qbx_police to only be police or something, ps need compiling and chaning xml files also
 * The target makes the screen dark when using it disable that maybe but kind of nice tho
 * Add the center cursor once you enter inventory btw quick thinking is that because we center the cursor that item info reapears becuase its where it was left before maybe you can center it before you close it to so it have time to get rid of it not pointing at a item
-* Seems not able to delete character
 * Sim card might not have image
 * Change garage markes to use target or textui
 * Setup qbx_core logs to log things that also admins can see like left, joined, killed, and more anticheat kind of logs
@@ -167,7 +166,6 @@ FIXLIST
 * Add sound for seatbelt on of maybe
 * Fixing so the street names and compas is hidden while the escape menu is open and inventory and other menus if thats the case fix force minmap hidden either on foot or in vehicle or both via config
 * Remove so vehicles don't despawn while you noclip trough them its true for npc vehicles
-* Fix character cant be deleted maybe its that we changed config for what tables to get deleted when you delete character or check errors when you try to delete character
 * For making it more plesent in the begining of loading in alot of things show up that loaded on the screen hide that maybe somehow
 * Fix crosshair in vehicle flickering only in first person
 * Add menu options on either target menu, context or radial menu. Open all doors, Lock, Open all windows, Engine shut on off, Neon control, Extras, Air supspension

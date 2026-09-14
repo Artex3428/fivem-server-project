@@ -60,23 +60,13 @@ return {
     ---@alias ColumnName string
     ---@type [TableName, ColumnName][]
     characterDataTables = {
-        {'properties', 'owner'},
+        {'properties', 'owner_citizenid'},
         {'bank_accounts_new', 'id'},
         {'playerskins', 'citizenid'},
-        -- {'player_mails', 'citizenid'},
         {'player_outfits', 'citizenid'},
         {'player_vehicles', 'citizenid'},
         {'player_groups', 'citizenid'},
         {'players', 'citizenid'},
-        -- {'npwd_calls', 'identifier'},
-        -- {'npwd_darkchat_channel_members', 'user_identifier'},
-        -- {'npwd_marketplace_listings', 'identifier'},
-        -- {'npwd_messages_participants', 'participant'},
-        -- {'npwd_notes', 'identifier'},
-        -- {'npwd_phone_contacts', 'identifier'},
-        -- {'npwd_phone_gallery', 'identifier'},
-        -- {'npwd_twitter_profiles', 'identifier'},
-        -- {'npwd_match_profiles', 'identifier'},
     }, -- Rows to be deleted when the character is deleted
 
     server = {
