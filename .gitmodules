@@ -298,3 +298,6 @@
 [submodule "server-data/resources/tc-wepRecoil"]
 	path = server-data/resources/tc-wepRecoil
 	url = https://github.com/Artex3428/tc-wepRecoil.git
+[submodule "server-data/resources/pma-voice"]
+	path = server-data/resources/pma-voice
+	url = https://github.com/Artex3428/pma-voice.git

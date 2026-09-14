@@ -89,7 +89,6 @@ Tip is use the startwithouttxadmin.bat if you don't want to use txadmin otherwis
 **NOTES**
 * Make sure sim card and phone are sold somewhere
 * Some resources names might be wrong if any issues accure
-* Might have to use temporarly pma-voice since fivem integrated voice might not work for phones etc
 * Add boss panel ui
 * Add report system if the current adminmenu don't have that
 * Add bank card incase bank system don't include it as item in inventory
