@@ -167,7 +167,6 @@ FIXLIST
 * Fixing so the street names and compas is hidden while the escape menu is open and inventory and other menus if thats the case fix force minmap hidden either on foot or in vehicle or both via config
 * Remove so vehicles don't despawn while you noclip trough them its true for npc vehicles
 * For making it more plesent in the begining of loading in alot of things show up that loaded on the screen hide that maybe somehow
-* Fix crosshair in vehicle flickering only in first person
 * Add menu options on either target menu, context or radial menu. Open all doors, Lock, Open all windows, Engine shut on off, Neon control, Extras, Air supspension
 * Remove 3dme since it is not realistic to have text writen over peoples head and you should instead speak of what you do
 * Remove say command
@@ -230,6 +229,7 @@ When deleting
 DELETE FROM properties WHERE owner = 'ST99X98P'
 Unknown column 'owner' in 'WHERE'
 
+Accurs sometime around being in a vehicle deleting it
 [00:29:07] [fatal] [ qbx_mechanicjob] @qbx_mechanicjob/server/main.lua:96: table index is nil
 > [global chunk] (qbx_mechanicjob/server/main.lua:96)
 > [global chunk]
