@@ -60,16 +60,22 @@ you have to check relevant commits manually
 
 Make sure that after each update you build if a build is needed ussaly with either
 * npm install
-  npm run build
+* npm run build
+
+or
 
 * pnpm i
-  pnpm run build
+* pnpm run build
+
+or
 
 * npm ci
-  npm run build
+* npm run build
+
+or
 
 * bun install --forzen-lockfile
-  bun run build
+* bun run build
 
 Add submodule
 * git submodule add https://github.com/Artex3428/RESOURCENAME.git server-data/resources/RESOURCENAME
