@@ -60,19 +60,15 @@ you have to check relevant commits manually
 
 Make sure that after each update you build if a build is needed ussaly with either
 * npm install
-
   npm run build
 
 * pnpm i
-
   pnpm run build
 
 * npm ci
-
   npm run build
 
 * bun install --forzen-lockfile
-
   bun run build
 
 Add submodule
