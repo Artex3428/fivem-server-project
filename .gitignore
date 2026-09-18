@@ -6,9 +6,10 @@ coreclr_server/
 
 *.log
 
-.id
-.console-history
-local-database/
+server-data/.id
+server-data/.console-history
+server-data/local-database/
+server-data/logs
 
 libnode26.dll
 cfx-server.exe
