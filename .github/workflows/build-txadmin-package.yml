@@ -1,0 +1,58 @@
+name: Build txAdmin Package
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    name: Build deployment package
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout server with submodules
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 1
+          lfs: true
+
+      - name: Pull Git LFS files in submodules
+        shell: bash
+        run: |
+          git submodule foreach --recursive 'git lfs pull || true'
+
+      - name: Build txAdmin server-data package
+        shell: bash
+        run: |
+          cd server-data
+
+          zip -r ../txadmin-server-data.zip . \
+            -x "server-private.cfg" \
+               "cache/*" \
+               "logs/*" \
+               "crashes/*" \
+               "*/.git" \
+               "*/.git/*" \
+               ".git/*"
+
+          cd ..
+
+      - name: Publish rolling development package
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh release view txadmin-dev >/dev/null 2>&1; then
+            gh release upload txadmin-dev txadmin-server-data.zip --clobber
+          else
+            gh release create txadmin-dev txadmin-server-data.zip \
+              --title "txAdmin Development Package" \
+              --notes "Automatically generated deployment package from the current main branch. This is a development package and not a stable server release." \
+              --prerelease
+          fi

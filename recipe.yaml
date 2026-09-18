@@ -1,0 +1,96 @@
+$engine: 3
+$onesync: on
+
+name: Artex Qbox RP
+version: development
+author: Artex3428
+description: Open-source FiveM Enhanced Qbox roleplay server project.
+
+tasks:
+
+  # ---------------------------------------------------------
+  # Database
+  # ---------------------------------------------------------
+
+  - action: connect_database
+
+  # ---------------------------------------------------------
+  # Download complete server-data package
+  # ---------------------------------------------------------
+
+  - action: download_file
+    url: https://github.com/Artex3428/fivem-server-project/releases/download/txadmin-dev/txadmin-server-data.zip
+    path: ./tmp/txadmin-server-data.zip
+    timeoutSeconds: 600
+
+  - action: unzip
+    src: ./tmp/txadmin-server-data.zip
+    dest: ./
+    timeoutSeconds: 600
+
+  # ---------------------------------------------------------
+  # Database setup
+  # ---------------------------------------------------------
+
+  - action: query_database
+    file: ./install.sql
+    timeoutSeconds: 300
+
+  # ---------------------------------------------------------
+  # txAdmin server configuration
+  # ---------------------------------------------------------
+
+  - action: replace_string
+    file: ./server.cfg
+    search: 'endpoint_add_tcp "0.0.0.0:30120"'
+    replace: '{{serverEndpoints}}'
+
+  - action: replace_string
+    file: ./server.cfg
+    search: 'endpoint_add_udp "0.0.0.0:30120"'
+    replace: ''
+
+  - action: replace_string
+    file: ./server.cfg
+    search: 'sv_maxclients 48'
+    replace: 'sv_maxclients {{maxClients}}'
+
+  - action: replace_string
+    file: ./server.cfg
+    search: 'sv_hostname "Unnamed server"'
+    replace: 'sv_hostname "{{serverName}}"'
+
+  - action: replace_string
+    file: ./server.cfg
+    search: 'sets sv_projectName "Server project"'
+    replace: 'sets sv_projectName "{{serverName}}"'
+
+  # ---------------------------------------------------------
+  # Private configuration
+  # ---------------------------------------------------------
+
+  - action: write_file
+    file: ./server-private.cfg
+    data: |
+      # Generated automatically by the txAdmin recipe.
+      # Keep this file private.
+
+      sv_licenseKey "{{svLicense}}"
+
+      set steam_webApiKey ""
+
+      set mysql_connection_string "{{dbConnectionString}}"
+
+      # Initial txAdmin server owner
+      {{addPrincipalsMaster}}
+
+  - action: replace_string
+    mode: all_vars
+    file: ./server-private.cfg
+
+  # ---------------------------------------------------------
+  # Cleanup installation files
+  # ---------------------------------------------------------
+
+  - action: remove_path
+    path: ./tmp

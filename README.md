@@ -27,6 +27,7 @@ Steps to take to get the server up
 * Vs code(optional for editing code and texts)
 
 2. Setup
+Keep in mind that if you want to use txadmin please read the USING_TXADMIN.md that is in root
 * Clone the repo while in a created folder on your machine using git clone --recurse-submodules https://github.com/Artex3428/fivem-server-project.git
 * Create a database in mariadb after you have set mariadb up password for root user or recomended making a new user for your server. I recomend using hedisql as the database interface.
 * Run the install.sql file in server-data in the newly created database
