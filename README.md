@@ -27,10 +27,11 @@ Steps to take to get the server up
 * Vs code(optional for editing code and texts)
 
 2. Setup
+* Clone the repo while in a created folder on your machine using git clone --recurse-submodules https://github.com/Artex3428/fivem-server-project.git
 * Create a database in mariadb after you have set mariadb up with password for root user or recomended making a new user for your server. I recomend using hedisql to make the server database.
-* Run the backed up sql file in server-data in the newly created database
+* Run the backed up sql file in server-data in the newly created database the one without database if you have already made one
 * Download FiveM enhanced artifacts files and add to root. Leave the system resources folder the current one and do not replace with new if you want to keep the chat modification which i recomend.
-* Configure a server-private.cfg with the following: sv_licenseKey changeme, set steam_webApiKey "", #set rcon_password "", add_principal identifier.license:playerlicense group.admin # add the admin to the group, set mysql_connection_string "mysql://mariadbuser:password@ipwithporthere(default is 127.0.0.1:3306 if on local)/databasename"
+* Configure a server-private.cfg and put it next to the server.cfg inside of server-data folder with the following: sv_licenseKey changeme, set steam_webApiKey "", #set rcon_password "", add_principal identifier.license:playerlicense group.admin # add the admin to the group, set mysql_connection_string "mysql://mariadbuser:password@ipwithporthere(default is 127.0.0.1:3306 if on local)/databasename"
 
 To add a resource
 * Make a fork of their repo
