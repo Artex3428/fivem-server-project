@@ -6,4 +6,12 @@ coreclr_server/
 
 *.log
 
+.id
+.console-history
+local-database/
+
+libnode26.dll
+cfx-server.exe
+license-attribution.txt
+
 server-data/server-private.cfg
