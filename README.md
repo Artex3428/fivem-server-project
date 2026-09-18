@@ -1,3 +1,7 @@
+**QUICK ACCESS**
+
+txadmin recipe link https://raw.githubusercontent.com/Artex3428/fivem-server-project/main/recipe.yaml
+
 **IMPORTANT**
 
 This server is work in progress. The server is working fine but might require some configuration and small amount of fixing. It is a good start and maybe the best one out there.
