@@ -1,0 +1,85 @@
+name: Bug Report
+description: Report a reproducible problem with the server project
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug.
+
+        Please include enough information for the issue to be reproduced.
+
+  - type: input
+    id: resource
+    attributes:
+      label: Affected resource
+      description: Which resource or system is affected?
+      placeholder: qbx_core, ox_inventory, housing, custom_chat, etc.
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Explain what is wrong.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What should have happened?
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Explain how the issue can be reproduced.
+      placeholder: |
+        1. Start the server
+        2. Go to ...
+        3. Use ...
+        4. Error occurs
+    validations:
+      required: true
+
+  - type: textarea
+    id: errors
+    attributes:
+      label: Console errors or logs
+      description: Paste relevant client/server/txAdmin console output here.
+      render: shell
+
+  - type: dropdown
+    id: enhanced
+    attributes:
+      label: FiveM build
+      options:
+        - FiveM Enhanced
+        - Other / Unknown
+    validations:
+      required: true
+
+  - type: textarea
+    id: modifications
+    attributes:
+      label: Additional modifications
+      description: Have you changed anything after installing this project?
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues before opening this report.
+          required: true
+        - label: I tested that the issue is reproducible.
+          required: true
+        - label: This is not a security vulnerability that should be reported privately.
+          required: true

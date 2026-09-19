@@ -1,0 +1,62 @@
+name: Feature Request
+description: Suggest an improvement or new feature
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Suggest improvements that fit the goals of the project:
+        quality, performance, security, realism, immersion and maintainability.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or use case
+      description: What problem would this feature solve?
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: Describe what you would like added or changed.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Are there existing resources or alternative approaches?
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Gameplay
+        - Jobs
+        - PvE
+        - PvP
+        - UI / UX
+        - Performance
+        - Security
+        - Quality / Cleanup
+        - Maps / World
+        - Vehicles
+        - Other
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues before submitting this request.
+          required: true
+        - label: This feature fits the general goals of the project.
+          required: true
