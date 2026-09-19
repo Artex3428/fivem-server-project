@@ -118,6 +118,7 @@ Tip is use the startwithouttxadmin.bat if you don't want to use txadmin otherwis
 * Should maybe remove images that are only for install in the different resources to save space and have it more clean
 * Seatbelt resource might need to make sure harnes entity are deleted if a player uses it and disconnects or if the car despawns since sometimes it might be stuck in the air
 * Make sure that property script uses the houses and apartments that actually got windows but that still has different instances
+* If you use a database that support it and want the best of the best before launching the install.sql you can replace all utf8mb4_unicode_ci with utf8mb4_uca1400_ai_ci
 
 **Changes**
 Inventory

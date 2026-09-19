@@ -2560,7 +2560,7 @@ CREATE TABLE IF NOT EXISTS `player_jobs_activity` (
   KEY `id` (`id` DESC) USING BTREE,
   KEY `last_checkout` (`last_checkout`) USING BTREE,
   KEY `citizenid_job` (`citizenid`,`job`) USING BTREE,
-  CONSTRAINT `1` FOREIGN KEY (`citizenid`) REFERENCES `players` (`citizenid`) ON DELETE CASCADE
+  CONSTRAINT `fk_player_jobs_activity_citizenid` FOREIGN KEY (`citizenid`) REFERENCES `players` (`citizenid`) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- Dumping data for table fivem-server-project.player_jobs_activity: ~0 rows (approximately)
@@ -2641,7 +2641,7 @@ CREATE TABLE IF NOT EXISTS `player_vehicles` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `plate` (`plate`),
   KEY `citizenid` (`citizenid`),
-  CONSTRAINT `1` FOREIGN KEY (`citizenid`) REFERENCES `players` (`citizenid`) ON DELETE CASCADE ON UPDATE CASCADE
+  CONSTRAINT `fk_player_vehicles_citizenid` FOREIGN KEY (`citizenid`) REFERENCES `players` (`citizenid`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Dumping data for table fivem-server-project.player_vehicles: ~0 rows (approximately)
