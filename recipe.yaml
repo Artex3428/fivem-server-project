@@ -1,7 +1,7 @@
 $engine: 3
 $onesync: on
 
-name: Artex Qbox RP
+name: FiveM Enhanced Qbox Roleplay Server
 version: development
 author: Artex3428
 description: Open-source FiveM Enhanced Qbox roleplay server project.
@@ -19,14 +19,134 @@ tasks:
   # ---------------------------------------------------------
 
   - action: download_file
-    url: https://github.com/Artex3428/fivem-server-project/releases/download/txadmin-dev/txadmin-server-data.zip
-    path: ./tmp/txadmin-server-data.zip
-    timeoutSeconds: 600
+    url: https://github.com/Artex3428/fivem-server-project/releases/download/txadmin-dev/txadmin-base.zip
+    path: ./tmp/txadmin-base.zip
+    timeoutSeconds: 1200
 
   - action: unzip
-    src: ./tmp/txadmin-server-data.zip
+    src: ./tmp/txadmin-base.zip
     dest: ./
-    timeoutSeconds: 600
+    timeoutSeconds: 1200
+
+  - action: download_file
+    url: https://github.com/Artex3428/fivem-server-project/releases/download/txadmin-dev/txadmin-resources-01.zip
+    path: ./tmp/txadmin-resources-01.zip
+    timeoutSeconds: 1200
+
+  - action: unzip
+    src: ./tmp/txadmin-resources-01.zip
+    dest: ./
+    timeoutSeconds: 1200
+
+  - action: download_file
+    url: https://github.com/Artex3428/fivem-server-project/releases/download/txadmin-dev/txadmin-resources-02.zip
+    path: ./tmp/txadmin-resources-02.zip
+    timeoutSeconds: 1200
+
+  - action: unzip
+    src: ./tmp/txadmin-resources-02.zip
+    dest: ./
+    timeoutSeconds: 1200
+
+  - action: download_file
+    url: https://github.com/Artex3428/fivem-server-project/releases/download/txadmin-dev/txadmin-resources-03.zip
+    path: ./tmp/txadmin-resources-03.zip
+    timeoutSeconds: 1200
+
+  - action: unzip
+    src: ./tmp/txadmin-resources-03.zip
+    dest: ./
+    timeoutSeconds: 1200
+
+  - action: download_file
+    url: https://github.com/Artex3428/fivem-server-project/releases/download/txadmin-dev/txadmin-resources-04.zip
+    path: ./tmp/txadmin-resources-04.zip
+    timeoutSeconds: 1200
+
+  - action: unzip
+    src: ./tmp/txadmin-resources-04.zip
+    dest: ./
+    timeoutSeconds: 1200
+
+  - action: download_file
+    url: https://github.com/Artex3428/fivem-server-project/releases/download/txadmin-dev/txadmin-resources-05.zip
+    path: ./tmp/txadmin-resources-05.zip
+    timeoutSeconds: 1200
+
+  - action: unzip
+    src: ./tmp/txadmin-resources-05.zip
+    dest: ./
+    timeoutSeconds: 1200
+
+  - action: download_file
+    url: https://github.com/Artex3428/fivem-server-project/releases/download/txadmin-dev/txadmin-resources-06.zip
+    path: ./tmp/txadmin-resources-06.zip
+    timeoutSeconds: 1200
+
+  - action: unzip
+    src: ./tmp/txadmin-resources-06.zip
+    dest: ./
+    timeoutSeconds: 1200
+
+  - action: download_file
+    url: https://github.com/Artex3428/fivem-server-project/releases/download/txadmin-dev/txadmin-resources-07.zip
+    path: ./tmp/txadmin-resources-07.zip
+    timeoutSeconds: 1200
+
+  - action: unzip
+    src: ./tmp/txadmin-resources-07.zip
+    dest: ./
+    timeoutSeconds: 1200
+
+  - action: download_file
+    url: https://github.com/Artex3428/fivem-server-project/releases/download/txadmin-dev/txadmin-resources-08.zip
+    path: ./tmp/txadmin-resources-08.zip
+    timeoutSeconds: 1200
+
+  - action: unzip
+    src: ./tmp/txadmin-resources-08.zip
+    dest: ./
+    timeoutSeconds: 1200
+
+  - action: download_file
+    url: https://github.com/Artex3428/fivem-server-project/releases/download/txadmin-dev/txadmin-resources-09.zip
+    path: ./tmp/txadmin-resources-09.zip
+    timeoutSeconds: 1200
+
+  - action: unzip
+    src: ./tmp/txadmin-resources-09.zip
+    dest: ./
+    timeoutSeconds: 1200
+
+  - action: download_file
+    url: https://github.com/Artex3428/fivem-server-project/releases/download/txadmin-dev/txadmin-resources-10.zip
+    path: ./tmp/txadmin-resources-10.zip
+    timeoutSeconds: 1200
+
+  - action: unzip
+    src: ./tmp/txadmin-resources-10.zip
+    dest: ./
+    timeoutSeconds: 1200
+
+  - action: download_file
+    url: https://github.com/Artex3428/fivem-server-project/releases/download/txadmin-dev/txadmin-resources-11.zip
+    path: ./tmp/txadmin-resources-11.zip
+    timeoutSeconds: 1200
+
+  - action: unzip
+    src: ./tmp/txadmin-resources-11.zip
+    dest: ./
+    timeoutSeconds: 1200
+
+  - action: download_file
+    url: https://github.com/Artex3428/fivem-server-project/releases/download/txadmin-dev/txadmin-resources-12.zip
+    path: ./tmp/txadmin-resources-12.zip
+    timeoutSeconds: 1200
+
+  - action: unzip
+    src: ./tmp/txadmin-resources-12.zip
+    dest: ./
+    timeoutSeconds: 1200
 
   # ---------------------------------------------------------
   # Database setup
@@ -34,7 +154,7 @@ tasks:
 
   - action: query_database
     file: ./install.sql
-    timeoutSeconds: 300
+    timeoutSeconds: 1200
 
   # ---------------------------------------------------------
   # txAdmin server configuration

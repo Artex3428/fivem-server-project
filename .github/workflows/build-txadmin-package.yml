@@ -27,32 +27,199 @@ jobs:
         run: |
           git submodule foreach --recursive 'git lfs pull || true'
 
-      - name: Build txAdmin server-data package
+      - name: Build txAdmin packages
         shell: bash
         run: |
-          cd server-data
+          python3 <<'PY'
+          from pathlib import Path
+          import zipfile
 
-          zip -r ../txadmin-server-data.zip . \
-            -x "server-private.cfg" \
-               "cache/*" \
-               "logs/*" \
-               "crashes/*" \
-               "*/.git" \
-               "*/.git/*" \
-               ".git/*"
+          ROOT = Path("server-data")
+          RESOURCES = ROOT / "resources"
+          OUTPUT = Path("txadmin-packages")
 
-          cd ..
+          RESOURCE_PARTS = 12
 
-      - name: Publish rolling development package
+          OUTPUT.mkdir(exist_ok=True)
+
+          def ignored(path):
+              rel = path.relative_to(ROOT)
+              parts = rel.parts
+
+              if ".git" in parts:
+                  return True
+
+              if parts and parts[0] in {
+                  "cache",
+                  "logs",
+                  "crashes",
+                  "local-database"
+              }:
+                  return True
+
+              if rel.as_posix() in {
+                  "server-private.cfg",
+                  ".id",
+                  ".console-history"
+              }:
+                  return True
+
+              return False
+
+          def get_files(path):
+              if path.is_file():
+                  return [] if ignored(path) else [path]
+
+              files = []
+
+              for file in path.rglob("*"):
+                  if file.is_file() and not ignored(file):
+                      files.append(file)
+
+              return files
+
+          def create_zip(filename, files):
+              output = OUTPUT / filename
+
+              with zipfile.ZipFile(
+                  output,
+                  "w",
+                  compression=zipfile.ZIP_DEFLATED,
+                  compresslevel=6,
+                  allowZip64=True
+              ) as archive:
+
+                  for file in sorted(files):
+                      archive.write(
+                          file,
+                          file.relative_to(ROOT).as_posix()
+                      )
+
+              size_mb = output.stat().st_size / 1024 / 1024
+
+              print(f"{filename}: {size_mb:.2f} MB")
+
+          # -------------------------------------------------
+          # Base package
+          # Everything except resources
+          # -------------------------------------------------
+
+          base_files = []
+
+          for file in ROOT.rglob("*"):
+              if not file.is_file():
+                  continue
+
+              rel = file.relative_to(ROOT)
+
+              if rel.parts[0] == "resources":
+                  continue
+
+              if ignored(file):
+                  continue
+
+              base_files.append(file)
+
+          create_zip(
+              "txadmin-base.zip",
+              base_files
+          )
+
+          # -------------------------------------------------
+          # Find individual resources
+          # -------------------------------------------------
+
+          units = [
+            entry
+            for entry in RESOURCES.iterdir()
+            if entry.is_dir()
+          ]
+
+          # Calculate approximate size of each resource.
+          resource_sizes = []
+
+          for unit in units:
+              files = get_files(unit)
+
+              size = sum(
+                  file.stat().st_size
+                  for file in files
+              )
+
+              resource_sizes.append(
+                  (size, unit, files)
+              )
+
+          # Largest resources first.
+          resource_sizes.sort(
+              key=lambda item: item[0],
+              reverse=True
+          )
+
+          # -------------------------------------------------
+          # Balance resources across 6 packages
+          # -------------------------------------------------
+
+          bins = [
+              {
+                  "size": 0,
+                  "files": []
+              }
+              for _ in range(RESOURCE_PARTS)
+          ]
+
+          for size, unit, files in resource_sizes:
+
+              smallest = min(
+                  bins,
+                  key=lambda item: item["size"]
+              )
+
+              smallest["size"] += size
+              smallest["files"].extend(files)
+
+          # -------------------------------------------------
+          # Create resource packages
+          # -------------------------------------------------
+
+          for index, package in enumerate(bins, start=1):
+
+              create_zip(
+                  f"txadmin-resources-{index:02}.zip",
+                  package["files"]
+              )
+
+          PY
+
+      - name: Publish rolling development packages
         shell: bash
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          if gh release view txadmin-dev >/dev/null 2>&1; then
-            gh release upload txadmin-dev txadmin-server-data.zip --clobber
-          else
-            gh release create txadmin-dev txadmin-server-data.zip \
+          if ! gh release view txadmin-dev >/dev/null 2>&1; then
+            gh release create txadmin-dev \
               --title "txAdmin Development Package" \
-              --notes "Automatically generated deployment package from the current main branch. This is a development package and not a stable server release." \
+              --notes "Automatically generated txAdmin deployment packages from the current main branch. This is a development package and not a stable server release." \
               --prerelease
           fi
+
+          gh release upload txadmin-dev \
+            txadmin-packages/txadmin-base.zip \
+            txadmin-packages/txadmin-resources-01.zip \
+            txadmin-packages/txadmin-resources-02.zip \
+            txadmin-packages/txadmin-resources-03.zip \
+            txadmin-packages/txadmin-resources-04.zip \
+            txadmin-packages/txadmin-resources-05.zip \
+            txadmin-packages/txadmin-resources-06.zip \
+            txadmin-packages/txadmin-resources-07.zip \
+            txadmin-packages/txadmin-resources-08.zip \
+            txadmin-packages/txadmin-resources-09.zip \
+            txadmin-packages/txadmin-resources-10.zip \
+            txadmin-packages/txadmin-resources-11.zip \
+            txadmin-packages/txadmin-resources-12.zip \
+            --clobber
+
+          gh release delete-asset \
+            txadmin-dev \
+            txadmin-server-data.zip \
+            --yes || true
