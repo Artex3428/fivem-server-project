@@ -157,8 +157,8 @@ INSERT INTO `businesses` (`id`, `zone_id`, `owner_citizenid`, `business_type`, `
 	(10, 'tattoo_vespucci', NULL, 'tattoo_parlor', 'Vespucci Body Art', 0, 'basic', NULL, NULL, NULL, NULL),
 	(11, 'garage_benny', NULL, 'garage', 'Benny\'s Workshop', 0, 'basic', NULL, NULL, NULL, NULL),
 	(12, 'garage_sandy', NULL, 'garage', 'Sandy Shores Auto Repair', 0, 'basic', NULL, NULL, NULL, NULL),
-	(13, 'clothing_ponsonbys', 'D236R1HE', 'clothing_store', 'Ponsonbys Boutique', 0, 'basic', NULL, '2026-09-13 20:00:57', NULL, NULL),
-	(14, 'clothing_suburban', 'D236R1HE', 'clothing_store', 'Suburban Threads', 0, 'basic', NULL, '2026-09-13 20:00:57', NULL, NULL),
+	(13, 'clothing_ponsonbys', NULL, 'clothing_store', 'Ponsonbys Boutique', 0, 'basic', NULL, NULL, NULL, NULL),
+	(14, 'clothing_suburban', NULL, 'clothing_store', 'Suburban Threads', 0, 'basic', NULL, NULL, NULL, NULL),
 	(15, 'convstore_strawberry', NULL, 'convenience_store', '24/7 Strawberry', 0, 'basic', NULL, NULL, NULL, NULL),
 	(16, 'convstore_sandy', NULL, 'convenience_store', 'Sandy Shores Grab & Go', 0, 'basic', NULL, NULL, NULL, NULL);
 
@@ -2190,10 +2190,6 @@ CREATE TABLE IF NOT EXISTS `phone_settings` (
   KEY `idx_phone_settings_number` (`phone_number`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table fivem-server-project.phone_settings: ~1 rows (approximately)
-INSERT INTO `phone_settings` (`citizenid`, `device`, `phone_number`, `active_group_id`, `ringtone`, `notification_tone`, `airplane_mode`, `card_name`, `card_avatar`, `card_email`, `card_address`, `installed_apps`, `home_layout`, `lock_clock`, `wallpaper`, `wallpaper_home`, `blur_lock`, `blur_home`, `island_pet`, `custom_wallpapers`, `passcode`, `face_id`, `chat_text_scale`, `reduce_motion`, `bold_text`, `text_scale`, `app_labels`, `phone_scale`, `brightness`, `phone_align`, `phone_tilt`, `dock_style`, `open_anim`, `wallpaper_parallax`, `hour24`, `caller_id`, `streamer_mode`, `streamer_hide`, `reopen_app`, `setup_done`, `theme`, `dark_theme`, `light_theme`, `accent`, `shell`, `game_time`, `palette_custom`, `icon_theme`, `icon_custom`, `show_app_names`, `home_density`, `ringtone_volume`, `call_volume`, `locale`, `updated_at`) VALUES
-	('sim:6630893051', 'phone', '6630893051', NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, '2026-09-13 20:04:52');
-
 -- Dumping structure for table fivem-server-project.phone_signatures
 CREATE TABLE IF NOT EXISTS `phone_signatures` (
   `citizenid` varchar(64) NOT NULL,
@@ -2214,10 +2210,6 @@ CREATE TABLE IF NOT EXISTS `phone_sim_cards` (
   PRIMARY KEY (`number`),
   KEY `idx_phone_sim_identity` (`identity`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
--- Dumping data for table fivem-server-project.phone_sim_cards: ~1 rows (approximately)
-INSERT INTO `phone_sim_cards` (`number`, `identity`, `owner_cid`, `adopted_by`, `created_at`) VALUES
-	('6630893051', 'sim:6630893051', 'D236R1HE', NULL, '2026-09-13 20:05:07');
 
 -- Dumping structure for table fivem-server-project.phone_stock_holdings
 CREATE TABLE IF NOT EXISTS `phone_stock_holdings` (

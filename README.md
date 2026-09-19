@@ -182,12 +182,12 @@ FIXLIST
 * Add menu options on either target menu, context or radial menu. Open all doors, Lock, Open all windows, Engine shut on off, Neon control, Extras, Air supspension
 * Remove 3dme since it is not realistic to have text writen over peoples head and you should instead speak of what you do
 * Remove say command
+* FiveM loadscreen randomly turns black and fail to load the background images somehow and the loadbar are of center maybe only first time after clearing cache
 
 UNCLEAR
 * Saved walk styles might be between all characters
 * Crashes when cunsuming items either caused by animation or prop might even be for default gta 5 props 
 * Can't open gunstore shop keep saying you cant open inventory right now maybe you need gun lisence as item in inventory
-* Character face seem to still change randomly and the character that you start with seems not to be about that config in qbx core but maybe inside illenium appearance somewhere
 
 FEUTURE THINS MIGHT BE INFLICTING
 * Make silencer in vehicle allowed

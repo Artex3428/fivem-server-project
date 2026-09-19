@@ -10,15 +10,17 @@ local randomPeds = {
     {
         model = `mp_m_freemode_01`,
         headBlend = {
-            skinSecond = 0,
+            shapeFirst = 0,
             shapeSecond = 0,
             shapeThird = 0,
-            shapeFirst = 1,
-            skinThird = 0,
-            thirdMix = 0.0,
-            skinMix = 0.0,
+
             skinFirst = 0,
-            shapeMix = 0,
+            skinSecond = 0,
+            skinThird = 0,
+
+            shapeMix = 0.0,
+            skinMix = 0.0,
+            thirdMix = 0.0,
         },
         hair = {
             texture = 0,
@@ -89,15 +91,17 @@ local randomPeds = {
     {
         model = `mp_f_freemode_01`,
         headBlend = {
-            shapeThird = 21,
-            shapeMix = 1,
+            shapeFirst = 0,
+            shapeSecond = 0,
+            shapeThird = 33,
+
+            skinFirst = 0,
             skinSecond = 0,
-            skinFirst = 21,
-            shapeFirst = 1,
-            thirdMix = 0.69,
-            shapeSecond = 32,
-            skinMix = 0.89,
-            skinThird = 20,
+            skinThird = 0,
+
+            shapeMix = 0.5,
+            skinMix = 0.5,
+            thirdMix = 1.0,
         },
         hair = {
             color = 3,
