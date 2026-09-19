@@ -170,7 +170,7 @@ CREATE TABLE IF NOT EXISTS `darkchat_bans` (
   PRIMARY KEY (`room_id`,`citizenid`),
   KEY `idx_fk_darkchat_bans_room` (`room_id`),
   CONSTRAINT `fk_darkchat_bans_room` FOREIGN KEY (`room_id`) REFERENCES `darkchat_rooms` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Dumping data for table fivem-server-project.darkchat_bans: ~0 rows (approximately)
 
@@ -184,7 +184,7 @@ CREATE TABLE IF NOT EXISTS `darkchat_members` (
   KEY `citizenid` (`citizenid`),
   KEY `idx_fk_darkchat_members_room` (`room_id`),
   CONSTRAINT `fk_darkchat_members_room` FOREIGN KEY (`room_id`) REFERENCES `darkchat_rooms` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Dumping data for table fivem-server-project.darkchat_members: ~0 rows (approximately)
 
@@ -202,7 +202,7 @@ CREATE TABLE IF NOT EXISTS `darkchat_messages` (
   KEY `room_id` (`room_id`,`id`),
   KEY `idx_fk_darkchat_messages_room` (`room_id`),
   CONSTRAINT `fk_darkchat_messages_room` FOREIGN KEY (`room_id`) REFERENCES `darkchat_rooms` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Dumping data for table fivem-server-project.darkchat_messages: ~0 rows (approximately)
 
@@ -211,7 +211,7 @@ CREATE TABLE IF NOT EXISTS `darkchat_nicknames` (
   `citizenid` varchar(60) NOT NULL,
   `nickname` varchar(40) NOT NULL,
   PRIMARY KEY (`citizenid`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Dumping data for table fivem-server-project.darkchat_nicknames: ~0 rows (approximately)
 
@@ -225,7 +225,7 @@ CREATE TABLE IF NOT EXISTS `darkchat_reactions` (
   KEY `message_id` (`message_id`),
   KEY `idx_fk_darkchat_reactions_message` (`message_id`),
   CONSTRAINT `fk_darkchat_reactions_message` FOREIGN KEY (`message_id`) REFERENCES `darkchat_messages` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Dumping data for table fivem-server-project.darkchat_reactions: ~0 rows (approximately)
 
@@ -239,7 +239,7 @@ CREATE TABLE IF NOT EXISTS `darkchat_rooms` (
   `code_changed_at` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `code` (`code`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Dumping data for table fivem-server-project.darkchat_rooms: ~0 rows (approximately)
 
@@ -292,7 +292,7 @@ CREATE TABLE IF NOT EXISTS `management_outfits` (
   `props` varchar(1000) DEFAULT NULL,
   `components` varchar(1500) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Dumping data for table fivem-server-project.management_outfits: ~0 rows (approximately)
 
@@ -311,7 +311,7 @@ CREATE TABLE IF NOT EXISTS `marketplace_listings` (
   PRIMARY KEY (`id`),
   KEY `citizenid` (`citizenid`),
   KEY `created_at` (`created_at`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Dumping data for table fivem-server-project.marketplace_listings: ~0 rows (approximately)
 
@@ -376,7 +376,7 @@ CREATE TABLE IF NOT EXISTS `pages_posts` (
   PRIMARY KEY (`id`),
   KEY `citizenid` (`citizenid`),
   KEY `created_at` (`created_at`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Dumping data for table fivem-server-project.pages_posts: ~0 rows (approximately)
 
@@ -425,7 +425,7 @@ CREATE TABLE IF NOT EXISTS `phone_alarms` (
   `snooze_secs` int(11) NOT NULL DEFAULT 60,
   PRIMARY KEY (`citizenid`,`id`),
   KEY `bytime` (`citizenid`,`hour`,`minute`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Dumping data for table fivem-server-project.phone_alarms: ~0 rows (approximately)
 
@@ -475,7 +475,7 @@ CREATE TABLE IF NOT EXISTS `phone_bank_transactions` (
   UNIQUE KEY `uq_bank_tx_src` (`src_id`),
   KEY `citizenid` (`citizenid`),
   KEY `created_at` (`created_at`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Dumping data for table fivem-server-project.phone_bank_transactions: ~0 rows (approximately)
 
@@ -781,7 +781,7 @@ CREATE TABLE IF NOT EXISTS `phone_cookie` (
   `updated_at` bigint(20) NOT NULL,
   PRIMARY KEY (`citizenid`),
   KEY `earned` (`earned`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Dumping data for table fivem-server-project.phone_cookie: ~0 rows (approximately)
 
@@ -859,7 +859,7 @@ CREATE TABLE IF NOT EXISTS `phone_friends` (
   `created_at` varchar(40) NOT NULL,
   PRIMARY KEY (`owner`,`friend`),
   KEY `idx_phone_friends_friend` (`friend`,`share`,`pending`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Dumping data for table fivem-server-project.phone_friends: ~0 rows (approximately)
 
@@ -986,7 +986,7 @@ CREATE TABLE IF NOT EXISTS `phone_map_markers` (
   `markers` mediumtext NOT NULL,
   `updated_at` varchar(40) NOT NULL,
   PRIMARY KEY (`citizenid`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Dumping data for table fivem-server-project.phone_map_markers: ~0 rows (approximately)
 
@@ -1936,7 +1936,7 @@ CREATE TABLE IF NOT EXISTS `phone_radio` (
   `frequency` decimal(5,1) NOT NULL DEFAULT 1.0,
   `volume` int(11) NOT NULL DEFAULT 50,
   PRIMARY KEY (`citizenid`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Dumping data for table fivem-server-project.phone_radio: ~0 rows (approximately)
 
@@ -1949,7 +1949,7 @@ CREATE TABLE IF NOT EXISTS `phone_radio_saved` (
   `created_at` bigint(20) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `citizenid` (`citizenid`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Dumping data for table fivem-server-project.phone_radio_saved: ~0 rows (approximately)
 
@@ -1962,7 +1962,7 @@ CREATE TABLE IF NOT EXISTS `phone_review_business_meta` (
   `updated_by` varchar(60) DEFAULT NULL,
   `updated_at` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`business_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Dumping data for table fivem-server-project.phone_review_business_meta: ~0 rows (approximately)
 
@@ -1974,7 +1974,7 @@ CREATE TABLE IF NOT EXISTS `phone_review_helpful` (
   PRIMARY KEY (`review_id`,`citizenid`),
   KEY `idx_fk_review_helpful_review` (`review_id`),
   CONSTRAINT `fk_review_helpful_review` FOREIGN KEY (`review_id`) REFERENCES `phone_review_reviews` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Dumping data for table fivem-server-project.phone_review_helpful: ~0 rows (approximately)
 
@@ -1991,7 +1991,7 @@ CREATE TABLE IF NOT EXISTS `phone_review_reviews` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `uniq_biz_cid` (`business_id`,`citizenid`),
   KEY `business_id` (`business_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Dumping data for table fivem-server-project.phone_review_reviews: ~0 rows (approximately)
 
@@ -2221,7 +2221,7 @@ CREATE TABLE IF NOT EXISTS `phone_stock_holdings` (
   PRIMARY KEY (`citizenid`,`symbol`),
   KEY `citizenid` (`citizenid`),
   KEY `idx_stock_holdings_symbol` (`symbol`,`quantity`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Dumping data for table fivem-server-project.phone_stock_holdings: ~0 rows (approximately)
 
@@ -2232,7 +2232,7 @@ CREATE TABLE IF NOT EXISTS `phone_stock_prices` (
   `history` longtext DEFAULT NULL,
   `updated_at` bigint(20) NOT NULL,
   PRIMARY KEY (`symbol`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Dumping data for table fivem-server-project.phone_stock_prices: ~30 rows (approximately)
 INSERT INTO `phone_stock_prices` (`symbol`, `price`, `history`, `updated_at`) VALUES
@@ -2273,7 +2273,7 @@ CREATE TABLE IF NOT EXISTS `phone_stock_wallet` (
   `cash` decimal(18,2) NOT NULL DEFAULT 0.00,
   `updated_at` bigint(20) NOT NULL,
   PRIMARY KEY (`citizenid`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Dumping data for table fivem-server-project.phone_stock_wallet: ~0 rows (approximately)
 
@@ -2325,7 +2325,7 @@ CREATE TABLE IF NOT EXISTS `phone_timer_recents` (
   `used_at` bigint(20) NOT NULL,
   PRIMARY KEY (`citizenid`,`seconds`),
   KEY `recency` (`citizenid`,`used_at`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Dumping data for table fivem-server-project.phone_timer_recents: ~0 rows (approximately)
 
@@ -2459,7 +2459,7 @@ CREATE TABLE IF NOT EXISTS `phone_voice_memos` (
   KEY `citizenid` (`citizenid`),
   KEY `created_at` (`created_at`),
   KEY `idx_voice_memos_cid_at` (`citizenid`,`created_at`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Dumping data for table fivem-server-project.phone_voice_memos: ~0 rows (approximately)
 
@@ -2480,7 +2480,7 @@ CREATE TABLE IF NOT EXISTS `phone_weazel_articles` (
   PRIMARY KEY (`id`),
   KEY `created_at` (`created_at`),
   KEY `featured` (`featured`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Dumping data for table fivem-server-project.phone_weazel_articles: ~0 rows (approximately)
 
@@ -2492,7 +2492,7 @@ CREATE TABLE IF NOT EXISTS `phone_weazel_breaking` (
   `created_at` bigint(20) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `pos` (`pos`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Dumping data for table fivem-server-project.phone_weazel_breaking: ~0 rows (approximately)
 
@@ -2587,7 +2587,7 @@ CREATE TABLE IF NOT EXISTS `player_outfits` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `citizenid_outfitname_model` (`citizenid`,`outfitname`,`model`),
   KEY `citizenid` (`citizenid`)
-) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Dumping data for table fivem-server-project.player_outfits: ~0 rows (approximately)
 
@@ -2773,7 +2773,7 @@ CREATE TABLE IF NOT EXISTS `v_sport_stats` (
   `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
   PRIMARY KEY (`identifier`),
   KEY `idx_last_session` (`last_session`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Dumping data for table fivem-server-project.v_sport_stats: ~0 rows (approximately)
 
