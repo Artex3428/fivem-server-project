@@ -1,6 +1,7 @@
 **QUICK ACCESS**
 
 txadmin recipe link https://raw.githubusercontent.com/Artex3428/fivem-server-project/main/recipe.yaml
+Download from github without txadmin git clone --recurse-submodules https://github.com/Artex3428/fivem-server-project.git
 
 **IMPORTANT**
 
@@ -118,7 +119,8 @@ Tip is use the startwithouttxadmin.bat if you don't want to use txadmin otherwis
 * Should maybe remove images that are only for install in the different resources to save space and have it more clean
 * Seatbelt resource might need to make sure harnes entity are deleted if a player uses it and disconnects or if the car despawns since sometimes it might be stuck in the air
 * Make sure that property script uses the houses and apartments that actually got windows but that still has different instances
-* If you use a database that support it and want the best of the best before launching the install.sql you can replace all utf8mb4_unicode_ci with utf8mb4_uca1400_ai_ci
+* If you use a database that support it and want the best of the best before launching the install.sql you can replace all utf8mb4_unicode_ci with utf8mb4_uca1400_ai_ci and keep in mind for publishing the server the install.sql need to use the unicode one for compatibility as well as CONSTRAINT `1` should not be 1 but a unique name instead like the others fk_.....
+* First thing that have to happen is to remove .gitignore files inside each resource. Then to either use submodules and if not that subtree and if not that plain one complete repo.
 
 **Changes**
 Inventory
