@@ -115,7 +115,6 @@ Tip is use the startwithouttxadmin.bat if you don't want to use txadmin otherwis
 * Maybe make not enough cops incative in scripts since its limiting roleplay that you can do
 * Make sure all items resources use exist with images and that images look the same in quality size etc
 * Maybe add anti animate trough wall and check to see if they are in prison and use the prison script tp back to prison for if you relog or maybe set a specifik spot like a cell you tp to
-* Add anticheat maybe
 * Should maybe remove images that are only for install in the different resources to save space and have it more clean
 * Seatbelt resource might need to make sure harnes entity are deleted if a player uses it and disconnects or if the car despawns since sometimes it might be stuck in the air
 * Make sure that property script uses the houses and apartments that actually got windows but that still has different instances
