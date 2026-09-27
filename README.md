@@ -121,6 +121,7 @@ Tip is use the startwithouttxadmin.bat if you don't want to use txadmin otherwis
 * Make sure that property script uses the houses and apartments that actually got windows but that still has different instances
 * If you use a database that support it and want the best of the best before launching the install.sql you can replace all utf8mb4_unicode_ci with utf8mb4_uca1400_ai_ci and keep in mind for publishing the server the install.sql need to use the unicode one for compatibility as well as CONSTRAINT `1` should not be 1 but a unique name instead like the others fk_.....
 * First thing that have to happen is to remove .gitignore files inside each resource. Then to either use submodules and if not that subtree and if not that plain one complete repo.
+* If need to change to legacy you need to go inside of ND_Ambulance, ps-housing, qbx_police, renzu_motels, sd-phone-props, sd-tablet-props fxmanifest and change from stream_enhanced to stream
 
 **Changes**
 Inventory
@@ -170,10 +171,9 @@ ADDED IMAGES
 FIXLIST
 * Look into what the z radial menu comes from and look if that is realy neccesery
 * Change nd_police name on files like audio in qbx_police to only be police or something, ps need compiling and chaning xml files also
-* The target makes the screen dark when using it disable that maybe but kind of nice tho
+* The target makes the screen dark when using it disable that maybe but kind of nice tho and also the outline of objects you selects gets white might be to much but also might be nice
 * Add the center cursor once you enter inventory btw quick thinking is that because we center the cursor that item info reapears becuase its where it was left before maybe you can center it before you close it to so it have time to get rid of it not pointing at a item
 * Sim card might not have image
-* Change garage markes to use target or textui
 * Setup qbx_core logs to log things that also admins can see like left, joined, killed, and more anticheat kind of logs
 * Add vehicle teleport to the s4t4n667_elevators
 * Change the images from nd_ambulance to match with the other images styles which is tourniquet, gauze, splint, burndressing, medbag, defib, stretcher
@@ -185,12 +185,16 @@ FIXLIST
 * Add menu options on either target menu, context or radial menu. Open all doors, Lock, Open all windows, Engine shut on off, Neon control, Extras, Air supspension
 * Remove 3dme since it is not realistic to have text writen over peoples head and you should instead speak of what you do
 * Remove say command
-* FiveM loadscreen randomly turns black and fail to load the background images somehow and the loadbar are of center maybe only first time after clearing cache
+* Fix inventory takes time to load first time opening it after login
+* Sometimes the target bugs and randomly not aften but it happens you can't open it as soon as you do it closes imidietly its most likely after new artifcats files added somehow
+* Removed draw marker for garages but might have to add target or something so people can find it easy right now at least it has textui
+* Currently it seems like new artifact files prevents enable keys so before it worked to drive and run while using target and inventory specificly but now it don't could be that those options specificly uses setr not set tested recently and did not work setting from setr to set
+* Fix que skip point the more you play
+* Anticheat
 
 UNCLEAR
 * Saved walk styles might be between all characters
 * Crashes when cunsuming items either caused by animation or prop might even be for default gta 5 props 
-* Can't open gunstore shop keep saying you cant open inventory right now maybe you need gun lisence as item in inventory
 
 FEUTURE THINS MIGHT BE INFLICTING
 * Make silencer in vehicle allowed

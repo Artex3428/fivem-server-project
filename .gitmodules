@@ -304,3 +304,6 @@
 [submodule "server-data/resources/custom_chat"]
 	path = server-data/resources/custom_chat
 	url = https://github.com/Artex3428/custom_chat.git
+[submodule "server-data/resources/Valkyrie"]
+	path = server-data/resources/Valkyrie
+	url = https://github.com/Artex3428/Valkyrie.git
