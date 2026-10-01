@@ -168,35 +168,53 @@ ADDED IMAGES
 **TODO**
 
 FIXLIST
-* Look into what the z radial menu comes from and look if that is realy neccesery
+Waiting for
+* Sometimes the target bugs and randomly not aften but it happens you can't open it as soon as you do it closes imidietly its most likely after new artifcats files added somehow
+* Currently it seems like new artifact files prevents enable keys so before it worked to drive and run while using target and inventory specificly but now it don't could be that those options specificly uses setr not set tested recently and did not work setting from setr to set
+* Removed draw marker for garages but might have to add target or something so people can find it easy right now at least it has textui
+
 * Change nd_police name on files like audio in qbx_police to only be police or something, ps need compiling and chaning xml files also
 * The target makes the screen dark when using it disable that maybe but kind of nice tho and also the outline of objects you selects gets white might be to much but also might be nice
 * Add the center cursor once you enter inventory btw quick thinking is that because we center the cursor that item info reapears becuase its where it was left before maybe you can center it before you close it to so it have time to get rid of it not pointing at a item
-* Sim card might not have image
 * Setup qbx_core logs to log things that also admins can see like left, joined, killed, and more anticheat kind of logs
-* Add vehicle teleport to the s4t4n667_elevators
+
 * Change the images from nd_ambulance to match with the other images styles which is tourniquet, gauze, splint, burndressing, medbag, defib, stretcher
+* Sim card might not have image
+
 * Add enter any vehicle doors with ox
+* Add menu options on either target menu, context or radial menu. Open all doors, Lock, Open all windows, Engine shut on off, Neon control, Extras, Air supspension
+* Look into what the z radial menu comes from and look if that is realy neccesery maybe change appearance and add options to it
+
 * Add sound for seatbelt on of maybe
-* Fixing so the street names and compas is hidden while the escape menu is open and inventory and other menus if thats the case fix force minmap hidden either on foot or in vehicle or both via config
 * Remove so vehicles don't despawn while you noclip trough them its true for npc vehicles
 * For making it more plesent in the begining of loading in alot of things show up that loaded on the screen hide that maybe somehow
-* Add menu options on either target menu, context or radial menu. Open all doors, Lock, Open all windows, Engine shut on off, Neon control, Extras, Air supspension
-* Remove 3dme since it is not realistic to have text writen over peoples head and you should instead speak of what you do
-* Remove say command
 * Fix inventory takes time to load first time opening it after login
-* Sometimes the target bugs and randomly not aften but it happens you can't open it as soon as you do it closes imidietly its most likely after new artifcats files added somehow
-* Removed draw marker for garages but might have to add target or something so people can find it easy right now at least it has textui
-* Currently it seems like new artifact files prevents enable keys so before it worked to drive and run while using target and inventory specificly but now it don't could be that those options specificly uses setr not set tested recently and did not work setting from setr to set
-* Fix que skip point the more you play
-* Anticheat
+
+* Make so that if a dead player is left untuched by other players the respawn works but if someone tuches them it adds 5 minutes or something on the timer
+* Maybe add so you have a chance to stand up when bleeding and laying down if you not fully dead
+
+* Maybe add the blueprints resource for crafting for more imersion as well as real drug resources where you can grow weed and cook meth and so on as well as gang territories
+
+* If not already exist add npc hostpial ped that if sertaint medics are not online then you get get help
+* Make sure that server-specific configuration is a seperate file like servername and so on also if its about webhooks that its a convar and can be a file that is not tracked
+* Zip ties seems not to work the item gets used but the player is not placed in them and maybe same for handcuffs
+* When mag is empty sometime the reload sound gets spammed
+
+* Maybe add those carts you can take up to mont everest
+* Make the loadscreen already be loaded before it starts so that you don't have to see it load and also it might still have a bug where sometimes it fails to load and won't show any styling.
 
 UNCLEAR
+* Remove 3dme since it is not realistic to have text writen over peoples head and you should instead speak of what you do but also maybe people need it sometimes
+* Upon entering server the first time healthbar are not positioned perfect if you reset settings it works so maybe just do that first time you login maybe with kvp not existing then
+* First time you use itemspawner maybe 2 items even tho you choose 1 gives you 2 times
 * Saved walk styles might be between all characters
-* Crashes when cunsuming items either caused by animation or prop might even be for default gta 5 props 
 
-FEUTURE THINS MIGHT BE INFLICTING
+FEUTURE THINS
+* Fix que skip point the more you play
+* Maybe make so that clothing that is the same model are not reprecented multiple times just add together the different colors to one model
+* Add map textures option
 * Make silencer in vehicle allowed
+* Fix so that either hair or face thickness etc don't clip trough clothin
 * Make clothing like hats or fat jackets allowed in vehicles
 * Make trailers or other things attached to vehicles like towtrucks be treated as a vehicle otherwize npc will run straight trough the trailer not thinking its something in the whay and lights wont work etc
 * Mirrors in vehicles working
@@ -283,3 +301,20 @@ Failed to parse pending replication value for ConfigVar inventory:weaponanims: t
 Failed to parse pending replication value for ConfigVar inventory:itemnotify: true
 Failed to parse pending replication value for ConfigVar inventory:weaponnotify: true
 Failed to parse pending replication value for ConfigVar inventory:dropprops: true
+
+
+
+
+
+
+[01:22:33] [fatal] [        Valkyrie] @valkyrie/server/modules/sv_clearTasks.lua:22: attempt to index a nil value (global 'CLogger')
+> [global chunk] (valkyrie/server/modules/sv_clearTasks.lua:22)
+
+[01:22:33] [fatal] [        Valkyrie] @valkyrie/server/modules/sv_events.lua:251: attempt to index a nil value (global 'CPlayerManager')
+> [global chunk] (valkyrie/server/modules/sv_events.lua:251)
+
+[01:22:33] [fatal] [        Valkyrie] @valkyrie/server/modules/sv_playerIntegrity.lua:1: attempt to index a nil value (global 'CConfigStore')
+> [global chunk] (valkyrie/server/modules/sv_playerIntegrity.lua:1)
+
+[01:22:33] [fatal] [        Valkyrie] @valkyrie/server/sv_main.lua:35: attempt to index a nil value (global 'CLogger')
+> [global chunk] (valkyrie/server/sv_main.lua:35)

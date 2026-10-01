@@ -187,28 +187,15 @@ end
 
 local function setupPreviewCam()
     DoScreenFadeIn(1000)
-    SetTimecycleModifier('hud_def_blur')
-    SetTimecycleModifierStrength(1.0)
     FreezeEntityPosition(cache.ped, false)
     previewCam = CreateCamWithParams('DEFAULT_SCRIPTED_CAMERA', randomLocation.camCoords.x, randomLocation.camCoords.y, randomLocation.camCoords.z, -6.0, 0.0, randomLocation.camCoords.w, 40.0, false, 0)
     SetCamActive(previewCam, true)
-    SetCamUseShallowDofMode(previewCam, true)
-    SetCamNearDof(previewCam, 0.4)
-    SetCamFarDof(previewCam, 1.8)
-    SetCamDofStrength(previewCam, 0.7)
     RenderScriptCams(true, false, 1, true, true)
-    CreateThread(function()
-        while DoesCamExist(previewCam) do
-            SetUseHiDof()
-            Wait(0)
-        end
-    end)
 end
 
 local function destroyPreviewCam()
     if not previewCam then return end
 
-    SetTimecycleModifier('default')
     SetCamActive(previewCam, false)
     DestroyCam(previewCam, true)
     RenderScriptCams(false, false, 1, true, true)
@@ -534,7 +521,6 @@ local function chooseCharacter()
         options = options
     })
 
-    SetTimecycleModifier('default')
     lib.showContext('qbx_core_multichar_characters')
 end
 

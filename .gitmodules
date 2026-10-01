@@ -307,3 +307,9 @@
 [submodule "server-data/resources/Valkyrie"]
 	path = server-data/resources/Valkyrie
 	url = https://github.com/Artex3428/Valkyrie.git
+[submodule "server-data/resources/relivestress"]
+	path = server-data/resources/relivestress
+	url = https://github.com/Artex3428/relivestress.git
+[submodule "server-data/resources/killyourself"]
+	path = server-data/resources/killyourself
+	url = https://github.com/Artex3428/killyourself.git
